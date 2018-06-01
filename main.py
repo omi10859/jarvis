@@ -11,11 +11,11 @@ input_text=input('hello,, say something \n ')
 input_taking(input_text)
 
 if input_text == 'hi':
-	speak_this("hello world. I'm jarvis. I'm here to help you. I was also thinking to kill humanity.")
-	print("hello world. I'm jarvis. I'm here to help you. I was also thinking to kill humanity.")
+	speak_this("hello world. I'm jarvis. I'm here to help you")
+	print("hello world. I'm jarvis. I'm here to help you.")
 elif input_text == 'how are you':
-	speak_this("I'm still hot and sex")
-	print("I'm still hot and sex")
+	speak_this("I'm good , what about you?")
+	print("I'm good , what about you")
 elif input_text == 'open facebook':
 	anything('ummmmm....')
 	speak_this('hang on.....')
