@@ -10,19 +10,19 @@ I'm written in python.<br>
 
 
 ## What is GROOT?
-GROOT is a virtual assistant which generally functions for voice recognition.
+GROOT is a virtual assistant which functioning with voice recognition.
 
 ## What GROOT can do?
-A virtual assistant basically functions to recognize voice of a person and 
-then implement it.
+A virtual assistant basically tries to recognize voice of a person and 
+then implement the task said by the invoker.
+
 Functions of GROOT are-
-* It can play video on youtube on your voice command.
-[![Plays video on Youtube]()](https://www.youtube.com/)
-Play video name on youtube
-* It can Open any URL.
-[![Open facebook.com]()](https://www.facebook.com/)
-[![Hey GROOT Can you please open random.in]()]()
-(You dont need to include www)
+* Play videos on youtube on your voice command.
+   > Play video name on youtube
+
+* Open any URL.
+   >Hey GROOT Can you please open random.in
+     (You dont need to include www)
 
 
 ## How to Contribute to GROOT?
