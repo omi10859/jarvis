@@ -1,0 +1,20 @@
+# Gobject Introspection vext
+#
+
+# Vext will allow access to these modules
+modules:
+    cairo
+    gi
+
+test_import:
+    # Vext will try and import any modules here
+    # To check if the install worked
+    gi.repository
+
+install_message:
+    You might want to try pygi with your package, it is built with CFFI and
+    works with virtualenv and covers quite a lot of the gi.repository
+
+pths:
+    # rpath.pth adds the "gnome" directory
+    rpath.pth
