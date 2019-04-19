@@ -31,7 +31,7 @@ def boredomKiller():
             results.append(link.get('href'))
         finalResults = [result for result in results if not re.search("fossbytes",result)]
         
-        uselink = finalResults[random.randint(0,len(finalResults)-1)]
+        uselink = finalResults[random.randint(0,len(finalResults))]
         webbrowser.open(uselink,new=2)
     
     else:
