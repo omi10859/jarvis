@@ -11,9 +11,9 @@ from asset.modules.playvideo.play import playthis
 
 def boredomKiller():
     options = ["youtube","fossbytes","moz"]
-    options = options[random.randint(0,len(options))]
+    option = options[random.randint(0,len(options))]
 
-    if options == "youtube":
+    if option == "youtube":
         html = requests.get("https://www.youtube.com/feed/trending")
         soup = BeautifulSoup(html.text,"html.parser")
         finalResults = []
@@ -23,7 +23,7 @@ def boredomKiller():
         uselink = "https://www.youtube.com"+finalResults[random.randint(0,len(finalResults))]
         playthis(uselink)
 
-    elif options == "fossbytes":
+    elif option == "fossbytes":
         html = requests.get("https://fossbytes.com/most-useful-websites-internet/")
         soup = BeautifulSoup(html.text,"html.parser")
         results = []
