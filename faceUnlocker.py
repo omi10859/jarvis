@@ -14,6 +14,7 @@ def unlock():
             files.append(_dir)
 
     if len(files) > 1:
+        """If there is more than one image in the folder asset/img/login then Groot Rejects to Login"""
         print("login must have a unique image")
 
     imageAsset = image+files[0]
