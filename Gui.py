@@ -79,10 +79,6 @@ class Groot_Ui(QWidget):
             self.upperLayout.outputEdit.setText("Showing Note Widget")
             self.createAdditionalLayout(["No need"],type="notes")
         
-        else:    
-            self.upperLayout.outputEdit.setText(reply[1])
-
-
         elif reply[0] == 'mail':
             speak_this("Opening Mail Service")
             self.upperLayout.outputEdit.setText("Mail Service")
