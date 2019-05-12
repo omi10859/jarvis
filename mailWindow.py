@@ -49,18 +49,16 @@ class mailWin(QWidget):
         details = {'Sender':self.senderEdit.text(),'Receiver':self.receiverEdit.text(),'Subject':self.subjectEdit.text(),'Message':self.messageEdit.toPlainText()}
         self.passwordText = self.confirmWindow.passwordEdit.text()
         details['Password'] = self.passwordText
-        print(details['Password'])
         reply = shootMail(details)
         if reply == 'Success':
             QMessageBox.about(self, "Successful","Mail Sent Succesfully")
         else:
-            QMessageBox.about(self,"Warning Error Occured",result)
+            QMessageBox.about(self,"Warning Error Occured",reply)
 
     def resourceCollection(self):
         details = {'Sender':self.senderEdit.text()}
         self.confirmWindow = confirmWin(details['Sender'])
         self.confirmWindow.show()
-        print("Reached Here")
         self.confirmWindow.send.clicked.connect(self.passwordCollection)
 
 class confirmWin(QWidget):

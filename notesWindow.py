@@ -19,7 +19,6 @@ class noteCreationBox(QWidget):
         self.setGeometry(150,150,800,400)
         self.show()
 
-
 class noteCreationWidgetLayout(QWidget):
     def __init__(self,parent=None):
         super(noteCreationWidgetLayout,self).__init__()
@@ -61,9 +60,7 @@ class noteCreationWidgetLayout(QWidget):
     
     def createNotesList(self):
         "Called when note button is clicked.Create scrollable list of notes in new Window"
-        
         self.content = getGrootFolderContent()
-        print(self.content)
         self.noteWindow = noteShowBox(self.content)
         self.noteWindow.show()
 
@@ -92,27 +89,16 @@ class noteShowBox(QWidget):
             self.notetile = noteTile(key,value)
             self.scroll_layout.addLayout(self.notetile.noteTileLayout)
 
-
         self.notes.setWidget(self.scroll_widget)
         self.mainLayout.addWidget(self.notes)
         self.setLayout(self.mainLayout)
         self.show()
     
-
-
 class noteTile(QWidget):
     def __init__(self,heading,summary):
         super(noteTile,self).__init__()
         self.heading = QLabel('<b>%s</b>'%heading)
         self.summary = QLabel(summary)
-
         self.noteTileLayout = QVBoxLayout()
-
         self.noteTileLayout.addWidget(self.heading)
         self.noteTileLayout.addWidget(self.summary)
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = noteCreationBox()
-    sys.exit(app.exec_())

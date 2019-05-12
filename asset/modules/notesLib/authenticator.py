@@ -50,7 +50,7 @@ def createFile(filename,fileContent):
     if title in fileList.keys():
         return "Name Already Exists Please Choose Another Name"
     
-    f = drive.CreateFile({"title" : title ,"parents": [{"kind": "Groot/", "id": fid}]})
+    f = drive.CreateFile({"title" : title ,"parents": [{"kind": "Groot/", "id": folderid}]})
     f.SetContentString(fileContent)
     f.Upload()
     return "Successful"

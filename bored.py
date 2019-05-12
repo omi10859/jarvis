@@ -31,7 +31,7 @@ def boredomKiller():
             results.append(link.get('href'))
         finalResults = [result for result in results if not re.search("fossbytes",result)]
         
-        uselink = finalResults[random.randint(0,len(finalResults))]
+        uselink = finalResults[random.randint(0,len(finalResults)-1)]
         webbrowser.open(uselink,new=2)
     
     else:
@@ -41,8 +41,5 @@ def boredomKiller():
         for link in soup.findAll('a', attrs={'href': re.compile("^http|https")}):
             results.append(link.get('href'))
         finalResults = [result for result in results if not re.search("moz",result)]
-        uselink = finalResults[random.randint(0,len(finalResults))]
+        uselink = finalResults[random.randint(0,len(finalResults)-1)]
         webbrowser.open(uselink,new=2)
-
-
-boredomKiller()

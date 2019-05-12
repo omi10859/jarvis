@@ -1,5 +1,4 @@
 from PyQt5.QtWidgets import QApplication
-from faceUnlocker import unlock
 from texttospeech import speak_this
 import sys
  

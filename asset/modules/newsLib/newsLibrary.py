@@ -24,6 +24,3 @@ def news_func(passedKeywords=['india','delhi']):
         headlines = headlines + all_headlines['articles']
         #print(headlines)
     return headlines
-
-news_func()
-
