@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.mousepoll" gettext-domain="compiz">
+    <key type="i" name="mouse-poll-interval">
+      <default>10</default>
+      <summary>Mouse Poll Interval</summary>
+      <description>How often to poll the mouse position, in miliseconds. Reduce this to reduce choppy behavior. (1 - 500)</description>
+    </key>
+  </schema>
+</schemalist>

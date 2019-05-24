@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.ezoom" gettext-domain="compiz">
+    <key type="s" name="zoom-in-button">
+      <default>'Disabled'</default>
+      <summary>Zoom In Button</summary>
+      <description>Mouse button shortcut to invoke zooming in.</description>
+    </key>
+    <key type="s" name="zoom-in-key">
+      <default>'Disabled'</default>
+      <summary>Zoom In Key</summary>
+      <description>Key shortcut to invoke zooming in.</description>
+    </key>
+    <key type="s" name="zoom-out-button">
+      <default>'Disabled'</default>
+      <summary>Zoom Out Button</summary>
+      <description>Mouse button shortcut to invoke zooming out.</description>
+    </key>
+    <key type="s" name="zoom-out-key">
+      <default>'Disabled'</default>
+      <summary>Zoom Out Key</summary>
+      <description>Key shortcut to invoke zooming in.</description>
+    </key>
+    <key type="s" name="zoom-box-button">
+      <default>'Disabled'</default>
+      <summary>Invoke Zoom Box Button</summary>
+      <description>Define a rectangle area and zoom into it.</description>
+    </key>
+    <key type="s" name="zoom-box-outline-color">
+      <default>'#2f2f4f9f'</default>
+      <summary>Zoom Box Outline Color</summary>
+      <description>Color and opacity of the zoom box outline.</description>
+    </key>
+    <key type="s" name="zoom-box-fill-color">
+      <default>'#2f2f2f4f'</default>
+      <summary>Zoom Box Fill Color</summary>
+      <description>Fill color and opacity of the zoom box.</description>
+    </key>
+    <key type="i" name="zoom-smoothing">
+      <default>1</default>
+      <summary>Zoom Smoothing Algorithm</summary>
+      <description>Select algorithm for smoothing the zoom rendering (0 = None, 1 = Bilinear)</description>
+    </key>
+    <key type="s" name="center-mouse-key">
+      <default>'Disabled'</default>
+      <summary>Center the mouse</summary>
+      <description>Puts the mouse in the middle of the screen (Regardless of zoom level)</description>
+    </key>
+    <key type="b" name="spec-target-focus">
+      <default>true</default>
+      <summary>Target Focused Window on Specific Zoom</summary>
+      <description>Check this to target the focused window when jumping to a specific zoom level. Uncheck this to target the mouse.</description>
+    </key>
+    <key type="d" name="zoom-specific-1">
+      <default>1.0</default>
+      <summary>Specific Zoom 1</summary>
+      <description>Zoom level to go to when triggering hotkey 1 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-1-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 1</summary>
+      <description>Zoom to the specific zoom level 1</description>
+    </key>
+    <key type="d" name="zoom-specific-2">
+      <default>1.0</default>
+      <summary>Specific Zoom 2</summary>
+      <description>Zoom level to go to when triggering hotkey 2 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-2-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 2</summary>
+      <description>Zoom to the specific zoom level 2</description>
+    </key>
+    <key type="d" name="zoom-specific-3">
+      <default>1.0</default>
+      <summary>Specific Zoom 3</summary>
+      <description>Zoom level to go to when triggering hotkey 3 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-3-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 3</summary>
+      <description>Zoom to the specific zoom level 3</description>
+    </key>
+    <key type="d" name="zoom-specific-4">
+      <default>1.0</default>
+      <summary>Specific Zoom 4</summary>
+      <description>Zoom level to go to when triggering hotkey 4 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-4-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 4</summary>
+      <description>Zoom to the specific zoom level 4</description>
+    </key>
+    <key type="d" name="zoom-specific-5">
+      <default>1.0</default>
+      <summary>Specific Zoom 5</summary>
+      <description>Zoom level to go to when triggering hotkey 5 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-5-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 5</summary>
+      <description>Zoom to the specific zoom level 5</description>
+    </key>
+    <key type="d" name="zoom-specific-6">
+      <default>1.0</default>
+      <summary>Specific Zoom 6</summary>
+      <description>Zoom level to go to when triggering hotkey 6 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-6-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 6</summary>
+      <description>Zoom to the specific zoom level 6</description>
+    </key>
+    <key type="d" name="zoom-specific-7">
+      <default>1.0</default>
+      <summary>Specific Zoom 7</summary>
+      <description>Zoom level to go to when triggering hotkey 7 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-7-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 7</summary>
+      <description>Zoom to the specific zoom level 7</description>
+    </key>
+    <key type="d" name="zoom-specific-8">
+      <default>1.0</default>
+      <summary>Specific Zoom 8</summary>
+      <description>Zoom level to go to when triggering hotkey 8 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-8-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 8</summary>
+      <description>Zoom to the specific zoom level 8</description>
+    </key>
+    <key type="d" name="zoom-specific-9">
+      <default>1.0</default>
+      <summary>Specific Zoom 9</summary>
+      <description>Zoom level to go to when triggering hotkey 9 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-9-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 9</summary>
+      <description>Zoom to the specific zoom level 9</description>
+    </key>
+    <key type="d" name="zoom-specific-10">
+      <default>1.0</default>
+      <summary>Specific Zoom 10</summary>
+      <description>Zoom level to go to when triggering hotkey 10 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-10-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 10</summary>
+      <description>Zoom to the specific zoom level 10</description>
+    </key>
+    <key type="d" name="zoom-specific-11">
+      <default>1.0</default>
+      <summary>Specific Zoom 11</summary>
+      <description>Zoom level to go to when triggering hotkey 11 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-11-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 11</summary>
+      <description>Zoom to the specific zoom level 11</description>
+    </key>
+    <key type="d" name="zoom-specific-12">
+      <default>1.0</default>
+      <summary>Specific Zoom 12</summary>
+      <description>Zoom level to go to when triggering hotkey 12 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-12-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 12</summary>
+      <description>Zoom to the specific zoom level 12</description>
+    </key>
+    <key type="d" name="zoom-specific-13">
+      <default>1.0</default>
+      <summary>Specific Zoom 13</summary>
+      <description>Zoom level to go to when triggering hotkey 13 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-13-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 13</summary>
+      <description>Zoom to the specific zoom level 13</description>
+    </key>
+    <key type="d" name="zoom-specific-14">
+      <default>1.0</default>
+      <summary>Specific Zoom 14</summary>
+      <description>Zoom level to go to when triggering hotkey 14 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-14-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 14</summary>
+      <description>Zoom to the specific zoom level 14</description>
+    </key>
+    <key type="d" name="zoom-specific-15">
+      <default>1.0</default>
+      <summary>Specific Zoom 15</summary>
+      <description>Zoom level to go to when triggering hotkey 15 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-15-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 15</summary>
+      <description>Zoom to the specific zoom level 15</description>
+    </key>
+    <key type="d" name="zoom-specific-16">
+      <default>1.0</default>
+      <summary>Specific Zoom 16</summary>
+      <description>Zoom level to go to when triggering hotkey 16 (0.1 - 1.0)</description>
+    </key>
+    <key type="s" name="zoom-specific-16-key">
+      <default>'Disabled'</default>
+      <summary>Zoom to Specific Zoom 16</summary>
+      <description>Zoom to the specific zoom level 16</description>
+    </key>
+    <key type="s" name="lock-zoom-key">
+      <default>'Disabled'</default>
+      <summary>Toggle zoom area lock</summary>
+      <description>Toggles a lock on the zoom area so it doesn't change on various events</description>
+    </key>
+    <key type="s" name="pan-left-key">
+      <default>'Disabled'</default>
+      <summary>Pan Zoom Left</summary>
+      <description>Pan (move) the zoom area left</description>
+    </key>
+    <key type="s" name="pan-right-key">
+      <default>'Disabled'</default>
+      <summary>Pan Zoom Right</summary>
+      <description>Pan (move) the zoom area right</description>
+    </key>
+    <key type="s" name="pan-up-key">
+      <default>'Disabled'</default>
+      <summary>Pan Zoom Up</summary>
+      <description>Pan (move) the zoom area up</description>
+    </key>
+    <key type="s" name="pan-down-key">
+      <default>'Disabled'</default>
+      <summary>Pan Zoom Down</summary>
+      <description>Pan (move) the zoom area down</description>
+    </key>
+    <key type="s" name="fit-to-zoom-key">
+      <default>'Disabled'</default>
+      <summary>Fit the window to the zoom level</summary>
+      <description>Resize the window so it matches the current zoom level.</description>
+    </key>
+    <key type="s" name="fit-to-window-key">
+      <default>'Disabled'</default>
+      <summary>Fit zoomed area to window</summary>
+      <description>Zooms in/out so the focused window is zoomed to the maximum while still being fully visible.</description>
+    </key>
+    <key type="d" name="zoom-factor">
+      <default>1.150</default>
+      <summary>Zoom factor</summary>
+      <description>Zoom in/out by this factor. Higher value means quicker zooming. (1.01 - 3)</description>
+    </key>
+    <key type="d" name="minimum-zoom">
+      <default>0.125</default>
+      <summary>Minimum zoom factor</summary>
+      <description>The minimum allowed zoom factor. A value of 0.5 equals 2x zoom, a value of 0.25 equals 4x zoom. (0.000001 - 0.999999)</description>
+    </key>
+    <key type="i" name="zoom-mode">
+      <default>0</default>
+      <summary>Zoom Mode</summary>
+      <description>How the cursor should be tracked when zooming (0 = Sync Mouse, 1 = Pan Area)</description>
+    </key>
+    <key type="b" name="scale-mouse">
+      <default>true</default>
+      <summary>Scale the mouse pointer</summary>
+      <description>Enable this to get a gradually larger mouse pointer as you zoom in</description>
+    </key>
+    <key type="b" name="scale-mouse-dynamic">
+      <default>true</default>
+      <summary>Dynamic mouse pointer scale</summary>
+      <description>When scaling the mouse pointer, this option makes the scale adjust according to the current level of zoom.</description>
+    </key>
+    <key type="d" name="scale-mouse-static">
+      <default>0.2</default>
+      <summary>Static mouse pointer scale</summary>
+      <description>When not using a dynamic mouse pointer scale, this is the scale factor for the mouse pointer. (0.1 - 1.0)</description>
+    </key>
+    <key type="b" name="hide-original-mouse">
+      <default>true</default>
+      <summary>Hide original mouse pointer</summary>
+      <description>Hides the original mouse pointer when zoomed in and scaling the mouse</description>
+    </key>
+    <key type="b" name="restrain-mouse">
+      <default>false</default>
+      <summary>Restrain the mouse to the zoom area</summary>
+      <description>Attempt to keep the zoomed mouse visible by warping it when it is moved outside the zoom area.</description>
+    </key>
+    <key type="i" name="restrain-margin">
+      <default>5</default>
+      <summary>Mouse Restrain Margin</summary>
+      <description>The size of the margin to add when attempting to restrain the mouse. (0 - 50)</description>
+    </key>
+    <key type="d" name="pan-factor">
+      <default>0.1</default>
+      <summary>Pan Factor</summary>
+      <description>Move the zoomed area this much whenever you pan the zoomed area with keys. (0.001 - 1.0)</description>
+    </key>
+    <key type="b" name="follow-focus">
+      <default>true</default>
+      <summary>Enable focus tracking</summary>
+      <description>Move the zoom area when focus changes.</description>
+    </key>
+    <key type="b" name="focus-fit-window">
+      <default>false</default>
+      <summary>Fit zoom level to window on focus change</summary>
+      <description>Fit the zoomed area to the window when the zoomed area moves as a result of focus tracking.</description>
+    </key>
+    <key type="d" name="autoscale-min">
+      <default>0.25</default>
+      <summary>Autoscale threshold</summary>
+      <description>Only change zoom level (scale) on focus change if the target value is higher than this. Prevents zooming too far in on small popups etc. (0.000001 - 0.999999)</description>
+    </key>
+    <key type="b" name="always-focus-fit-window">
+      <default>false</default>
+      <summary>Always fit to window on focus track</summary>
+      <description>Fit the zoomed area to the window when the zoomed area moves as a result of focus tracking. Even when not initially zoomed in.</description>
+    </key>
+    <key type="i" name="follow-focus-delay">
+      <default>0</default>
+      <summary>Follow Focus Delay</summary>
+      <description>Only attempt to center newly focused windows if the mouse hasn't moved in this amount of seconds. Use this to avoid jumping when using sloppy focus. (0 - 15)</description>
+    </key>
+    <key type="d" name="speed">
+      <default>25</default>
+      <summary>Speed</summary>
+      <description>Zoom Speed (0.1 - 100)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>1.2</default>
+      <summary>Timestep</summary>
+      <description>Zoom Timestep (0.1 - 50)</description>
+    </key>
+  </schema>
+</schemalist>

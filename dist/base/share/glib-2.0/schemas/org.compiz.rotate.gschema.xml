@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.rotate" gettext-domain="compiz">
+    <key type="b" name="edge-flip-pointer">
+      <default>false</default>
+      <summary>Edge Flip Pointer</summary>
+      <description>Flip to next viewport when moving pointer to screen edge</description>
+    </key>
+    <key type="b" name="edge-flip-window">
+      <default>true</default>
+      <summary>Edge Flip Move</summary>
+      <description>Flip to next viewport when moving window to screen edge</description>
+    </key>
+    <key type="b" name="edge-flip-dnd">
+      <default>true</default>
+      <summary>Edge Flip DnD</summary>
+      <description>Flip to next viewport when dragging object to screen edge</description>
+    </key>
+    <key type="b" name="raise-on-rotate">
+      <default>false</default>
+      <summary>Raise on rotate</summary>
+      <description>Raise window when rotating</description>
+    </key>
+    <key type="b" name="invert-y">
+      <default>false</default>
+      <summary>Pointer Invert Y</summary>
+      <description>Invert Y axis for pointer movement</description>
+    </key>
+    <key type="b" name="snap-top">
+      <default>false</default>
+      <summary>Snap To Top Face</summary>
+      <description>Snap Cube Rotation to Top Face</description>
+    </key>
+    <key type="b" name="snap-bottom">
+      <default>false</default>
+      <summary>Snap To Bottom Face</summary>
+      <description>Snap Cube Rotation to Bottom Face</description>
+    </key>
+    <key type="d" name="zoom">
+      <default>0.0</default>
+      <summary>Zoom</summary>
+      <description>Rotation Zoom (0.0 - 2.0)</description>
+    </key>
+    <key type="i" name="flip-time">
+      <default>350</default>
+      <summary>Flip Time</summary>
+      <description>Timeout before flipping viewport (0 - 1000)</description>
+    </key>
+    <key type="d" name="sensitivity">
+      <default>1.0</default>
+      <summary>Pointer Sensitivity</summary>
+      <description>Sensitivity of pointer movement (0.01 - 100.0)</description>
+    </key>
+    <key type="d" name="acceleration">
+      <default>4.0</default>
+      <summary>Acceleration</summary>
+      <description>Rotation Acceleration (1.0 - 20.0)</description>
+    </key>
+    <key type="d" name="speed">
+      <default>2.0</default>
+      <summary>Speed</summary>
+      <description>Rotation Speed (0.1 - 50.0)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>1.0</default>
+      <summary>Timestep</summary>
+      <description>Rotation Timestep (0.1 - 50.0)</description>
+    </key>
+    <key type="s" name="initiate-button">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Button1'</default>
+      <summary>Initiate</summary>
+      <description>Start Rotation</description>
+    </key>
+    <key type="s" name="rotate-left-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Left'</default>
+      <summary>Rotate Left</summary>
+      <description>Rotate left</description>
+    </key>
+    <key type="s" name="rotate-left-button">
+      <default>'Disabled'</default>
+      <summary>Rotate Left</summary>
+      <description>Rotate left</description>
+    </key>
+    <key type="s" name="rotate-right-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Right'</default>
+      <summary>Rotate Right</summary>
+      <description>Rotate right</description>
+    </key>
+    <key type="s" name="rotate-right-button">
+      <default>'Disabled'</default>
+      <summary>Rotate Right</summary>
+      <description>Rotate right</description>
+    </key>
+    <key type="s" name="rotate-left-window-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Left'</default>
+      <summary>Rotate Left with Window</summary>
+      <description>Rotate left and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-left-window-button">
+      <default>'Disabled'</default>
+      <summary>Rotate Left with Window</summary>
+      <description>Rotate left and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-right-window-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Right'</default>
+      <summary>Rotate Right with Window</summary>
+      <description>Rotate right and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-right-window-button">
+      <default>'Disabled'</default>
+      <summary>Rotate Right with Window</summary>
+      <description>Rotate right and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To</summary>
+      <description>Rotate to viewport</description>
+    </key>
+    <key type="s" name="rotate-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate window</summary>
+      <description>Rotate with window</description>
+    </key>
+    <key type="s" name="rotate-flip-left-edge">
+      <default>'Left'</default>
+      <summary>Rotate Flip Left</summary>
+      <description>Flip to left viewport and warp pointer</description>
+    </key>
+    <key type="s" name="rotate-flip-right-edge">
+      <default>'Right'</default>
+      <summary>Rotate Flip Right</summary>
+      <description>Flip to right viewport and warp pointer</description>
+    </key>
+    <key type="s" name="rotate-to-1-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 1</summary>
+      <description>Rotate to face 1</description>
+    </key>
+    <key type="s" name="rotate-to-2-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 2</summary>
+      <description>Rotate to face 2</description>
+    </key>
+    <key type="s" name="rotate-to-3-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 3</summary>
+      <description>Rotate to face 3</description>
+    </key>
+    <key type="s" name="rotate-to-4-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 4</summary>
+      <description>Rotate to face 4</description>
+    </key>
+    <key type="s" name="rotate-to-5-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 5</summary>
+      <description>Rotate to face 5</description>
+    </key>
+    <key type="s" name="rotate-to-6-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 6</summary>
+      <description>Rotate to face 6</description>
+    </key>
+    <key type="s" name="rotate-to-7-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 7</summary>
+      <description>Rotate to face 7</description>
+    </key>
+    <key type="s" name="rotate-to-8-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 8</summary>
+      <description>Rotate to face 8</description>
+    </key>
+    <key type="s" name="rotate-to-9-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 9</summary>
+      <description>Rotate to face 9</description>
+    </key>
+    <key type="s" name="rotate-to-10-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 10</summary>
+      <description>Rotate to face 10</description>
+    </key>
+    <key type="s" name="rotate-to-11-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 11</summary>
+      <description>Rotate to face 11</description>
+    </key>
+    <key type="s" name="rotate-to-12-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 12</summary>
+      <description>Rotate to face 12</description>
+    </key>
+    <key type="s" name="rotate-to-1-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 1 with Window</summary>
+      <description>Rotate to face 1 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-2-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 2 with Window</summary>
+      <description>Rotate to face 2 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-3-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 3 with Window</summary>
+      <description>Rotate to face 3 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-4-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 4 with Window</summary>
+      <description>Rotate to face 4 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-5-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 5 with Window</summary>
+      <description>Rotate to face 5 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-6-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 6 with Window</summary>
+      <description>Rotate to face 6 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-7-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 7 with Window</summary>
+      <description>Rotate to face 7 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-8-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 8 with Window</summary>
+      <description>Rotate to face 8 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-9-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 9 with Window</summary>
+      <description>Rotate to face 9 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-10-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 10 with Window</summary>
+      <description>Rotate to face 10 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-11-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 11 with Window</summary>
+      <description>Rotate to face 11 and bring active window along</description>
+    </key>
+    <key type="s" name="rotate-to-12-window-key">
+      <default>'Disabled'</default>
+      <summary>Rotate To Face 12 with Window</summary>
+      <description>Rotate to face 12 and bring active window along</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,42 @@
+<schemalist>
+  <enum id="org.gnome.sudoku.print-multiple-sudoku-difficulty">
+    <value nick="easy" value="1" />
+    <value nick="medium" value="2" />
+    <value nick="hard" value="3"  />
+    <value nick="very_hard" value="4"  />
+  </enum>
+  <schema id="org.gnome.sudoku" path="/org/gnome/sudoku/" gettext-domain="gnome-sudoku">
+    <key name="print-multiple-sudoku-difficulty" enum="org.gnome.sudoku.print-multiple-sudoku-difficulty">
+      <default>"easy"</default>
+      <summary>Difficulty level of sudokus to be printed</summary>
+      <description>Set the difficulty level of the sudokus you want to print. Possible values are: "easy", "medium", "hard", "very_hard"</description>
+    </key>
+    <key name="print-multiple-sudokus-to-print" type="i">
+      <default>4</default>
+      <range min="1" max="100" />
+      <summary>Number of Sudokus to print</summary>
+      <description>Set the number of sudokus you want to print</description>
+    </key>
+    <key name="show-warnings" type="b">
+      <default>true</default>
+      <summary>Warn about unfillable squares and duplicate numbers</summary>
+      <description>Displays a big red X in a square if it cannot possibly be filled by any number and duplicate numbers are highlighted in red</description>
+    </key>
+    <key name="highlighter" type="b">
+        <default>false</default>
+        <summary>Highlight row, column and square that contain the selected cell</summary>
+    </key>
+    <key name="window-width" type="i">
+      <default>730</default>
+      <summary>Width of the window in pixels</summary>
+    </key>
+    <key name="window-height" type="i">
+      <default>630</default>
+      <summary>Height of the window in pixels</summary>
+    </key>
+    <key name="window-is-maximized" type="b">
+      <default>false</default>
+      <summary>true if the window is maximized</summary>
+    </key>
+  </schema>
+</schemalist>

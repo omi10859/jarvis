@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.composite" gettext-domain="compiz">
+    <key type="s" name="slow-animations-key">
+      <default>'Disabled'</default>
+      <summary>Slow Animations</summary>
+      <description>Toggle use of slow animations</description>
+    </key>
+    <key type="b" name="detect-refresh-rate">
+      <default>true</default>
+      <summary>Detect Refresh Rate</summary>
+      <description>Automatic detection of refresh rate</description>
+    </key>
+    <key type="i" name="refresh-rate">
+      <default>60</default>
+      <summary>Refresh Rate</summary>
+      <description>The rate at which the screen is redrawn (times/second) (1 - 200)</description>
+    </key>
+    <key type="b" name="unredirect-fullscreen-windows">
+      <default>true</default>
+      <summary>Unredirect Fullscreen Windows</summary>
+      <description>Allow drawing of fullscreen windows to not be redirected to offscreen pixmaps</description>
+    </key>
+    <key type="s" name="unredirect-match">
+      <default>'(any) &amp; !(class=Totem) &amp; !(class=MPlayer) &amp; !(class=vlc) &amp; !(class=Plugin-container) &amp; !(class=QtQmlViewer) &amp; !(class=Firefox) &amp; !(class=google-chrome) &amp; !(class=google-chrome-unstable) &amp; !(class=chromium-browser)'</default>
+      <summary>Unredirect Match</summary>
+      <description>Specifies which windows will be unredirected when they are fullscreen. You might want to exclude video players for example, to avoid tearing. But this will be at the expense of performance/frame rate. Note: "class=" matching requires the regex plugin to work. (match)</description>
+    </key>
+    <key type="b" name="force-independent-output-painting">
+      <default>false</default>
+      <summary>Force independent output painting.</summary>
+      <description>Paint each output device independly, even if the output devices overlap</description>
+    </key>
+  </schema>
+</schemalist>

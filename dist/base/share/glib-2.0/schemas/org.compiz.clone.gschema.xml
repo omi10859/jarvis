@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.clone" gettext-domain="compiz">
+    <key type="s" name="initiate-button">
+      <default>'&lt;Super&gt;&lt;Shift&gt;Button1'</default>
+      <summary>Initiate</summary>
+      <description>Initiate clone selection</description>
+    </key>
+  </schema>
+</schemalist>

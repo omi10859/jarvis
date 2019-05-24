@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.session" gettext-domain="compiz">
+    <key type="b" name="save-legacy">
+      <default>false</default>
+      <summary>Save Legacy Apps</summary>
+      <description>Also try to save and restore legacy apps that don't support the X session management protocol. This setting only should be used in KDE, as only KDE's session manager also saves those applications.</description>
+    </key>
+    <key type="s" name="ignore-match">
+      <default>''</default>
+      <summary>Windows to ignore</summary>
+      <description>Matching windows will not be handled by the session plugin (match)</description>
+    </key>
+  </schema>
+</schemalist>

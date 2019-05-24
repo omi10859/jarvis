@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.animationaddon" gettext-domain="compiz">
+    <key type="i" name="time-step-intense">
+      <default>30</default>
+      <summary>Animation Time Step For Intense Effects</summary>
+      <description>The amount of time in milliseconds between each render of the intense animation (Ex. Burn, Beam). The higher the number, the jerkier the movements become. (1 - 400)</description>
+    </key>
+    <key type="d" name="airplane-path-length">
+      <default>1</default>
+      <summary>Airplane Flying Path Length</summary>
+      <description>Length of airplane's flying path. (0.5 - 3)</description>
+    </key>
+    <key type="b" name="airplane-fly-to-taskbar">
+      <default>true</default>
+      <summary>Fly to TaskBar on Minimize</summary>
+      <description>Whether the window should fly to taskbar when minimized with Airplane effect.</description>
+    </key>
+    <key type="d" name="beam-size">
+      <default>8</default>
+      <summary>Beam Width</summary>
+      <description>Beam width. (0.1 - 20)</description>
+    </key>
+    <key type="i" name="beam-spacing">
+      <default>5</default>
+      <summary>Beam Spacing</summary>
+      <description>Spacing between beams. (1 - 20)</description>
+    </key>
+    <key type="s" name="beam-color">
+      <default>'#7f7f7fff'</default>
+      <summary>Beam Color</summary>
+      <description>Beam color.</description>
+    </key>
+    <key type="d" name="beam-slowdown">
+      <default>1</default>
+      <summary>Beam Slowdown</summary>
+      <description>Beam slowdown. (0.1 - 10)</description>
+    </key>
+    <key type="d" name="beam-life">
+      <default>0.7</default>
+      <summary>Beam Life</summary>
+      <description>Beam life. (0.1 - 1)</description>
+    </key>
+    <key type="i" name="fire-particles">
+      <default>1000</default>
+      <summary>Number Of Fire Particles</summary>
+      <description>Number of fire particles. (100 - 10000)</description>
+    </key>
+    <key type="d" name="fire-size">
+      <default>5</default>
+      <summary>Fire Particle Size</summary>
+      <description>Fire particle size. (0.1 - 20)</description>
+    </key>
+    <key type="d" name="fire-slowdown">
+      <default>0.5</default>
+      <summary>Fire Particle Slowdown</summary>
+      <description>Fire particle slowdown. (0.1 - 10)</description>
+    </key>
+    <key type="d" name="fire-life">
+      <default>0.7</default>
+      <summary>Fire Particle Life</summary>
+      <description>Fire particle life. (0.1 - 1)</description>
+    </key>
+    <key type="s" name="fire-color">
+      <default>'#ff3305ff'</default>
+      <summary>Fire Particle Color</summary>
+      <description>Fire particle color.</description>
+    </key>
+    <key type="i" name="fire-direction">
+      <default>0</default>
+      <summary>Fire direction</summary>
+      <description>Fire direction. (0 = Down, 1 = Up, 2 = Left, 3 = Right, 4 = Random, 5 = Automatic)</description>
+    </key>
+    <key type="b" name="fire-constant-speed">
+      <default>false</default>
+      <summary>Fire constant speed</summary>
+      <description>Make fire effect duration be dependent on window height.</description>
+    </key>
+    <key type="b" name="fire-smoke">
+      <default>false</default>
+      <summary>Fire Smoke</summary>
+      <description>Fire smoke.</description>
+    </key>
+    <key type="b" name="fire-mystical">
+      <default>false</default>
+      <summary>Randomly Colored Fire</summary>
+      <description>Have random colors for the fire effect, also known as Mystical Fire.</description>
+    </key>
+    <key type="i" name="domino-direction">
+      <default>5</default>
+      <summary>Domino Piece Falling Direction</summary>
+      <description>Falling direction for Domino pieces. (0 = Down, 1 = Up, 2 = Left, 3 = Right, 4 = Random, 5 = Automatic)</description>
+    </key>
+    <key type="i" name="explode-gridx">
+      <default>13</default>
+      <summary>Window Grid Width</summary>
+      <description>The exploding window will be split into pieces along a grid. Specify the number of grid cells along the width of the window. (1 - 200)</description>
+    </key>
+    <key type="i" name="explode-gridy">
+      <default>10</default>
+      <summary>Window Grid Height</summary>
+      <description>The exploding window will be split into pieces along a grid. Specify the number of grid cells along the height of the window. (1 - 200)</description>
+    </key>
+    <key type="i" name="explode-spokes">
+      <default>2</default>
+      <summary>Shatter Number of Spokes</summary>
+      <description>The exploding window with the shatter animation will be split into pieces radially from the center. Specify the number of radial spokes the animation will have. (1 - 100)</description>
+    </key>
+    <key type="i" name="explode-tiers">
+      <default>3</default>
+      <summary>Shatter Number of Tiers</summary>
+      <description>The exploding window will be split into pieces along concentric circles. Specify the number of concentric circles the shatter tessellation will have. (1 - 100)</description>
+    </key>
+    <key type="d" name="explode-thickness">
+      <default>15</default>
+      <summary>Thickness of Exploding Polygons</summary>
+      <description>Thickness of exploding window pieces (in pixels). (0 - 100)</description>
+    </key>
+    <key type="i" name="explode-tessellation">
+      <default>0</default>
+      <summary>Tessellation Type</summary>
+      <description>Tessellation type for exploding window pieces. (0 = Rectangular, 1 = Hexagonal, 2 = Glass)</description>
+    </key>
+    <key type="i" name="fold-gridx">
+      <default>3</default>
+      <summary>Window Grid Width</summary>
+      <description>The animated window will be split into pieces along a grid. Specify the number of grid cells along the width of the window. (1 - 100)</description>
+    </key>
+    <key type="i" name="fold-gridy">
+      <default>3</default>
+      <summary>Window Grid Height</summary>
+      <description>The animated window will be split into pieces along a grid. Specify the number of grid cells along the height of the window. (1 - 100)</description>
+    </key>
+    <key type="i" name="fold-dir">
+      <default>1</default>
+      <summary>Fold Direction</summary>
+      <description>Window folding direction. (0 = In, 1 = Out)</description>
+    </key>
+    <key type="d" name="glide3-away-position">
+      <default>-0.4</default>
+      <summary>Away Position</summary>
+      <description>Closeness of window to camera at the end of the animation (1.0: Close to camera, -2.0: Away from camera). (-2 - 1)</description>
+    </key>
+    <key type="d" name="glide3-away-angle">
+      <default>45</default>
+      <summary>Away Angle</summary>
+      <description>Angle of window at the end of the animation. (-540 - 540)</description>
+    </key>
+    <key type="d" name="glide3-thickness">
+      <default>0</default>
+      <summary>Thickness</summary>
+      <description>Window thickness in pixels. Setting this to larger than 0 will disable shadow, blur, and reflection during the animation. (0 - 100)</description>
+    </key>
+    <key type="i" name="razr-direction">
+      <default>5</default>
+      <summary>Razr Fold Opening Direction</summary>
+      <description>Fold opening direction for pieces in Razr effect. (0 = Down, 1 = Up, 2 = Left, 3 = Right, 4 = Random, 5 = Automatic)</description>
+    </key>
+    <key type="i" name="skewer-direction">
+      <default>8</default>
+      <summary>Skewer Direction</summary>
+      <description>Movement direction(s) for window pieces. (0 = Left, 1 = Right, 2 = Left-right, 3 = Up, 4 = Down, 5 = Up-down, 6 = In, 7 = Out, 8 = In-out, 9 = Random)</description>
+    </key>
+    <key type="i" name="skewer-tessellation">
+      <default>0</default>
+      <summary>Tessellation Type</summary>
+      <description>Tessellation type for window pieces. (0 = Rectangular, 1 = Hexagonal)</description>
+    </key>
+    <key type="i" name="skewer-gridx">
+      <default>6</default>
+      <summary>Window Grid Width</summary>
+      <description>The animated window will be split into pieces along a grid. Specify the number of grid cells along the width of the window. (1 - 100)</description>
+    </key>
+    <key type="i" name="skewer-gridy">
+      <default>4</default>
+      <summary>Window Grid Height</summary>
+      <description>The animated window will be split into pieces along a grid. Specify the number of grid cells along the height of the window. (1 - 100)</description>
+    </key>
+    <key type="d" name="skewer-thickness">
+      <default>0</default>
+      <summary>Thickness of Animated Polygons</summary>
+      <description>Thickness of animated window pieces (in pixels). (0 - 100)</description>
+    </key>
+    <key type="i" name="skewer-rotation">
+      <default>0</default>
+      <summary>Rotation Angle</summary>
+      <description>Rotation angle of animated window pieces (in degrees). (-720 - 720)</description>
+    </key>
+  </schema>
+</schemalist>

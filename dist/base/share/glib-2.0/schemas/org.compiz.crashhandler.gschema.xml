@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.crashhandler" gettext-domain="compiz">
+    <key type="b" name="enabled">
+      <default>true</default>
+      <summary>Enable Crash Handler</summary>
+      <description>Activate Crash Handler.</description>
+    </key>
+    <key type="s" name="directory">
+      <default>'/tmp'</default>
+      <summary>Crash Dump Directory</summary>
+      <description>Directory to dump the crash logs to.</description>
+    </key>
+    <key type="b" name="start-wm">
+      <default>false</default>
+      <summary>Start Other Window Manager</summary>
+      <description>Start other window manager on Crash.</description>
+    </key>
+    <key type="s" name="wm-cmd">
+      <default>''</default>
+      <summary>Window Manager Command Line</summary>
+      <description>Window manager command line. DO NOT ENTER COMPIZ HERE!!!</description>
+    </key>
+  </schema>
+</schemalist>

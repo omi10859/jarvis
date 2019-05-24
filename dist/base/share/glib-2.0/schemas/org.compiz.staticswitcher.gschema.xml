@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.staticswitcher" gettext-domain="compiz">
+    <key type="s" name="next-button">
+      <default>'Disabled'</default>
+      <summary>Next window</summary>
+      <description>Popup switcher if not visible and select next window</description>
+    </key>
+    <key type="s" name="next-key">
+      <default>'&lt;Alt&gt;Tab'</default>
+      <summary>Next window</summary>
+      <description>Popup switcher if not visible and select next window</description>
+    </key>
+    <key type="s" name="prev-button">
+      <default>'Disabled'</default>
+      <summary>Prev window</summary>
+      <description>Popup switcher if not visible and select previous window</description>
+    </key>
+    <key type="s" name="prev-key">
+      <default>'&lt;Shift&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Prev window</summary>
+      <description>Popup switcher if not visible and select previous window</description>
+    </key>
+    <key type="s" name="next-all-button">
+      <default>'Disabled'</default>
+      <summary>Next window (All windows)</summary>
+      <description>Popup switcher if not visible and select next window out of all windows</description>
+    </key>
+    <key type="s" name="next-all-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Next window (All windows)</summary>
+      <description>Popup switcher if not visible and select next window out of all windows</description>
+    </key>
+    <key type="s" name="prev-all-button">
+      <default>'Disabled'</default>
+      <summary>Prev window (All windows)</summary>
+      <description>Popup switcher if not visible and select previous window out of all windows</description>
+    </key>
+    <key type="s" name="prev-all-key">
+      <default>'&lt;Shift&gt;&lt;Control&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Prev window (All windows)</summary>
+      <description>Popup switcher if not visible and select previous window out of all windows</description>
+    </key>
+    <key type="s" name="next-group-button">
+      <default>'Disabled'</default>
+      <summary>Next window (Group)</summary>
+      <description>Popup switcher if not visible and select next window of the current application.</description>
+    </key>
+    <key type="s" name="next-group-key">
+      <default>'Disabled'</default>
+      <summary>Next window (Group)</summary>
+      <description>Popup switcher if not visible and select next window of the current application.</description>
+    </key>
+    <key type="s" name="prev-group-button">
+      <default>'Disabled'</default>
+      <summary>Prev window (Group)</summary>
+      <description>Popup switcher if not visible and select previous window of the current application.</description>
+    </key>
+    <key type="s" name="prev-group-key">
+      <default>'Disabled'</default>
+      <summary>Prev window (Group)</summary>
+      <description>Popup switcher if not visible and select previous window of the current application.</description>
+    </key>
+    <key type="s" name="next-no-popup-button">
+      <default>'Disabled'</default>
+      <summary>Next window (No popup)</summary>
+      <description>Select next window without showing the popup window.</description>
+    </key>
+    <key type="s" name="next-no-popup-key">
+      <default>'Disabled'</default>
+      <summary>Next window (No popup)</summary>
+      <description>Select next window without showing the popup window.</description>
+    </key>
+    <key type="s" name="prev-no-popup-button">
+      <default>'Disabled'</default>
+      <summary>Prev window (No popup)</summary>
+      <description>Select previous window without showing the popup window.</description>
+    </key>
+    <key type="s" name="prev-no-popup-key">
+      <default>'Disabled'</default>
+      <summary>Prev window (No popup)</summary>
+      <description>Select previous window without showing the popup window.</description>
+    </key>
+    <key type="s" name="next-panel-button">
+      <default>'Disabled'</default>
+      <summary>Next Panel</summary>
+      <description>Select next panel type window.</description>
+    </key>
+    <key type="s" name="next-panel-key">
+      <default>'Disabled'</default>
+      <summary>Next Panel</summary>
+      <description>Select next panel type window.</description>
+    </key>
+    <key type="s" name="prev-panel-button">
+      <default>'Disabled'</default>
+      <summary>Prev Panel</summary>
+      <description>Select previous panel type window.</description>
+    </key>
+    <key type="s" name="prev-panel-key">
+      <default>'Disabled'</default>
+      <summary>Prev Panel</summary>
+      <description>Select previous panel type window.</description>
+    </key>
+    <key type="d" name="speed">
+      <default>4</default>
+      <summary>Speed</summary>
+      <description>Switcher speed (0.1 - 50)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>1.2</default>
+      <summary>Timestep</summary>
+      <description>Switcher timestep (0.1 - 50)</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'Normal | Dialog | Toolbar | Utility | Unknown'</default>
+      <summary>Switcher windows</summary>
+      <description>Windows that should be shown in switcher (match)</description>
+    </key>
+    <key type="b" name="minimized">
+      <default>true</default>
+      <summary>Show Minimized</summary>
+      <description>Show minimized windows</description>
+    </key>
+    <key type="b" name="auto-change-vp">
+      <default>true</default>
+      <summary>Auto Change Viewport</summary>
+      <description>Change to the viewport of the selected window while switching</description>
+    </key>
+    <key type="d" name="popup-delay">
+      <default>0.2</default>
+      <summary>Popup Window Delay</summary>
+      <description>Time (in s) the popup window should be delayed before appearing (0.0 - 2.0)</description>
+    </key>
+    <key type="b" name="mouse-select">
+      <default>true</default>
+      <summary>Allow Mouse Selection</summary>
+      <description>Allow selection of windows from the switcher window with the mouse</description>
+    </key>
+    <key type="i" name="saturation">
+      <default>100</default>
+      <summary>Saturation</summary>
+      <description>Amount of saturation in percent (0 - 100)</description>
+    </key>
+    <key type="i" name="brightness">
+      <default>100</default>
+      <summary>Brightness</summary>
+      <description>Amount of brightness in percent (0 - 100)</description>
+    </key>
+    <key type="i" name="opacity">
+      <default>100</default>
+      <summary>Opacity</summary>
+      <description>Amount of opacity in percent (0 - 100)</description>
+    </key>
+    <key type="b" name="icon">
+      <default>true</default>
+      <summary>Icon</summary>
+      <description>Show icon next to thumbnail</description>
+    </key>
+    <key type="b" name="icon-only">
+      <default>false</default>
+      <summary>Show icon only</summary>
+      <description>Only show the application icon and do not show a thumbnail</description>
+    </key>
+    <key type="b" name="mipmap">
+      <default>false</default>
+      <summary>Mipmap</summary>
+      <description>Generate mipmaps when possible for higher quality scaling</description>
+    </key>
+    <key type="i" name="row-align">
+      <default>1</default>
+      <summary>Row Alignment</summary>
+      <description>Alignment for rows that are not fully filled (0 = Left, 1 = Centered, 2 = Right)</description>
+    </key>
+    <key type="b" name="focus-on-switch">
+      <default>false</default>
+      <summary>Focus on Switch</summary>
+      <description>Focus windows when they are visible during the switch</description>
+    </key>
+    <key type="b" name="bring-to-front">
+      <default>false</default>
+      <summary>Bring To Front</summary>
+      <description>Bring selected window to front</description>
+    </key>
+    <key type="i" name="highlight-mode">
+      <default>0</default>
+      <summary>Highlight Mode</summary>
+      <description>Mode for highlighting the currently selected window (0 = None, 1 = Bring Selected To Front, 2 = Show Rectangle)</description>
+    </key>
+    <key type="i" name="highlight-rect-hidden">
+      <default>1</default>
+      <summary>Minimized Window Highlight Rectangle</summary>
+      <description>Where to draw highlight rectangle for minimized windows (0 = None, 1 = Taskbar Entry, 2 = Original Window Position)</description>
+    </key>
+    <key type="s" name="highlight-color">
+      <default>'#00000096'</default>
+      <summary>Highlight Color</summary>
+      <description>Color of highlight rectangle</description>
+    </key>
+    <key type="s" name="highlight-border-color">
+      <default>'#000000c8'</default>
+      <summary>Highlight Border Color</summary>
+      <description>Color of highlight rectangle border</description>
+    </key>
+    <key type="s" name="highlight-border-inlay-color">
+      <default>'#c8c8c8c8'</default>
+      <summary>Highlight Border Inlay Color</summary>
+      <description>Color of inlay in highlight rectangle border</description>
+    </key>
+    <key type="b" name="use-background-color">
+      <default>false</default>
+      <summary>Set background color</summary>
+      <description>Set background color</description>
+    </key>
+    <key type="s" name="background-color">
+      <default>'#333333d9'</default>
+      <summary>Background Color</summary>
+      <description>Background color of the switcher window.</description>
+    </key>
+  </schema>
+</schemalist>

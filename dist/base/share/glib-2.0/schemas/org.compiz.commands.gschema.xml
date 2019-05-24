@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.commands" gettext-domain="compiz">
+    <key type="s" name="command0">
+      <default>''</default>
+      <summary>Command line 0</summary>
+      <description>Command line to be executed in shell when run_command0 is invoked</description>
+    </key>
+    <key type="s" name="command1">
+      <default>''</default>
+      <summary>Command line 1</summary>
+      <description>Command line to be executed in shell when run_command1 is invoked</description>
+    </key>
+    <key type="s" name="command2">
+      <default>''</default>
+      <summary>Command line 2</summary>
+      <description>Command line to be executed in shell when run_command2 is invoked</description>
+    </key>
+    <key type="s" name="command3">
+      <default>''</default>
+      <summary>Command line 3</summary>
+      <description>Command line to be executed in shell when run_command3 is invoked</description>
+    </key>
+    <key type="s" name="command4">
+      <default>''</default>
+      <summary>Command line 4</summary>
+      <description>Command line to be executed in shell when run_command4 is invoked</description>
+    </key>
+    <key type="s" name="command5">
+      <default>''</default>
+      <summary>Command line 5</summary>
+      <description>Command line to be executed in shell when run_command5 is invoked</description>
+    </key>
+    <key type="s" name="command6">
+      <default>''</default>
+      <summary>Command line 6</summary>
+      <description>Command line to be executed in shell when run_command6 is invoked</description>
+    </key>
+    <key type="s" name="command7">
+      <default>''</default>
+      <summary>Command line 7</summary>
+      <description>Command line to be executed in shell when run_command7 is invoked</description>
+    </key>
+    <key type="s" name="command8">
+      <default>''</default>
+      <summary>Command line 8</summary>
+      <description>Command line to be executed in shell when run_command8 is invoked</description>
+    </key>
+    <key type="s" name="command9">
+      <default>''</default>
+      <summary>Command line 9</summary>
+      <description>Command line to be executed in shell when run_command9 is invoked</description>
+    </key>
+    <key type="s" name="command10">
+      <default>''</default>
+      <summary>Command line 10</summary>
+      <description>Command line to be executed in shell when run_command10 is invoked</description>
+    </key>
+    <key type="s" name="command11">
+      <default>''</default>
+      <summary>Command line 11</summary>
+      <description>Command line to be executed in shell when run_command11 is invoked</description>
+    </key>
+    <key type="s" name="command12">
+      <default>''</default>
+      <summary>Command line 12</summary>
+      <description>Command line to be executed in shell when run_command12 is invoked</description>
+    </key>
+    <key type="s" name="command13">
+      <default>''</default>
+      <summary>Command line 13</summary>
+      <description>Command line to be executed in shell when run_command13 is invoked</description>
+    </key>
+    <key type="s" name="command14">
+      <default>''</default>
+      <summary>Command line 14</summary>
+      <description>Command line to be executed in shell when run_command14 is invoked</description>
+    </key>
+    <key type="s" name="command15">
+      <default>''</default>
+      <summary>Command line 15</summary>
+      <description>Command line to be executed in shell when run_command15 is invoked</description>
+    </key>
+    <key type="s" name="command16">
+      <default>''</default>
+      <summary>Command line 16</summary>
+      <description>Command line to be executed in shell when run_command16 is invoked</description>
+    </key>
+    <key type="s" name="command17">
+      <default>''</default>
+      <summary>Command line 17</summary>
+      <description>Command line to be executed in shell when run_command17 is invoked</description>
+    </key>
+    <key type="s" name="command18">
+      <default>''</default>
+      <summary>Command line 18</summary>
+      <description>Command line to be executed in shell when run_command18 is invoked</description>
+    </key>
+    <key type="s" name="command19">
+      <default>''</default>
+      <summary>Command line 19</summary>
+      <description>Command line to be executed in shell when run_command19 is invoked</description>
+    </key>
+    <key type="s" name="command20">
+      <default>'/usr/bin/gnome-system-monitor -p'</default>
+      <summary>Command line 20</summary>
+      <description>Command line to be executed in shell when run_command20 is invoked</description>
+    </key>
+    <key type="s" name="run-command0-key">
+      <default>'Disabled'</default>
+      <summary>Run command 0</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command0</description>
+    </key>
+    <key type="s" name="run-command1-key">
+      <default>'Disabled'</default>
+      <summary>Run command 1</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command1</description>
+    </key>
+    <key type="s" name="run-command2-key">
+      <default>'Disabled'</default>
+      <summary>Run command 2</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command2</description>
+    </key>
+    <key type="s" name="run-command3-key">
+      <default>'Disabled'</default>
+      <summary>Run command 3</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command3</description>
+    </key>
+    <key type="s" name="run-command4-key">
+      <default>'Disabled'</default>
+      <summary>Run command 4</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command4</description>
+    </key>
+    <key type="s" name="run-command5-key">
+      <default>'Disabled'</default>
+      <summary>Run command 5</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command5</description>
+    </key>
+    <key type="s" name="run-command6-key">
+      <default>'Disabled'</default>
+      <summary>Run command 6</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command6</description>
+    </key>
+    <key type="s" name="run-command7-key">
+      <default>'Disabled'</default>
+      <summary>Run command 7</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command7</description>
+    </key>
+    <key type="s" name="run-command8-key">
+      <default>'Disabled'</default>
+      <summary>Run command 8</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command8</description>
+    </key>
+    <key type="s" name="run-command9-key">
+      <default>'Disabled'</default>
+      <summary>Run command 9</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command9</description>
+    </key>
+    <key type="s" name="run-command10-key">
+      <default>'Disabled'</default>
+      <summary>Run command 10</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command10</description>
+    </key>
+    <key type="s" name="run-command11-key">
+      <default>'Disabled'</default>
+      <summary>Run command 11</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command11</description>
+    </key>
+    <key type="s" name="run-command12-key">
+      <default>'Disabled'</default>
+      <summary>Run command 12</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command12</description>
+    </key>
+    <key type="s" name="run-command13-key">
+      <default>'Disabled'</default>
+      <summary>Run command 13</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command13</description>
+    </key>
+    <key type="s" name="run-command14-key">
+      <default>'Disabled'</default>
+      <summary>Run command 14</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command14</description>
+    </key>
+    <key type="s" name="run-command15-key">
+      <default>'Disabled'</default>
+      <summary>Run command 15</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command15</description>
+    </key>
+    <key type="s" name="run-command16-key">
+      <default>'Disabled'</default>
+      <summary>Run command 16</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command16</description>
+    </key>
+    <key type="s" name="run-command17-key">
+      <default>'Disabled'</default>
+      <summary>Run command 17</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command17</description>
+    </key>
+    <key type="s" name="run-command18-key">
+      <default>'Disabled'</default>
+      <summary>Run command 18</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command18</description>
+    </key>
+    <key type="s" name="run-command19-key">
+      <default>'Disabled'</default>
+      <summary>Run command 19</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command19</description>
+    </key>
+    <key type="s" name="run-command20-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Delete'</default>
+      <summary>Run command 20</summary>
+      <description>A keybinding that when invoked, will run the shell command identified by command20</description>
+    </key>
+    <key type="s" name="run-command0-button">
+      <default>'Disabled'</default>
+      <summary>Run command 0</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command0</description>
+    </key>
+    <key type="s" name="run-command1-button">
+      <default>'Disabled'</default>
+      <summary>Run command 1</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command1</description>
+    </key>
+    <key type="s" name="run-command2-button">
+      <default>'Disabled'</default>
+      <summary>Run command 2</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command2</description>
+    </key>
+    <key type="s" name="run-command3-button">
+      <default>'Disabled'</default>
+      <summary>Run command 3</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command3</description>
+    </key>
+    <key type="s" name="run-command4-button">
+      <default>'Disabled'</default>
+      <summary>Run command 4</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command4</description>
+    </key>
+    <key type="s" name="run-command5-button">
+      <default>'Disabled'</default>
+      <summary>Run command 5</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command5</description>
+    </key>
+    <key type="s" name="run-command6-button">
+      <default>'Disabled'</default>
+      <summary>Run command 6</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command6</description>
+    </key>
+    <key type="s" name="run-command7-button">
+      <default>'Disabled'</default>
+      <summary>Run command 7</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command7</description>
+    </key>
+    <key type="s" name="run-command8-button">
+      <default>'Disabled'</default>
+      <summary>Run command 8</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command8</description>
+    </key>
+    <key type="s" name="run-command9-button">
+      <default>'Disabled'</default>
+      <summary>Run command 9</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command9</description>
+    </key>
+    <key type="s" name="run-command10-button">
+      <default>'Disabled'</default>
+      <summary>Run command 10</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command10</description>
+    </key>
+    <key type="s" name="run-command11-button">
+      <default>'Disabled'</default>
+      <summary>Run command 11</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command11</description>
+    </key>
+    <key type="s" name="run-command12-button">
+      <default>'Disabled'</default>
+      <summary>Run command 12</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command12</description>
+    </key>
+    <key type="s" name="run-command13-button">
+      <default>'Disabled'</default>
+      <summary>Run command 13</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command13</description>
+    </key>
+    <key type="s" name="run-command14-button">
+      <default>'Disabled'</default>
+      <summary>Run command 14</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command14</description>
+    </key>
+    <key type="s" name="run-command15-button">
+      <default>'Disabled'</default>
+      <summary>Run command 15</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command15</description>
+    </key>
+    <key type="s" name="run-command16-button">
+      <default>'Disabled'</default>
+      <summary>Run command 16</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command16</description>
+    </key>
+    <key type="s" name="run-command17-button">
+      <default>'Disabled'</default>
+      <summary>Run command 17</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command17</description>
+    </key>
+    <key type="s" name="run-command18-button">
+      <default>'Disabled'</default>
+      <summary>Run command 18</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command18</description>
+    </key>
+    <key type="s" name="run-command19-button">
+      <default>'Disabled'</default>
+      <summary>Run command 19</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command19</description>
+    </key>
+    <key type="s" name="run-command20-button">
+      <default>'Disabled'</default>
+      <summary>Run command 20</summary>
+      <description>A button binding that when invoked, will run the shell command identified by command20</description>
+    </key>
+    <key type="s" name="run-command0-edge">
+      <default>''</default>
+      <summary>Run command 0</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command0</description>
+    </key>
+    <key type="s" name="run-command1-edge">
+      <default>''</default>
+      <summary>Run command 1</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command1</description>
+    </key>
+    <key type="s" name="run-command2-edge">
+      <default>''</default>
+      <summary>Run command 2</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command2</description>
+    </key>
+    <key type="s" name="run-command3-edge">
+      <default>''</default>
+      <summary>Run command 3</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command3</description>
+    </key>
+    <key type="s" name="run-command4-edge">
+      <default>''</default>
+      <summary>Run command 4</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command4</description>
+    </key>
+    <key type="s" name="run-command5-edge">
+      <default>''</default>
+      <summary>Run command 5</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command5</description>
+    </key>
+    <key type="s" name="run-command6-edge">
+      <default>''</default>
+      <summary>Run command 6</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command6</description>
+    </key>
+    <key type="s" name="run-command7-edge">
+      <default>''</default>
+      <summary>Run command 7</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command7</description>
+    </key>
+    <key type="s" name="run-command8-edge">
+      <default>''</default>
+      <summary>Run command 8</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command8</description>
+    </key>
+    <key type="s" name="run-command9-edge">
+      <default>''</default>
+      <summary>Run command 9</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command9</description>
+    </key>
+    <key type="s" name="run-command10-edge">
+      <default>''</default>
+      <summary>Run command 10</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command10</description>
+    </key>
+    <key type="s" name="run-command11-edge">
+      <default>''</default>
+      <summary>Run command 11</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command11</description>
+    </key>
+    <key type="s" name="run-command12-edge">
+      <default>''</default>
+      <summary>Run command 12</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command12</description>
+    </key>
+    <key type="s" name="run-command13-edge">
+      <default>''</default>
+      <summary>Run command 13</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command13</description>
+    </key>
+    <key type="s" name="run-command14-edge">
+      <default>''</default>
+      <summary>Run command 14</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command14</description>
+    </key>
+    <key type="s" name="run-command15-edge">
+      <default>''</default>
+      <summary>Run command 15</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command15</description>
+    </key>
+    <key type="s" name="run-command16-edge">
+      <default>''</default>
+      <summary>Run command 16</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command16</description>
+    </key>
+    <key type="s" name="run-command17-edge">
+      <default>''</default>
+      <summary>Run command 17</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command17</description>
+    </key>
+    <key type="s" name="run-command18-edge">
+      <default>''</default>
+      <summary>Run command 18</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command18</description>
+    </key>
+    <key type="s" name="run-command19-edge">
+      <default>''</default>
+      <summary>Run command 19</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command19</description>
+    </key>
+    <key type="s" name="run-command20-edge">
+      <default>''</default>
+      <summary>Run command 20</summary>
+      <description>An edge binding that when invoked, will run the shell command identified by command20</description>
+    </key>
+  </schema>
+</schemalist>

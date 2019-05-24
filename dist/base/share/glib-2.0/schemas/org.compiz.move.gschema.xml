@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.move" gettext-domain="compiz">
+    <key type="s" name="initiate-button">
+      <default>'&lt;Alt&gt;Button1'</default>
+      <summary>Initiate Window Move</summary>
+      <description>Start moving window</description>
+    </key>
+    <key type="s" name="initiate-key">
+      <default>'&lt;Alt&gt;F7'</default>
+      <summary>Initiate Window Move</summary>
+      <description>Start moving window</description>
+    </key>
+    <key type="i" name="opacity">
+      <default>100</default>
+      <summary>Moving Window Opacity</summary>
+      <description>Opacity level of moving windows (in percent). (1 - 100)</description>
+    </key>
+    <key type="i" name="key-move-inc">
+      <default>24</default>
+      <summary>Keyboard Move Increment</summary>
+      <description>Move the window by this amount of pixels for every press on one of the cursor keys. (1 - 250)</description>
+    </key>
+    <key type="b" name="constrain-y">
+      <default>true</default>
+      <summary>Constrain Y</summary>
+      <description>Constrain y-coordinate to workspace area.</description>
+    </key>
+    <key type="b" name="snapoff-semimaximized">
+      <default>true</default>
+      <summary>Snapoff Semimaximized Windows</summary>
+      <description>Snapoff and auto-restore semimaximized windows when dragging them.</description>
+    </key>
+    <key type="i" name="snapoff-distance">
+      <default>100</default>
+      <summary>Snapoff Distance</summary>
+      <description>Distance of pixels you have to drag a snapped semimaximized window to unsnap it. (0 - 500)</description>
+    </key>
+    <key type="b" name="snapback-semimaximized">
+      <default>true</default>
+      <summary>Snapback Semimaximized Windows</summary>
+      <description>Snapback and re-maximize semimaximized windows when dragging them back.</description>
+    </key>
+    <key type="i" name="snapback-distance">
+      <default>20</default>
+      <summary>Snapback Distance</summary>
+      <description>Number of pixels from top or sides to snap back semimaximized windows. (0 - 250)</description>
+    </key>
+    <key type="b" name="lazy-positioning">
+      <default>false</default>
+      <summary>Lazy Positioning</summary>
+      <description>Do not update the server-side position of windows until finished moving.</description>
+    </key>
+    <key type="i" name="mode">
+      <default>0</default>
+      <summary>Default Moving Window Mode</summary>
+      <description>Default mode used for window moving. (0 = Normal, 1 = Outline, 2 = Rectangle)</description>
+    </key>
+    <key type="b" name="increase-border-contrast">
+      <default>true</default>
+      <summary>Use a double-border in 'Rectangle' and 'Outline' modes</summary>
+      <description>Increase the contrast of the border using a lighter color.</description>
+    </key>
+    <key type="b" name="use-desktop-average-color">
+      <default>true</default>
+      <summary>Use Desktop average colors</summary>
+      <description>Try to use the desktop average color if defined by your DE (overrides custom colors).</description>
+    </key>
+    <key type="s" name="border-color">
+      <default>'#fb8b009f'</default>
+      <summary>Border Color</summary>
+      <description>Border color used for outline and rectangle moving modes</description>
+    </key>
+    <key type="s" name="fill-color">
+      <default>'#fb8b0019'</default>
+      <summary>Fill Color</summary>
+      <description>Fill color used for rectangle moving mode</description>
+    </key>
+    <key type="b" name="blend">
+      <default>true</default>
+      <summary>Enable Transparency</summary>
+      <description>Enable or disable blending.</description>
+    </key>
+  </schema>
+</schemalist>

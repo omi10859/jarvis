@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.vpswitch" gettext-domain="compiz">
+    <key type="s" name="begin-key">
+      <default>'Disabled'</default>
+      <summary>Begin Viewport Switch</summary>
+      <description>Begin entering viewport number</description>
+    </key>
+    <key type="s" name="switch-to-1-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 1</summary>
+      <description>Switch to viewport 1</description>
+    </key>
+    <key type="s" name="switch-to-2-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 2</summary>
+      <description>Switch to viewport 2</description>
+    </key>
+    <key type="s" name="switch-to-3-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 3</summary>
+      <description>Switch to viewport 3</description>
+    </key>
+    <key type="s" name="switch-to-4-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 4</summary>
+      <description>Switch to viewport 4</description>
+    </key>
+    <key type="s" name="switch-to-5-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 5</summary>
+      <description>Switch to viewport 5</description>
+    </key>
+    <key type="s" name="switch-to-6-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 6</summary>
+      <description>Switch to viewport 6</description>
+    </key>
+    <key type="s" name="switch-to-7-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 7</summary>
+      <description>Switch to viewport 7</description>
+    </key>
+    <key type="s" name="switch-to-8-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 8</summary>
+      <description>Switch to viewport 8</description>
+    </key>
+    <key type="s" name="switch-to-9-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 9</summary>
+      <description>Switch to viewport 9</description>
+    </key>
+    <key type="s" name="switch-to-10-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 10</summary>
+      <description>Switch to viewport 10</description>
+    </key>
+    <key type="s" name="switch-to-11-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 11</summary>
+      <description>Switch to viewport 11</description>
+    </key>
+    <key type="s" name="switch-to-12-key">
+      <default>'Disabled'</default>
+      <summary>Switch to Viewport 12</summary>
+      <description>Switch to viewport 12</description>
+    </key>
+    <key type="s" name="left-button">
+      <default>'Disabled'</default>
+      <summary>Move Left</summary>
+      <description>Move to the left</description>
+    </key>
+    <key type="s" name="right-button">
+      <default>'Disabled'</default>
+      <summary>Move Right</summary>
+      <description>Move to the right</description>
+    </key>
+    <key type="s" name="up-button">
+      <default>'Disabled'</default>
+      <summary>Move Up</summary>
+      <description>Move up</description>
+    </key>
+    <key type="s" name="down-button">
+      <default>'Disabled'</default>
+      <summary>Move Down</summary>
+      <description>Move down</description>
+    </key>
+    <key type="s" name="next-button">
+      <default>'Disabled'</default>
+      <summary>Move Next</summary>
+      <description>Move to the next viewport</description>
+    </key>
+    <key type="s" name="prev-button">
+      <default>'Disabled'</default>
+      <summary>Move Prev</summary>
+      <description>Move to the previous viewport</description>
+    </key>
+    <key type="s" name="initiate-button">
+      <default>'Button2'</default>
+      <summary>Initiate plugin action</summary>
+      <description>Initiate/Terminate the selected plugin action</description>
+    </key>
+    <key type="s" name="init-plugin">
+      <default>'rotate'</default>
+      <summary>Plugin for initiate action</summary>
+      <description>Plugin for initiate/action action</description>
+    </key>
+    <key type="s" name="init-action">
+      <default>'initiate_button'</default>
+      <summary>Action name for initiate</summary>
+      <description>Action name for initiate/terminate</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.annotate" gettext-domain="compiz">
+    <key type="s" name="initiate-free-draw-button">
+      <default>'&lt;Super&gt;&lt;Alt&gt;Button1'</default>
+      <summary>Initiate Free Draw</summary>
+      <description>Initiate freehand drawing</description>
+    </key>
+    <key type="s" name="initiate-line-button">
+      <default>'&lt;Super&gt;&lt;Alt&gt;Button2'</default>
+      <summary>Initiate Line</summary>
+      <description>Initiate line drawing</description>
+    </key>
+    <key type="s" name="initiate-rectangle-button">
+      <default>'&lt;Super&gt;&lt;Alt&gt;&lt;Shift&gt;Button1'</default>
+      <summary>Initiate Rectangle</summary>
+      <description>Initiate rectangle drawing</description>
+    </key>
+    <key type="s" name="initiate-ellipse-button">
+      <default>'&lt;Super&gt;&lt;Alt&gt;&lt;Shift&gt;Button2'</default>
+      <summary>Initiate Ellipse</summary>
+      <description>Initiate ellipse drawing</description>
+    </key>
+    <key type="s" name="erase-button">
+      <default>'&lt;Super&gt;&lt;Alt&gt;Button3'</default>
+      <summary>Initiate Erase</summary>
+      <description>Initiate annotate erasing</description>
+    </key>
+    <key type="s" name="clear-button">
+      <default>'Disabled'</default>
+      <summary>Clear</summary>
+      <description>Clear</description>
+    </key>
+    <key type="s" name="clear-key">
+      <default>'&lt;Super&gt;&lt;Alt&gt;k'</default>
+      <summary>Clear</summary>
+      <description>Clear</description>
+    </key>
+    <key type="b" name="draw-shapes-from-center">
+      <default>true</default>
+      <summary>Draw shapes from center</summary>
+      <description>Uses the initial click point as the center of shapes.</description>
+    </key>
+    <key type="s" name="fill-color">
+      <default>'#ff000088'</default>
+      <summary>Annotate Fill Color</summary>
+      <description>Fill color for annotations</description>
+    </key>
+    <key type="s" name="stroke-color">
+      <default>'#00ff00ff'</default>
+      <summary>Annotate Stroke Color</summary>
+      <description>Stroke color for annotations</description>
+    </key>
+    <key type="d" name="erase-width">
+      <default>20.0</default>
+      <summary>Erase width</summary>
+      <description>Erase size (1.0 - 100.0)</description>
+    </key>
+    <key type="d" name="stroke-width">
+      <default>3.0</default>
+      <summary>Stroke width</summary>
+      <description>Stroke width for annotations (1.0 - 100.0)</description>
+    </key>
+  </schema>
+</schemalist>

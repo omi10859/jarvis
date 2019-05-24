@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.firepaint" gettext-domain="compiz">
+    <key type="s" name="initiate-key">
+      <default>'Disabled'</default>
+      <summary>Initiate Key</summary>
+      <description>Key shortcut to initiate fire drawing.</description>
+    </key>
+    <key type="s" name="initiate-button">
+      <default>'&lt;Super&gt;&lt;Shift&gt;Button1'</default>
+      <summary>Initiate Button</summary>
+      <description>Mouse button shortcut to initiate fire drawing.</description>
+    </key>
+    <key type="s" name="clear-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;c'</default>
+      <summary>Clear Key</summary>
+      <description>Key shortcut to remove all fire particles.</description>
+    </key>
+    <key type="s" name="clear-button">
+      <default>'Disabled'</default>
+      <summary>Clear Button</summary>
+      <description>Mouse button shortcut to remove all fire particles.</description>
+    </key>
+    <key type="d" name="bg-brightness">
+      <default>50.0</default>
+      <summary>Background Brightness</summary>
+      <description>The brightness of the background during Firepaint (in percent). (0.0 - 100.0)</description>
+    </key>
+    <key type="i" name="num-particles">
+      <default>3000</default>
+      <summary>Fire Particle Number</summary>
+      <description>Maximum number of active particles. (100 - 20000)</description>
+    </key>
+    <key type="d" name="fire-size">
+      <default>15.0</default>
+      <summary>Fire Particle Size</summary>
+      <description>The size of the individual particles. (0.1 - 40)</description>
+    </key>
+    <key type="d" name="fire-slowdown">
+      <default>0.5</default>
+      <summary>Fire Particle Slowdown</summary>
+      <description>The slowdown of the fire particles. (0.1 - 10)</description>
+    </key>
+    <key type="d" name="fire-life">
+      <default>0.7</default>
+      <summary>Fire Particle Life</summary>
+      <description>The lifespan of the fire particles. (0.1 - 0.95)</description>
+    </key>
+    <key type="s" name="fire-color">
+      <default>'#ff3305ff'</default>
+      <summary>Fire Particle Color</summary>
+      <description>The color and opacity of the fire particles.</description>
+    </key>
+    <key type="b" name="fire-mystical">
+      <default>false</default>
+      <summary>Randomly Colored Fire</summary>
+      <description>Have random colors for the fire effect, also known as Mystical Fire.</description>
+    </key>
+  </schema>
+</schemalist>

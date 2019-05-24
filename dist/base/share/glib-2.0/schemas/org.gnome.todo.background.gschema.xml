@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-todo">
+    <schema id="org.gnome.todo.plugins.background" path="/org/gnome/todo/plugins/background/">
+        <key name="run-on-startup" type="b">
+            <default>false</default>
+            <summary>Run To Do on startup</summary>
+            <description>Whether GNOME To Do should run on startup</description>
+        </key>
+        <key name="show-notifications" type="b">
+            <default>true</default>
+            <summary>Show notifications on startup</summary>
+            <description>Whether GNOME To Do should show notifications or not</description>
+        </key>
+    </schema>
+</schemalist>

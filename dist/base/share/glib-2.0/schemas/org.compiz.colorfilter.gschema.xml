@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.colorfilter" gettext-domain="compiz">
+    <key type="s" name="toggle-window-key">
+      <default>'&lt;Super&gt;f'</default>
+      <summary>Toggle window filtering</summary>
+      <description>Toggle filtering for currently focused window.</description>
+    </key>
+    <key type="s" name="toggle-screen-key">
+      <default>'&lt;Super&gt;d'</default>
+      <summary>Toggle screen filtering</summary>
+      <description>Toggle filtering for every window on the screen.</description>
+    </key>
+    <key type="s" name="switch-filter-key">
+      <default>'&lt;Control&gt;&lt;Super&gt;s'</default>
+      <summary>Switch filter</summary>
+      <description>Select filter to use from filters list : either apply all filters or only one specific filter (triggering this action switches filters one by one and eventually comes back to the "all filters" mode).</description>
+    </key>
+    <key type="as" name="filters">
+      <default>['negative','negative-lightness','negative-green','blueish-filter','sepia','grayscale','deuteranopia','protanopia']</default>
+      <summary>Filters files</summary>
+      <description>List of plain text filter files that should be applied when filtering windows or screen.</description>
+    </key>
+    <key type="b" name="filter-decorations">
+      <default>false</default>
+      <summary>Filter window decorations</summary>
+      <description>Window decorations (borders and titlebar) will be filtered as well as window contents if enabled.</description>
+    </key>
+    <key type="s" name="filter-match">
+      <default>'any'</default>
+      <summary>Filtered windows</summary>
+      <description>Windows to be filtered by default. (match)</description>
+    </key>
+    <key type="s" name="exclude-match">
+      <default>'type=Desktop'</default>
+      <summary>Exclude windows</summary>
+      <description>Windows to exclude from filtering. (match)</description>
+    </key>
+  </schema>
+</schemalist>

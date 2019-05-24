@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/com/canonical/indicator/bluetooth/" id="com.canonical.indicator.bluetooth">
+    <key type="b" name="visible">
+      <default>true</default>
+      <summary>Whether or not to show the bluetooth indicator in the menu bar.</summary>
+      <description>Whether or not to show the bluetooth indicator in the menu bar.</description>
+    </key>
+  </schema>
+</schemalist>

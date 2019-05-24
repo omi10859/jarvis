@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.wizard" gettext-domain="compiz">
+    <key type="s" name="toggle">
+      <default>'&lt;Super&gt;w'</default>
+      <summary>Toggle</summary>
+      <description>Toggle all particle effects.</description>
+    </key>
+    <key type="d" name="gx">
+      <default>0.0</default>
+      <summary>Gravity X</summary>
+      <description>Global horizontal gravity (-0.01 - 0.01)</description>
+    </key>
+    <key type="d" name="gy">
+      <default>0.0005</default>
+      <summary>Gravity Y</summary>
+      <description>Global vertical gravity (-0.01 - 0.01)</description>
+    </key>
+    <key type="ai" name="g-strength">
+      <default>[200]</default>
+      <summary>Strength</summary>
+      <description>The strength of this gravity source. Use negative values for a repulsing effect.</description>
+    </key>
+    <key type="ai" name="g-posx">
+      <default>[0]</default>
+      <summary>Position X</summary>
+      <description>The horizontal position of this gravity source. May be ignored or used for initialisation, depending on the movement type.</description>
+    </key>
+    <key type="ai" name="g-posy">
+      <default>[0]</default>
+      <summary>Position Y</summary>
+      <description>The vertical position of this gravity source. May be ignored or used for initialisation, depending on the movement type.</description>
+    </key>
+    <key type="ai" name="g-speed">
+      <default>[100]</default>
+      <summary>Speed</summary>
+      <description>The speed of this gravity source. May be ignored or used for initialisation, depending on the movement type.</description>
+    </key>
+    <key type="ai" name="g-angle">
+      <default>[20]</default>
+      <summary>Angle</summary>
+      <description>The angle for the movement of this gravity source. May be ignored or used for initialisation, depending on the movement type.</description>
+    </key>
+    <key type="ai" name="g-movement">
+      <default>[2]</default>
+      <summary>Movement Type</summary>
+      <description>The movement type of this source: Fixed (not moving at all), Mouse Position (exactly on the core pointer), Follow Mouse (moving towards core pointer at set speed), Bounce (moving at constant speed, bouncing off the walls) or Wrap (moving at constant speed, jumping to the opposite side at a wall).</description>
+    </key>
+    <key type="ab" name="e-active">
+      <default>[false,false,true,true,false,true,true,true,true,true]</default>
+      <summary>Active</summary>
+      <description>Since emitters have a lot of options, you can simply deactivate and name them instead of deleting them.</description>
+    </key>
+    <key type="as" name="e-name">
+      <default>['Fire Ball','Flame Pointer','Magic Pointer','Magic Rain (On/Off)','Magic Rain with Gravity Particles','Random Red Explosion','Random Yellow Explosion','Random Green Explosion','Random Blue Explosion','Random Purple Explosion']</default>
+      <summary>Name</summary>
+      <description>Since emitters have a lot of options, you can simply deactivate and name them instead of deleting them.</description>
+    </key>
+    <key type="ai" name="e-trigger">
+      <default>[0,0,1,3,0,2,2,2,2,2]</default>
+      <summary>Trigger</summary>
+      <description>The trigger to create particles: Persitent (create particles all the time), Mouse Movement (create particles when the mouse is being moved), Random Shot (a single particle burst once in a while), Random Period (randomly turning on and off particle production) or Notification (a single particle burst on notification events).</description>
+    </key>
+    <key type="ai" name="e-posx">
+      <default>[0,0,0,1000,1000,0,0,0,0,0]</default>
+      <summary>Position X</summary>
+      <description>The horizontal position of this emitter. May be ignored or used for initialisation, depending on the movement type.</description>
+    </key>
+    <key type="ai" name="e-posy">
+      <default>[0,0,0,0,0,0,0,0,0,0]</default>
+      <summary>Position Y</summary>
+      <description>The vertical position of this emitter. May be ignored or used for initialisation, depending on the movement type.</description>
+    </key>
+    <key type="ai" name="e-speed">
+      <default>[100,0,0,0,0,1000,1000,1000,1000,1000]</default>
+      <summary>Emitter Speed</summary>
+      <description>The speed of this emitter. May be ignored or used for initialisation, depending on the movement type.</description>
+    </key>
+    <key type="ai" name="e-angle">
+      <default>[326,0,0,0,0,13,33,53,73,93]</default>
+      <summary>Emitter Angle</summary>
+      <description>The angle for the movement of this emitter. May be ignored or used for initialisation, depending on the movement type.</description>
+    </key>
+    <key type="ai" name="e-movement">
+      <default>[2,0,0,3,3,3,3,3,3,3]</default>
+      <summary>Movement Type</summary>
+      <description>The movement type of this emitter: Mouse Position (exactly on the core pointer), Follow Mouse (moving towards core pointer at set speed), Bounce (moving at constant speed, bouncing off the walls) or Wrap (moving at constant speed, jumping to the opposite side at a wall).</description>
+    </key>
+    <key type="ai" name="e-count">
+      <default>[50,20,40,20,20,200,200,200,200,200]</default>
+      <summary>Particle count</summary>
+      <description>The amount of particles generated each time this emitter is triggered.</description>
+    </key>
+    <key type="ai" name="e-h">
+      <default>[67,100,0,0,0,0,167,333,667,833]</default>
+      <summary>Color hue</summary>
+      <description>The color of the particles. This is hue like in HSL colors. It is the center of the range given below.</description>
+    </key>
+    <key type="ai" name="e-dh">
+      <default>[100,150,500,500,500,133,133,133,133,133]</default>
+      <summary>Color hue range</summary>
+      <description>The color of the particles can be any value from the hue (given above) plus/minus this range. A range of 500 means any color.</description>
+    </key>
+    <key type="ai" name="e-l">
+      <default>[450,600,650,650,650,650,650,650,650,650]</default>
+      <summary>Color lightness</summary>
+      <description>The color of the particles. This is lightness like in HSL colors. It is the center of the range given below.</description>
+    </key>
+    <key type="ai" name="e-dl">
+      <default>[250,100,150,150,150,150,150,150,150,150]</default>
+      <summary>Color lightness range</summary>
+      <description>The color of the particles can be any value from the lightness (given above) plus/minus this range.</description>
+    </key>
+    <key type="ai" name="e-a">
+      <default>[500,400,700,700,700,700,700,700,700,700]</default>
+      <summary>Alpha</summary>
+      <description>The alpha (opacity) of the particles. This is the center of the range given below.</description>
+    </key>
+    <key type="ai" name="e-da">
+      <default>[200,200,200,200,200,200,200,200,200,200]</default>
+      <summary>Alpha range</summary>
+      <description>The alpha (opacity) of the particles can be any value from the alpha (given above) plus/minus this range.</description>
+    </key>
+    <key type="ai" name="e-dx">
+      <default>[0,0,0,1000,1000,0,0,0,0,0]</default>
+      <summary>X range</summary>
+      <description>The horizontal range of the particles.</description>
+    </key>
+    <key type="ai" name="e-dy">
+      <default>[0,0,0,0,0,0,0,0,0,0]</default>
+      <summary>Y range</summary>
+      <description>The vertical range of the particles.</description>
+    </key>
+    <key type="ai" name="e-dcirc">
+      <default>[30,5,20,0,0,5,5,5,5,5]</default>
+      <summary>Circular range</summary>
+      <description>The circular range of the particles.</description>
+    </key>
+    <key type="ai" name="e-vx">
+      <default>[0,0,0,0,0,0,0,0,0,0]</default>
+      <summary>X speed</summary>
+      <description>The horizontal speed of the particles.</description>
+    </key>
+    <key type="ai" name="e-vy">
+      <default>[0,-200,0,0,0,0,0,0,0,0]</default>
+      <summary>Y speed</summary>
+      <description>The vertical speed of the particles.</description>
+    </key>
+    <key type="ai" name="e-vt">
+      <default>[-30,-30,-5,-5,-5,-10,-10,-10,-10,-10]</default>
+      <summary>Aging speed</summary>
+      <description>The more negative the sooner particles disappear.</description>
+    </key>
+    <key type="ai" name="e-vphi">
+      <default>[0,0,0,0,0,0,0,0,0,0]</default>
+      <summary>Rotation speed</summary>
+      <description>The rotation of the particles can probably only be seen on the really big ones.</description>
+    </key>
+    <key type="ai" name="e-dvx">
+      <default>[0,50,0,0,0,0,0,0,0,0]</default>
+      <summary>X speed range</summary>
+      <description>The horizontal speed range of the particles.</description>
+    </key>
+    <key type="ai" name="e-dvy">
+      <default>[0,200,0,0,0,0,0,0,0,0]</default>
+      <summary>Y speed range</summary>
+      <description>The vertical speed range of the particles.</description>
+    </key>
+    <key type="ai" name="e-dvcirc">
+      <default>[50,0,100,50,50,500,500,500,500,500]</default>
+      <summary>Circular speed range</summary>
+      <description>The circular speed range of the particles.</description>
+    </key>
+    <key type="ai" name="e-dvt">
+      <default>[30,10,4,3,3,5,5,5,5,5]</default>
+      <summary>Aging speed range</summary>
+      <description>The range of aging speeds</description>
+    </key>
+    <key type="ai" name="e-dvphi">
+      <default>[50,50,50,50,50,50,50,50,50,50]</default>
+      <summary>Rotation speed range</summary>
+      <description>The rotation of the particles can probably only be seen on the really big ones.</description>
+    </key>
+    <key type="ai" name="e-s">
+      <default>[50,20,50,50,50,50,50,50,50,50]</default>
+      <summary>Particle Size</summary>
+      <description>The size of the particles.</description>
+    </key>
+    <key type="ai" name="e-ds">
+      <default>[25,10,25,25,25,25,25,25,25,25]</default>
+      <summary>Particle Size Range</summary>
+      <description>The size range of the particles.</description>
+    </key>
+    <key type="ai" name="e-snew">
+      <default>[300,50,100,125,125,50,50,50,50,50]</default>
+      <summary>New Size</summary>
+      <description>The size of the particles when they are new.</description>
+    </key>
+    <key type="ai" name="e-dsnew">
+      <default>[150,30,25,50,50,25,25,25,25,25]</default>
+      <summary>New Size Range</summary>
+      <description>The size range of the particles when they are new.</description>
+    </key>
+    <key type="ai" name="e-g">
+      <default>[0,0,0,0,0,0,0,0,0,0]</default>
+      <summary>Gravity</summary>
+      <description>The strength of the gravity effect, these particles have. (See gravity probability. May be especially resource consuming.)</description>
+    </key>
+    <key type="ai" name="e-dg">
+      <default>[0,0,0,0,200,0,0,0,0,0]</default>
+      <summary>Gravity Range</summary>
+      <description>The strength range of the gravity effect, these particles have. (See gravity probability. May be especially resource consuming.</description>
+    </key>
+    <key type="ai" name="e-gp">
+      <default>[0,0,0,0,10,0,0,0,0,0]</default>
+      <summary>Gravity Probability</summary>
+      <description>The probability that a particle has the gravity effect, that has been set up above. This value represents gravity particles out of 10000 particles. (Using gravity on too many particles may be very resource consuming.)</description>
+    </key>
+    <key type="i" name="hard-limit">
+      <default>3000</default>
+      <summary>Hard limit for particles</summary>
+      <description>If this hard limit is reached, no new particles are created. (100 - 5000)</description>
+    </key>
+    <key type="i" name="soft-limit">
+      <default>2000</default>
+      <summary>Soft limit for particles</summary>
+      <description>This soft limit can be exceeded. If this happens, particles will die faster. (100 - 5000)</description>
+    </key>
+    <key type="d" name="darken">
+      <default>0.9</default>
+      <summary>Darken background</summary>
+      <description>Darken background under particles (0.0 - 1.0)</description>
+    </key>
+    <key type="b" name="blend">
+      <default>true</default>
+      <summary>Additive blending</summary>
+      <description>Additive blending of particles</description>
+    </key>
+    <key type="d" name="tnew">
+      <default>0.98</default>
+      <summary>New particle time</summary>
+      <description>If the age of a particle is above this value, it is regarded as new and is especially bright and large. Particles are born at the age of 1.0 and die at the age of 0.0. (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="told">
+      <default>0.4</default>
+      <summary>Old particle time</summary>
+      <description>If the age of a particle is below this value, it is regarded as old and starts to fade. Particles are born at the age of 1.0 and die at the age of 0.0. (0.0 - 1.0)</description>
+    </key>
+  </schema>
+</schemalist>

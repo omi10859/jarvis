@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.animationsim" gettext-domain="compiz">
+    <key type="i" name="flyin-direction">
+      <default>0</default>
+      <summary>Fly In Direction</summary>
+      <description>The direction in which the fly in should take place (0 = Up, 1 = Left, 2 = Down, 3 = Right, 4 = User Defined)</description>
+    </key>
+    <key type="d" name="flyin-direction-x">
+      <default>0</default>
+      <summary>UD Direction X</summary>
+      <description>Direction and Distance X for user defined fly in (-1000 - 1000)</description>
+    </key>
+    <key type="d" name="flyin-direction-y">
+      <default>0</default>
+      <summary>UD Direction Y</summary>
+      <description>Direction and Distance Y for user defined fly in (-1000 - 1000)</description>
+    </key>
+    <key type="b" name="flyin-fade">
+      <default>true</default>
+      <summary>Fade</summary>
+      <description>Fade when flying in</description>
+    </key>
+    <key type="d" name="flyin-distance">
+      <default>20</default>
+      <summary>Distance</summary>
+      <description>Distance to fly in (5 - 1000)</description>
+    </key>
+    <key type="i" name="rotatein-direction">
+      <default>3</default>
+      <summary>Rotate In Direction</summary>
+      <description>The direction in which the window rotates (1 = Up, 2 = Left, 3 = Down, 4 = Right)</description>
+    </key>
+    <key type="d" name="rotatein-angle">
+      <default>90</default>
+      <summary>Angle</summary>
+      <description>Angle to start from (-720 - 720)</description>
+    </key>
+    <key type="d" name="bounce-max-size">
+      <default>1.2</default>
+      <summary>Maximum Size</summary>
+      <description>Maximum scale factor of window when bouncing (1.0 - 3.0)</description>
+    </key>
+    <key type="d" name="bounce-min-size">
+      <default>0.6</default>
+      <summary>Minimum Size</summary>
+      <description>Minimum scale factor of window when bouncing (0.1 - 1.0)</description>
+    </key>
+    <key type="i" name="bounce-number">
+      <default>3</default>
+      <summary>Number of Bounces</summary>
+      <description>How many bounces during the animation (0 - 10)</description>
+    </key>
+    <key type="b" name="bounce-fade">
+      <default>true</default>
+      <summary>Fade</summary>
+      <description>Fade when flying in</description>
+    </key>
+    <key type="d" name="sheet-start-percent">
+      <default>80.0</default>
+      <summary>Starting Percent</summary>
+      <description>How wide the beginning of the sheet animation should be compared to the end (1.0 - 150.0)</description>
+    </key>
+    <key type="d" name="fan-angle">
+      <default>35</default>
+      <summary>Fan Angle</summary>
+      <description>Angle of windows away from the main window (0 - 90)</description>
+    </key>
+    <key type="b" name="expandpw-horiz-first">
+      <default>true</default>
+      <summary>First expand horizontally</summary>
+      <description>If checked, initially expand horizontally, then vertically</description>
+    </key>
+    <key type="i" name="expandpw-initial-horiz">
+      <default>20</default>
+      <summary>Initial horizontal size</summary>
+      <description>Number of pixels initially in horizontal direction (0 - 50)</description>
+    </key>
+    <key type="i" name="expandpw-initial-vert">
+      <default>20</default>
+      <summary>Initial vertical size</summary>
+      <description>Number of pixels initially in vertical direction (0 - 50)</description>
+    </key>
+    <key type="d" name="expandpw-delay">
+      <default>0.25</default>
+      <summary>Delay</summary>
+      <description>Delay between expanding horizontally and vertically (expressed as a fraction) (0.0 - 1.0)</description>
+    </key>
+  </schema>
+</schemalist>

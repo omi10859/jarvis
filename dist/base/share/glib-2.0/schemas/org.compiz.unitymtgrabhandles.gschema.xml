@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.unitymtgrabhandles" gettext-domain="compiz">
+    <key type="s" name="toggle-handles-key">
+      <default>'Disabled'</default>
+      <summary>Toggle Handles</summary>
+      <description>Key to toggle the handles</description>
+    </key>
+    <key type="s" name="show-handles-key">
+      <default>'Disabled'</default>
+      <summary>Show Handles</summary>
+      <description>Key to show the handles</description>
+    </key>
+    <key type="s" name="hide-handles-key">
+      <default>'Disabled'</default>
+      <summary>Hide Handles</summary>
+      <description>Key to hide the handles</description>
+    </key>
+    <key type="i" name="fade-duration">
+      <default>150</default>
+      <summary>Fade Duration</summary>
+      <description>How long the fade should last ( - )</description>
+    </key>
+  </schema>
+</schemalist>

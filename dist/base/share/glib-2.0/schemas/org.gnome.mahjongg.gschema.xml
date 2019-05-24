@@ -1,0 +1,28 @@
+<schemalist>
+  <schema id="org.gnome.mahjongg" path="/org/gnome/mahjongg/" gettext-domain="gnome-mahjongg">
+    <key name="show-toolbar" type="b">
+      <default>true</default>
+    </key>
+    <key name="tileset" type="s">
+      <default>"postmodern.svg"</default>
+    </key>
+    <key name="mapset" type="s">
+      <default>"Easy"</default>
+    </key>
+    <key name="bgcolour" type="s">
+      <default>"#34385b"</default>
+    </key>
+    <key name="window-width" type="i">
+      <default>900</default>
+      <summary>Width of the window in pixels</summary>
+    </key>
+    <key name="window-height" type="i">
+      <default>600</default>
+      <summary>Height of the window in pixels</summary>
+    </key>
+    <key name="window-is-maximized" type="b">
+      <default>false</default>
+      <summary>true if the window is maximized</summary>
+    </key>
+  </schema>
+</schemalist>

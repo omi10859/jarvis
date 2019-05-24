@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.addhelper" gettext-domain="compiz">
+    <key type="s" name="toggle-key">
+      <default>'&lt;Super&gt;p'</default>
+      <summary>Toggle AddHelper</summary>
+      <description>Use this to enable/disable AddHelper on the fly.</description>
+    </key>
+    <key type="s" name="window-types">
+      <default>'Toolbar | Utility | Dialog | ModalDialog | Fullscreen | Normal'</default>
+      <summary>Window Types</summary>
+      <description>Window types that should be Opacified. (match)</description>
+    </key>
+    <key type="b" name="ononinit">
+      <default>false</default>
+      <summary>Enable ADD Helper on start</summary>
+      <description>Enables ADD helper when it is first loaded.</description>
+    </key>
+    <key type="i" name="brightness">
+      <default>30</default>
+      <summary>Brightness</summary>
+      <description>Brightness of faded windows (1 - 100)</description>
+    </key>
+    <key type="i" name="saturation">
+      <default>50</default>
+      <summary>Saturation</summary>
+      <description>Saturation of faded windows (0 - 100)</description>
+    </key>
+    <key type="i" name="opacity">
+      <default>100</default>
+      <summary>Opacity</summary>
+      <description>Opacity of faded windows (1 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

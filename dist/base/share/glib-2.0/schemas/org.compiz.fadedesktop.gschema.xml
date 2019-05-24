@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.fadedesktop" gettext-domain="compiz">
+    <key type="i" name="fadetime">
+      <default>500</default>
+      <summary>Fade Time</summary>
+      <description>Fade time (in ms) (1 - 5000)</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'Toolbar | Utility | Dialog | Normal | Unknown'</default>
+      <summary>Window Match</summary>
+      <description>Windows that should be faded to desktop (match)</description>
+    </key>
+  </schema>
+</schemalist>

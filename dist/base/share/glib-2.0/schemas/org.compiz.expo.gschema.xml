@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.expo" gettext-domain="compiz">
+    <key type="s" name="expo-key">
+      <default>'&lt;Super&gt;s'</default>
+      <summary>Expo Key</summary>
+      <description>Initiate or terminate Expo mode with this keyboard shortcut.</description>
+    </key>
+    <key type="s" name="expo-button">
+      <default>'Disabled'</default>
+      <summary>Expo Button</summary>
+      <description>Initiate or terminate Expo mode with this mousebutton shortcut.</description>
+    </key>
+    <key type="s" name="expo-edge">
+      <default>''</default>
+      <summary>Expo Corner/Edge</summary>
+      <description>Initiate or terminate Expo mode by moving the pointer to this corner or edge of your screen(s).</description>
+    </key>
+    <key type="i" name="double-click-time">
+      <default>500</default>
+      <summary>Double-Click Time</summary>
+      <description>Timeframe to execute a double-click (in ms). (50 - 2000)</description>
+    </key>
+    <key type="s" name="dnd-button">
+      <default>'Button1'</default>
+      <summary>Drag &amp; Drop Button</summary>
+      <description>Drag and drop windows in Expo with this mousebutton.</description>
+    </key>
+    <key type="s" name="exit-button">
+      <default>'Button3'</default>
+      <summary>Exit Expo Button</summary>
+      <description>End Expo mode with this mousebutton.</description>
+    </key>
+    <key type="s" name="next-vp-button">
+      <default>'Button5'</default>
+      <summary>Next Viewport Button</summary>
+      <description>Button binding to focus the next viewport in Expo mode.</description>
+    </key>
+    <key type="s" name="prev-vp-button">
+      <default>'Button4'</default>
+      <summary>Previous Viewport Button</summary>
+      <description>Button binding to focus the previous viewport in Expo mode.</description>
+    </key>
+    <key type="d" name="zoom-time">
+      <default>0.3</default>
+      <summary>Animation Duration</summary>
+      <description>Duration of the selected animation (in seconds). (0.1 - 5.0)</description>
+    </key>
+    <key type="b" name="expo-immediate-move">
+      <default>false</default>
+      <summary>Immediate Moves</summary>
+      <description>Should window movements in Expo mode be immediate - this among other things disables wobbliness.</description>
+    </key>
+    <key type="i" name="expo-animation">
+      <default>0</default>
+      <summary>Expo Animation</summary>
+      <description>The animation used when initiating or leaving Expo. (0 = Zoom, 1 = Fade + Zoom, 2 = Vortex, 3 = None)</description>
+    </key>
+    <key type="i" name="deform">
+      <default>0</default>
+      <summary>Deformation</summary>
+      <description>The deformation of the Expo wall. (0 = None, 1 = Tilt, 2 = Curve)</description>
+    </key>
+    <key type="d" name="curve">
+      <default>0.50</default>
+      <summary>Curve Strength</summary>
+      <description>Strength of the deformation in curve mode. (0.0 - 1.0)</description>
+    </key>
+    <key type="i" name="x-offset">
+      <default>64</default>
+      <summary>X Offset</summary>
+      <description>Horizontal offset (in pixels). ( - )</description>
+    </key>
+    <key type="i" name="y-offset">
+      <default>24</default>
+      <summary>Y Offset</summary>
+      <description>Vertical offset (in pixels). ( - )</description>
+    </key>
+    <key type="i" name="y-bottom-offset">
+      <default>0</default>
+      <summary>Y Bottom Offset</summary>
+      <description>Vertical offset from the bottom (in pixels). (0 - )</description>
+    </key>
+    <key type="d" name="distance">
+      <default>0.0</default>
+      <summary>Camera Distance</summary>
+      <description>The distance between the camera and the exposed viewports. (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="vp-distance">
+      <default>0.2</default>
+      <summary>Viewport Distance</summary>
+      <description>The distance between viewports in Expo mode. (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="aspect-ratio">
+      <default>1.0</default>
+      <summary>Aspect Ratio</summary>
+      <description>The relation of the viewports' width to height in Expo mode. (0.0 - 1.0)</description>
+    </key>
+    <key type="b" name="hide-docks">
+      <default>false</default>
+      <summary>Hide Panels/Docks</summary>
+      <description>Hide panels and docks in Expo mode.</description>
+    </key>
+    <key type="b" name="mipmaps">
+      <default>false</default>
+      <summary>Mipmaps</summary>
+      <description>Generate mipmaps for higher quality textures in Expo mode.</description>
+    </key>
+    <key type="i" name="multioutput-mode">
+      <default>1</default>
+      <summary>Multi Output Mode</summary>
+      <description>How the Expo wall should be displayed, if multiple output devices are used. (0 = One big wall, 1 = One wall per output)</description>
+    </key>
+    <key type="d" name="vp-brightness">
+      <default>40.0</default>
+      <summary>Brightness</summary>
+      <description>The brightness of unfocused viewports (in percent). (0.0 - 100.0)</description>
+    </key>
+    <key type="d" name="vp-saturation">
+      <default>100.0</default>
+      <summary>Saturation</summary>
+      <description>The saturation of unfocused viewports (in percent). (0.0 - 100.0)</description>
+    </key>
+    <key type="s" name="selected-color">
+      <default>'#fb8b00ff'</default>
+      <summary>Selection Glow Color</summary>
+      <description>Color and opacity of the glow texture that highlights the selected viewport.</description>
+    </key>
+    <key type="b" name="reflection">
+      <default>false</default>
+      <summary>Reflection</summary>
+      <description>Render a realtime reflection of the viewports on the ground.</description>
+    </key>
+    <key type="s" name="ground-color1">
+      <default>'#b3b3b3cc'</default>
+      <summary>Ground Color (near)</summary>
+      <description>Color and opacity of the ground (near).</description>
+    </key>
+    <key type="s" name="ground-color2">
+      <default>'#b3b3b300'</default>
+      <summary>Ground Color (far)</summary>
+      <description>Color and opacity of the ground (far).</description>
+    </key>
+    <key type="d" name="ground-size">
+      <default>0.5</default>
+      <summary>Reflection Ground Size</summary>
+      <description>Size of the ground the reflection is rendered on. (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="scale-factor">
+      <default>0.75</default>
+      <summary>Reflection Scale</summary>
+      <description>The vertical scale factor of the ground reflection. (0.0 - 2.0)</description>
+    </key>
+  </schema>
+</schemalist>

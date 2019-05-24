@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.winrules" gettext-domain="compiz">
+    <key type="s" name="skiptaskbar-match">
+      <default>''</default>
+      <summary>Skip taskbar</summary>
+      <description>Don't show application in taskbar (match)</description>
+    </key>
+    <key type="s" name="skippager-match">
+      <default>''</default>
+      <summary>Skip pager</summary>
+      <description>Don't show application in pager (match)</description>
+    </key>
+    <key type="s" name="above-match">
+      <default>''</default>
+      <summary>Above</summary>
+      <description>Above others windows (match)</description>
+    </key>
+    <key type="s" name="below-match">
+      <default>''</default>
+      <summary>Below</summary>
+      <description>Below others windows (match)</description>
+    </key>
+    <key type="s" name="sticky-match">
+      <default>''</default>
+      <summary>Sticky</summary>
+      <description>Sticky windows (match)</description>
+    </key>
+    <key type="s" name="fullscreen-match">
+      <default>''</default>
+      <summary>Fullscreen</summary>
+      <description>Fullscreen windows (match)</description>
+    </key>
+    <key type="s" name="maximize-match">
+      <default>''</default>
+      <summary>Maximized</summary>
+      <description>Maximized windows (match)</description>
+    </key>
+    <key type="s" name="no-argb-match">
+      <default>''</default>
+      <summary>No ARGB visuals</summary>
+      <description>Windows that should be treated as not supporting transparency (match)</description>
+    </key>
+    <key type="s" name="no-move-match">
+      <default>''</default>
+      <summary>Non movable windows</summary>
+      <description>Set window as non movable (match)</description>
+    </key>
+    <key type="s" name="no-resize-match">
+      <default>''</default>
+      <summary>Non resizable windows</summary>
+      <description>Set window as non resizable (match)</description>
+    </key>
+    <key type="s" name="no-minimize-match">
+      <default>''</default>
+      <summary>Non minimizable windows</summary>
+      <description>Set window as non minimizable (match)</description>
+    </key>
+    <key type="s" name="no-maximize-match">
+      <default>''</default>
+      <summary>Non maximizable windows</summary>
+      <description>Set window as non maximizable (match)</description>
+    </key>
+    <key type="s" name="no-close-match">
+      <default>''</default>
+      <summary>Non closable windows</summary>
+      <description>Set window as non closable (match)</description>
+    </key>
+    <key type="s" name="no-focus-match">
+      <default>''</default>
+      <summary>No focus</summary>
+      <description>Windows will not have focus (match)</description>
+    </key>
+    <key type="as" name="size-matches">
+      <default>[]</default>
+      <summary>Sized Windows</summary>
+      <description>Windows that should be resized by default</description>
+    </key>
+    <key type="ai" name="size-width-values">
+      <default>[]</default>
+      <summary>Width</summary>
+      <description>Width values</description>
+    </key>
+    <key type="ai" name="size-height-values">
+      <default>[]</default>
+      <summary>Height</summary>
+      <description>Height values</description>
+    </key>
+  </schema>
+</schemalist>

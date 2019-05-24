@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.ring" gettext-domain="compiz">
+    <key type="s" name="next-key">
+      <default>'&lt;Super&gt;Tab'</default>
+      <summary>Next Window Key</summary>
+      <description>Reveals the ring and selects the next window on the current workspace.</description>
+    </key>
+    <key type="s" name="next-button">
+      <default>'Disabled'</default>
+      <summary>Next Window Button</summary>
+      <description>Reveals the ring and selects the next window on the current workspace.</description>
+    </key>
+    <key type="s" name="prev-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;Tab'</default>
+      <summary>Previous Window Key</summary>
+      <description>Reveals the ring and selects the previous window on the current workspace.</description>
+    </key>
+    <key type="s" name="prev-button">
+      <default>'Disabled'</default>
+      <summary>Previous Window Button</summary>
+      <description>Reveals the ring and selects the previous window on the current workspace.</description>
+    </key>
+    <key type="s" name="next-all-key">
+      <default>'&lt;Super&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Next Window Key (All Workspaces)</summary>
+      <description>Reveals the ring and selects the next window, taking into account all workspaces.</description>
+    </key>
+    <key type="s" name="next-all-button">
+      <default>'Disabled'</default>
+      <summary>Next Window Button (All Workspaces)</summary>
+      <description>Reveals the ring and selects the next window, taking into account all workspaces.</description>
+    </key>
+    <key type="s" name="prev-all-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Previous Window Key (All Workspaces)</summary>
+      <description>Reveals the ring and selects the previous window, taking into account all workspaces.</description>
+    </key>
+    <key type="s" name="prev-all-button">
+      <default>'Disabled'</default>
+      <summary>Previous Window Button (All Workspaces)</summary>
+      <description>Reveals the ring and selects the previous window, taking into account all workspaces.</description>
+    </key>
+    <key type="s" name="next-group-key">
+      <default>'Disabled'</default>
+      <summary>Next Window Key (Group)</summary>
+      <description>Reveals the ring and selects the next window of the currently focused application.</description>
+    </key>
+    <key type="s" name="next-group-button">
+      <default>'Disabled'</default>
+      <summary>Next Window Button (Group)</summary>
+      <description>Reveals the ring and selects the next window of the currently focuse application.</description>
+    </key>
+    <key type="s" name="prev-group-key">
+      <default>'Disabled'</default>
+      <summary>Previous Window Key (Group)</summary>
+      <description>Reveals the ring and selects the previous window of the currently focused application.</description>
+    </key>
+    <key type="s" name="prev-group-button">
+      <default>'Disabled'</default>
+      <summary>Previous Window Button (Group)</summary>
+      <description>Reveals the ring and selects the previous window of the currently focused application.</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'Normal | Dialog | ModalDialog | Utility | Unknown'</default>
+      <summary>Ring Windows</summary>
+      <description>Windows that should be shown in the ring. (match)</description>
+    </key>
+    <key type="i" name="overlay-icon">
+      <default>1</default>
+      <summary>Overlay Icon</summary>
+      <description>Which type of icon overlay to draw on windows in the ring. (0 = None, 1 = Emblem, 2 = Big)</description>
+    </key>
+    <key type="d" name="speed">
+      <default>1.5</default>
+      <summary>Speed</summary>
+      <description>The ring movement speed. (0.1 - 50.0)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>1.2</default>
+      <summary>Timestep</summary>
+      <description>Ring switcher timestep. (0.1 - 50.0)</description>
+    </key>
+    <key type="i" name="inactive-opacity">
+      <default>100</default>
+      <summary>Inactive Window Opacity</summary>
+      <description>Opacity (in percent) of unselected windows in the ring. (1 - 100)</description>
+    </key>
+    <key type="b" name="darken-back">
+      <default>true</default>
+      <summary>Darken Background</summary>
+      <description>Darken background when showing the ring.</description>
+    </key>
+    <key type="b" name="minimized">
+      <default>true</default>
+      <summary>Show Minimized</summary>
+      <description>Show windows that are minimized, shaded or in show-desktop mode.</description>
+    </key>
+    <key type="b" name="select-with-mouse">
+      <default>false</default>
+      <summary>Allow Mouse Selection</summary>
+      <description>Allow the selection of windows by just clicking on them while the switcher is active.</description>
+    </key>
+    <key type="b" name="ring-clockwise">
+      <default>false</default>
+      <summary>Rotate Ring Clockwise On Next</summary>
+      <description>Rotate the ring clockwise for the next window instead of counterclockwise.</description>
+    </key>
+    <key type="i" name="ring-width">
+      <default>70</default>
+      <summary>Ring Width</summary>
+      <description>Ring width (in percent of the screen width). (1 - 100)</description>
+    </key>
+    <key type="i" name="ring-height">
+      <default>60</default>
+      <summary>Ring Height</summary>
+      <description>Ring height (in percent of the screen height). (1 - 100)</description>
+    </key>
+    <key type="i" name="thumb-width">
+      <default>350</default>
+      <summary>Thumbnail Width</summary>
+      <description>Maximum horizontal size of a thumbnail in the ring. (10 - 1024)</description>
+    </key>
+    <key type="i" name="thumb-height">
+      <default>250</default>
+      <summary>Thumbnail Height</summary>
+      <description>Maximum vertical size of a thumbnail in the ring. (10 - 1024)</description>
+    </key>
+    <key type="d" name="min-brightness">
+      <default>0.5</default>
+      <summary>Minimum Brightness Factor</summary>
+      <description>Changes the minimum brightness factor for windows in the ring. The further away windows are, the less bright they are. (0.1 - 1.0)</description>
+    </key>
+    <key type="d" name="min-scale">
+      <default>0.4</default>
+      <summary>Minimum Scale Factor</summary>
+      <description>Changes the minimum scale factor for windows in the ring. The further away the windows are, the smaller they are. (0.1 - 1.0)</description>
+    </key>
+    <key type="b" name="window-title">
+      <default>true</default>
+      <summary>Show Window Title</summary>
+      <description>Show the window title of the currently selected window.</description>
+    </key>
+    <key type="b" name="title-font-bold">
+      <default>false</default>
+      <summary>Bold Font</summary>
+      <description>Render the window title using a bold font.</description>
+    </key>
+    <key type="i" name="title-font-size">
+      <default>16</default>
+      <summary>Font Size</summary>
+      <description>Font size of the window title text (in pixels). (6 - 96)</description>
+    </key>
+    <key type="s" name="title-back-color">
+      <default>'#00000099'</default>
+      <summary>Background Color</summary>
+      <description>Color and opacity of the window title background.</description>
+    </key>
+    <key type="s" name="title-font-color">
+      <default>'#ffffffff'</default>
+      <summary>Font Color</summary>
+      <description>Font color and opacity of the window title.</description>
+    </key>
+    <key type="i" name="title-text-placement">
+      <default>0</default>
+      <summary>Text Placement</summary>
+      <description>Selects where to place the window title. (0 = Centered on screen, 1 = Top of screen minus offset, 2 = Bottom of screen plus offset)</description>
+    </key>
+    <key type="i" name="vertical-offset">
+      <default>50</default>
+      <summary>Vertical Offset</summary>
+      <description>Vertical offset from top or bottom of the screen (in pixels). (0 - 500)</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.splash" gettext-domain="compiz">
+    <key type="s" name="initiate-key">
+      <default>'&lt;Control&gt;F11'</default>
+      <summary>Initiate Splash</summary>
+      <description>Start Splash.</description>
+    </key>
+    <key type="b" name="firststart">
+      <default>true</default>
+      <summary>Show on first start</summary>
+      <description>Show splash on first start.</description>
+    </key>
+    <key type="s" name="background">
+      <default>'splash_background.png'</default>
+      <summary>Background File</summary>
+      <description>Background image File.</description>
+    </key>
+    <key type="s" name="logo">
+      <default>'splash_logo.png'</default>
+      <summary>Logo File</summary>
+      <description>Logo image File.</description>
+    </key>
+    <key type="d" name="fade-time">
+      <default>1.0</default>
+      <summary>Fade Time</summary>
+      <description>Fade In/Out Time. (0.0 - 100.0)</description>
+    </key>
+    <key type="d" name="display-time">
+      <default>2.0</default>
+      <summary>Display Time</summary>
+      <description>Display In/Out Time. (0.0 - 100.0)</description>
+    </key>
+    <key type="d" name="saturation">
+      <default>50.0</default>
+      <summary>Saturation</summary>
+      <description>Background saturation. (0.0 - 100.0)</description>
+    </key>
+    <key type="d" name="brightness">
+      <default>50.0</default>
+      <summary>Brightness</summary>
+      <description>Background brightness. (0.0 - 100.0)</description>
+    </key>
+  </schema>
+</schemalist>

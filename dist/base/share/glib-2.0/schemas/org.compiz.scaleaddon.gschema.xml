@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.scaleaddon" gettext-domain="compiz">
+    <key type="s" name="close-key">
+      <default>'Disabled'</default>
+      <summary>Close Window</summary>
+      <description>Close windows while in scale mode</description>
+    </key>
+    <key type="s" name="close-button">
+      <default>'Button2'</default>
+      <summary>Close Window</summary>
+      <description>Close window while in scale mode</description>
+    </key>
+    <key type="s" name="pull-key">
+      <default>'Disabled'</default>
+      <summary>Pull Window</summary>
+      <description>Pull window to current viewport while in scale mode</description>
+    </key>
+    <key type="s" name="pull-button">
+      <default>'Disabled'</default>
+      <summary>Pull Window</summary>
+      <description>Pull window to current viewport while in scale mode</description>
+    </key>
+    <key type="s" name="zoom-key">
+      <default>'Disabled'</default>
+      <summary>Zoom Window</summary>
+      <description>Zoom window while in scale mode</description>
+    </key>
+    <key type="s" name="zoom-button">
+      <default>'Button3'</default>
+      <summary>Zoom Window</summary>
+      <description>Zoom window while in scale mode</description>
+    </key>
+    <key type="i" name="window-title">
+      <default>1</default>
+      <summary>Window Title Display</summary>
+      <description>Window title display in scale mode (0 = No display, 1 = Highlighted window only, 2 = All windows)</description>
+    </key>
+    <key type="b" name="title-bold">
+      <default>false</default>
+      <summary>Bold Font</summary>
+      <description>Use bold font for window title display</description>
+    </key>
+    <key type="i" name="title-size">
+      <default>10</default>
+      <summary>Font Size</summary>
+      <description>Font size for window title display (6 - 48)</description>
+    </key>
+    <key type="i" name="border-size">
+      <default>3</default>
+      <summary>Title Border Size</summary>
+      <description>Size of the border around the window title (1 - 20)</description>
+    </key>
+    <key type="s" name="font-color">
+      <default>'#ffffffff'</default>
+      <summary>Font Color</summary>
+      <description>Font color of the window title</description>
+    </key>
+    <key type="s" name="back-color">
+      <default>'#00000099'</default>
+      <summary>Background Color</summary>
+      <description>Background color of the window title</description>
+    </key>
+    <key type="b" name="window-highlight">
+      <default>false</default>
+      <summary>Draw Window Highlight</summary>
+      <description>Highlights the hovered window with the given color</description>
+    </key>
+    <key type="s" name="highlight-color">
+      <default>'#ffffff96'</default>
+      <summary>Highlight Color</summary>
+      <description>Color used for highlighting the hovered window</description>
+    </key>
+    <key type="i" name="layout-mode">
+      <default>0</default>
+      <summary>Window Layout Mode</summary>
+      <description>Selects the mode to layout the windows in scale mode (0 = Normal, 1 = Natural)</description>
+    </key>
+    <key type="d" name="natural-precision">
+      <default>2.0</default>
+      <summary>Precision</summary>
+      <description>How precisely windows should be pushed apart. Increasing this makes windows that are further apart closer together, but also increases CPU usage (1.0 - 20.0)</description>
+    </key>
+    <key type="b" name="constrain-pull-to-screen">
+      <default>true</default>
+      <summary>Constrain Pull To Screen</summary>
+      <description>Make sure windows are fully visible after pulling them to another viewport</description>
+    </key>
+    <key type="b" name="exit-after-pull">
+      <default>false</default>
+      <summary>Exit Scale On Pull</summary>
+      <description>Exit scale mode after a window has been pulled.</description>
+    </key>
+  </schema>
+</schemalist>

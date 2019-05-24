@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.resizeinfo" gettext-domain="compiz">
+    <key type="i" name="fade-time">
+      <default>500</default>
+      <summary>Fade Time</summary>
+      <description>Fade time (in ms) for the popup window. (10 - 5000)</description>
+    </key>
+    <key type="b" name="always-show">
+      <default>false</default>
+      <summary>Show Resizeinfo For All Windows</summary>
+      <description>Show resize info for all windows as opposed to just for text based windows like terminals.</description>
+    </key>
+    <key type="b" name="resizeinfo-font-bold">
+      <default>true</default>
+      <summary>Bold Font</summary>
+      <description>Render the resize info's size display with a bold font.</description>
+    </key>
+    <key type="i" name="resizeinfo-font-size">
+      <default>12</default>
+      <summary>Font Size</summary>
+      <description>Font size of the resize info's display. (10 - 14)</description>
+    </key>
+    <key type="s" name="text-color">
+      <default>'#000000ff'</default>
+      <summary>Text Color</summary>
+      <description>Color and opacity of the resize popup's text.</description>
+    </key>
+    <key type="s" name="gradient-1">
+      <default>'#cccce6cc'</default>
+      <summary>Gradient Color 1</summary>
+      <description>Color and opacity on the left side of the gradient background.</description>
+    </key>
+    <key type="s" name="gradient-2">
+      <default>'#f3f3f3cc'</default>
+      <summary>Gradient Color 2</summary>
+      <description>Color and opacity in the center of the gradient background.</description>
+    </key>
+    <key type="s" name="gradient-3">
+      <default>'#d9d9d9cc'</default>
+      <summary>Gradient Color 3</summary>
+      <description>Color and opacity on the right side of the gradient background.</description>
+    </key>
+    <key type="s" name="outline-color">
+      <default>'#e6e6e6ff'</default>
+      <summary>Outline Color</summary>
+      <description>Color and opacity of the background's outline.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.thumbnail" gettext-domain="compiz">
+    <key type="b" name="always-on-top">
+      <default>true</default>
+      <summary>Thumbnails Always On Top</summary>
+      <description>Paint thumbnails always on top.</description>
+    </key>
+    <key type="i" name="thumb-size">
+      <default>200</default>
+      <summary>Thumbnail Window Size</summary>
+      <description>Maximum horizontal size of the thumbnail (in pixel). (50 - 1500)</description>
+    </key>
+    <key type="i" name="show-delay">
+      <default>100</default>
+      <summary>Show Delay</summary>
+      <description>Time before the thumbnail preview is faded in (in ms). (100 - 10000)</description>
+    </key>
+    <key type="d" name="fade-speed">
+      <default>0.5</default>
+      <summary>Fade In/Out Duration</summary>
+      <description>Fade in/out duration (in seconds). (0.0 - 5.0)</description>
+    </key>
+    <key type="i" name="border">
+      <default>16</default>
+      <summary>Thumbnail Border Size</summary>
+      <description>Size of thumbnail window preview border (in pixel). (1 - 32)</description>
+    </key>
+    <key type="s" name="thumb-color">
+      <default>'#0000007f'</default>
+      <summary>Thumbnail Border Glow Color</summary>
+      <description>Border glow color and opacity or opacity of the window like black background.</description>
+    </key>
+    <key type="b" name="window-like">
+      <default>true</default>
+      <summary>Paint Window Like Background</summary>
+      <description>Render a black, window-like background instead of the background glow.</description>
+    </key>
+    <key type="b" name="mipmap">
+      <default>false</default>
+      <summary>Generate Mipmaps</summary>
+      <description>Generate mipmaps for higher quality texture scaling, if possible.</description>
+    </key>
+    <key type="b" name="current-viewport">
+      <default>true</default>
+      <summary>Only Windows of Current Viewport</summary>
+      <description>Enable this, if your dock, launcher or taskbar is set to show only windows of the current viewport.</description>
+    </key>
+    <key type="b" name="title-enabled">
+      <default>true</default>
+      <summary>Enable Titles</summary>
+      <description>Render window title text below the thumbnail.</description>
+    </key>
+    <key type="b" name="font-bold">
+      <default>true</default>
+      <summary>Bold Font</summary>
+      <description>Use a bold font to render the window title.</description>
+    </key>
+    <key type="i" name="text-distance">
+      <default>10</default>
+      <summary>Text Distance</summary>
+      <description>The gap between the thumbnail and the window title text (in pixel). (0 - 32)</description>
+    </key>
+    <key type="i" name="font-size">
+      <default>12</default>
+      <summary>Font Size</summary>
+      <description>The size of the window title (in pixel). (6 - 36)</description>
+    </key>
+    <key type="s" name="font-color">
+      <default>'#ffffffff'</default>
+      <summary>Font Color</summary>
+      <description>Color and opacity of the window title font.</description>
+    </key>
+    <key type="s" name="font-background-color">
+      <default>'#0000007f'</default>
+      <summary>Font Background Color</summary>
+      <description>Color and opacity of the filled rounded rectangle font background.</description>
+    </key>
+  </schema>
+</schemalist>

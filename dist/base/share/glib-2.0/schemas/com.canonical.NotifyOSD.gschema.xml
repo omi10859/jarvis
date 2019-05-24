@@ -1,0 +1,14 @@
+<schemalist>
+  <schema id="com.canonical.notify-osd" path="/apps/notify-osd/">
+    <key name="multihead-mode" type="s">
+      <default>'focus-follow'</default>
+      <summary>Multihead position behaviour</summary>
+      <description>Should the notification position follow the mouse-focus or not in multi-screen environments. Use values "dont-focus-follow" or "focus-follow".</description>
+    </key>
+    <key name="gravity" type="i">
+      <default>1</default>
+      <summary>Gravity</summary>
+      <description>Position of notifications on screen. Supported values are 1 (top-right) and 2 (vert. centered on the right).</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.trailfocus" gettext-domain="compiz">
+    <key type="s" name="window-match">
+      <default>'(type=toolbar | type=utility | type=dialog | type=normal) &amp; !(state=skiptaskbar | state=skippager)'</default>
+      <summary>Window Types</summary>
+      <description>Window types that should be handled by Trailfocus (match)</description>
+    </key>
+    <key type="i" name="windows-count">
+      <default>5</default>
+      <summary>Number of Windows to Track</summary>
+      <description>Number of windows Trailfocus will keep track of. Windows that had focus this amount of windows ago or more will be considered completly unfocused. (1 - 150)</description>
+    </key>
+    <key type="i" name="windows-start">
+      <default>2</default>
+      <summary>Window to Start Fading</summary>
+      <description>This defines when Trailfocus will start fading windows. This lets you set up trailfocus to treat the N first Windows as fully focused. (1 - 20)</description>
+    </key>
+    <key type="i" name="max-opacity">
+      <default>100</default>
+      <summary>Opacity Level of Focused Windows</summary>
+      <description>Opacity of the currently focused window. Windows will get opacity levels between the focused and minimum. (1 - 100)</description>
+    </key>
+    <key type="i" name="min-opacity">
+      <default>70</default>
+      <summary>Opacity Level of Unfocused Windows</summary>
+      <description>Opacity of the least focused window. Windows will get opacity levels between the focused and minimum. (1 - 100)</description>
+    </key>
+    <key type="i" name="max-brightness">
+      <default>100</default>
+      <summary>Brightness Level of Focused Windows</summary>
+      <description>Brightness of the currently focused window. Windows will get brightness levels between the focused and minimum. (1 - 100)</description>
+    </key>
+    <key type="i" name="min-brightness">
+      <default>100</default>
+      <summary>Brightness Level of Unfocused Windows</summary>
+      <description>Brightness of the least focused window. Windows will get brightness levels between the focused and minimum. (1 - 100)</description>
+    </key>
+    <key type="i" name="max-saturation">
+      <default>100</default>
+      <summary>Saturation Level of Focused Windows</summary>
+      <description>Saturation of the currently focused window. Windows will get saturation levels between the focused and minimum. (1 - 100)</description>
+    </key>
+    <key type="i" name="min-saturation">
+      <default>100</default>
+      <summary>Saturation Level of Unfocused Windows</summary>
+      <description>Saturation of the least focused window. Windows will get saturation levels between the focused and minimum. (1 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

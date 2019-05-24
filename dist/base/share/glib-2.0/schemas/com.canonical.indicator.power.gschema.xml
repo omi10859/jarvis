@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <enum id="icon-policy-enum">
+    <value value="0" nick="present"/>
+    <value value="1" nick="charge"/>
+    <value value="2" nick="never"/>
+  </enum>
+  <schema path="/com/canonical/indicator/power/" id="com.canonical.indicator.power" gettext-domain="@GETTEXT_PACKAGE@">
+    <key type="b" name="show-time">
+      <default>false</default>
+      <summary>Show time in Menu Bar</summary>
+      <description>Whether or not to show the time in the menu bar.</description>
+    </key>
+    <key type="b" name="show-percentage">
+      <default>false</default>
+      <summary>Show percentage in Menu Bar</summary>
+      <description>Whether or not to show the percentage in the menu bar.</description>
+    </key>
+    <key name="icon-policy" enum="icon-policy-enum">
+      <default>"present"</default>
+      <summary>When to show the battery status in the menu bar.</summary>
+      <description>Options for when to show battery status. Valid options are "present", "charge", and "never".</description>
+    </key>
+  </schema>
+</schemalist>

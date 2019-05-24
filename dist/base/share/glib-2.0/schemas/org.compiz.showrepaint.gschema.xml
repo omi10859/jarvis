@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.showrepaint" gettext-domain="compiz">
+    <key type="s" name="toggle-key">
+      <default>'&lt;Super&gt;&lt;Alt&gt;r'</default>
+      <summary>Toggle</summary>
+      <description>Toggle showing of repainted regions.</description>
+    </key>
+    <key type="i" name="intensity">
+      <default>20</default>
+      <summary>Intensity</summary>
+      <description>Intensity. (0 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.put" gettext-domain="compiz">
+    <key type="s" name="put-viewport-1-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 1</summary>
+      <description>Move window to viewport 1</description>
+    </key>
+    <key type="s" name="put-viewport-2-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 2</summary>
+      <description>Move window to viewport 2</description>
+    </key>
+    <key type="s" name="put-viewport-3-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 3</summary>
+      <description>Move window to viewport 3</description>
+    </key>
+    <key type="s" name="put-viewport-4-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 4</summary>
+      <description>Move window to viewport 4</description>
+    </key>
+    <key type="s" name="put-viewport-5-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 5</summary>
+      <description>Move window to viewport 5</description>
+    </key>
+    <key type="s" name="put-viewport-6-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 6</summary>
+      <description>Move window to viewport 6</description>
+    </key>
+    <key type="s" name="put-viewport-7-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 7</summary>
+      <description>Move window to viewport 7</description>
+    </key>
+    <key type="s" name="put-viewport-8-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 8</summary>
+      <description>Move window to viewport 8</description>
+    </key>
+    <key type="s" name="put-viewport-9-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 9</summary>
+      <description>Move window to viewport 9</description>
+    </key>
+    <key type="s" name="put-viewport-10-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 10</summary>
+      <description>Move window to viewport 10</description>
+    </key>
+    <key type="s" name="put-viewport-11-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 11</summary>
+      <description>Move window to viewport 11</description>
+    </key>
+    <key type="s" name="put-viewport-12-key">
+      <default>'Disabled'</default>
+      <summary>Put On Viewport 12</summary>
+      <description>Move window to viewport 12</description>
+    </key>
+    <key type="s" name="put-viewport-left-key">
+      <default>'Disabled'</default>
+      <summary>Viewport Left</summary>
+      <description>Move window to the viewport on the left</description>
+    </key>
+    <key type="s" name="put-viewport-right-key">
+      <default>'Disabled'</default>
+      <summary>Viewport Right</summary>
+      <description>Move window to the viewport on the right</description>
+    </key>
+    <key type="s" name="put-viewport-up-key">
+      <default>'Disabled'</default>
+      <summary>Viewport Top</summary>
+      <description>Move window to the viewport on the top</description>
+    </key>
+    <key type="s" name="put-viewport-down-key">
+      <default>'Disabled'</default>
+      <summary>Viewport Bottom</summary>
+      <description>Move window to the viewport on the bottom</description>
+    </key>
+    <key type="s" name="put-center-key">
+      <default>'&lt;Super&gt;KP_Begin'</default>
+      <summary>Put Center</summary>
+      <description>Move window to the center</description>
+    </key>
+    <key type="s" name="put-center-button">
+      <default>'Disabled'</default>
+      <summary>Put Center</summary>
+      <description>Move window to the center</description>
+    </key>
+    <key type="s" name="put-left-key">
+      <default>'&lt;Super&gt;KP_Left'</default>
+      <summary>Put Left</summary>
+      <description>Move window to the left edge</description>
+    </key>
+    <key type="s" name="put-left-button">
+      <default>'Disabled'</default>
+      <summary>Put Left</summary>
+      <description>Move window to the left edge</description>
+    </key>
+    <key type="s" name="put-right-key">
+      <default>'&lt;Super&gt;KP_Right'</default>
+      <summary>Put Right</summary>
+      <description>Move window to the right edge</description>
+    </key>
+    <key type="s" name="put-right-button">
+      <default>'Disabled'</default>
+      <summary>Put Right</summary>
+      <description>Move window to the right edge</description>
+    </key>
+    <key type="s" name="put-top-key">
+      <default>'&lt;Super&gt;KP_Up'</default>
+      <summary>Put Top</summary>
+      <description>Move window to the top edge</description>
+    </key>
+    <key type="s" name="put-top-button">
+      <default>'Disabled'</default>
+      <summary>Put Top</summary>
+      <description>Move window to the top edge</description>
+    </key>
+    <key type="s" name="put-bottom-key">
+      <default>'&lt;Super&gt;KP_Down'</default>
+      <summary>Put Bottom</summary>
+      <description>Move window to the bottom edge</description>
+    </key>
+    <key type="s" name="put-bottom-button">
+      <default>'&lt;Super&gt;KP_Down'</default>
+      <summary>Put Bottom</summary>
+      <description>Move window to the bottom edge</description>
+    </key>
+    <key type="s" name="put-topleft-key">
+      <default>'&lt;Super&gt;KP_Home'</default>
+      <summary>Put Top Left</summary>
+      <description>Move window to the top left corner</description>
+    </key>
+    <key type="s" name="put-topleft-button">
+      <default>'Disabled'</default>
+      <summary>Put Top Left</summary>
+      <description>Move window to the top left corner</description>
+    </key>
+    <key type="s" name="put-topright-key">
+      <default>'&lt;Super&gt;KP_Prior'</default>
+      <summary>Put Top Right</summary>
+      <description>Move window to the top right corner</description>
+    </key>
+    <key type="s" name="put-topright-button">
+      <default>'Disabled'</default>
+      <summary>Put Top Right</summary>
+      <description>Move window to the top right corner</description>
+    </key>
+    <key type="s" name="put-bottomleft-key">
+      <default>'&lt;Super&gt;KP_End'</default>
+      <summary>Put Bottom Left</summary>
+      <description>Move window to the bottom left corner</description>
+    </key>
+    <key type="s" name="put-bottomleft-button">
+      <default>'Disabled'</default>
+      <summary>Put Bottom Left</summary>
+      <description>Move window to the bottom left corner</description>
+    </key>
+    <key type="s" name="put-bottomright-key">
+      <default>'&lt;Super&gt;KP_Next'</default>
+      <summary>Put Bottom Right</summary>
+      <description>Move window to the bottom right corner</description>
+    </key>
+    <key type="s" name="put-bottomright-button">
+      <default>'Disabled'</default>
+      <summary>Put Bottom Right</summary>
+      <description>Move window to the bottom right corner</description>
+    </key>
+    <key type="s" name="put-empty-center-key">
+      <default>'Disabled'</default>
+      <summary>Put Center</summary>
+      <description>Move window to the center</description>
+    </key>
+    <key type="s" name="put-empty-center-button">
+      <default>'Disabled'</default>
+      <summary>Put Center</summary>
+      <description>Move window to the center</description>
+    </key>
+    <key type="s" name="put-empty-left-key">
+      <default>'Disabled'</default>
+      <summary>Put Left</summary>
+      <description>Move window to the left edge</description>
+    </key>
+    <key type="s" name="put-empty-left-button">
+      <default>'Disabled'</default>
+      <summary>Put Left</summary>
+      <description>Move window to the left edge</description>
+    </key>
+    <key type="s" name="put-empty-right-key">
+      <default>'Disabled'</default>
+      <summary>Put Right</summary>
+      <description>Move window to the right edge</description>
+    </key>
+    <key type="s" name="put-empty-right-button">
+      <default>'Disabled'</default>
+      <summary>Put Right</summary>
+      <description>Move window to the right edge</description>
+    </key>
+    <key type="s" name="put-empty-top-key">
+      <default>'Disabled'</default>
+      <summary>Put Top</summary>
+      <description>Move window to the top edge</description>
+    </key>
+    <key type="s" name="put-empty-top-button">
+      <default>'Disabled'</default>
+      <summary>Put Top</summary>
+      <description>Move window to the top edge</description>
+    </key>
+    <key type="s" name="put-empty-bottom-key">
+      <default>'Disabled'</default>
+      <summary>Put Bottom</summary>
+      <description>Move window to the bottom edge</description>
+    </key>
+    <key type="s" name="put-empty-bottom-button">
+      <default>'Disabled'</default>
+      <summary>Put Bottom</summary>
+      <description>Move window to the bottom edge</description>
+    </key>
+    <key type="s" name="put-empty-topleft-key">
+      <default>'Disabled'</default>
+      <summary>Put Top Left</summary>
+      <description>Move window to the top left corner</description>
+    </key>
+    <key type="s" name="put-empty-topleft-button">
+      <default>'Disabled'</default>
+      <summary>Put Top Left</summary>
+      <description>Move window to the top left corner</description>
+    </key>
+    <key type="s" name="put-empty-topright-key">
+      <default>'Disabled'</default>
+      <summary>Put Top Right</summary>
+      <description>Move window to the top right corner</description>
+    </key>
+    <key type="s" name="put-empty-topright-button">
+      <default>'Disabled'</default>
+      <summary>Put Top Right</summary>
+      <description>Move window to the top right corner</description>
+    </key>
+    <key type="s" name="put-empty-bottomleft-key">
+      <default>'Disabled'</default>
+      <summary>Put Bottom Left</summary>
+      <description>Move window to the bottom left corner</description>
+    </key>
+    <key type="s" name="put-empty-bottomleft-button">
+      <default>'Disabled'</default>
+      <summary>Put Bottom Left</summary>
+      <description>Move window to the bottom left corner</description>
+    </key>
+    <key type="s" name="put-empty-bottomright-key">
+      <default>'Disabled'</default>
+      <summary>Put Bottom Right</summary>
+      <description>Move window to the bottom right corner</description>
+    </key>
+    <key type="s" name="put-empty-bottomright-button">
+      <default>'Disabled'</default>
+      <summary>Put Bottom Right</summary>
+      <description>Move window to the bottom right corner</description>
+    </key>
+    <key type="s" name="put-restore-key">
+      <default>'&lt;Super&gt;KP_Insert'</default>
+      <summary>Restore Position</summary>
+      <description>Move window to the last position</description>
+    </key>
+    <key type="s" name="put-restore-button">
+      <default>'Disabled'</default>
+      <summary>Restore Position</summary>
+      <description>Move window to the last position</description>
+    </key>
+    <key type="s" name="put-pointer-key">
+      <default>'&lt;Super&gt;z'</default>
+      <summary>Put Pointer</summary>
+      <description>Move window to the pointer position</description>
+    </key>
+    <key type="s" name="put-pointer-button">
+      <default>'Disabled'</default>
+      <summary>Put Pointer</summary>
+      <description>Move window to the pointer position</description>
+    </key>
+    <key type="s" name="put-next-output-key">
+      <default>'Disabled'</default>
+      <summary>Put To Next Output</summary>
+      <description>Move window to the next output device</description>
+    </key>
+    <key type="s" name="put-next-output-button">
+      <default>'Disabled'</default>
+      <summary>Put To Next Output</summary>
+      <description>Move window to the next output device</description>
+    </key>
+    <key type="s" name="put-previous-output-key">
+      <default>'Disabled'</default>
+      <summary>Put To Previous Output</summary>
+      <description>Move window to the previous output device</description>
+    </key>
+    <key type="s" name="put-previous-output-button">
+      <default>'Disabled'</default>
+      <summary>Put To Previous Output</summary>
+      <description>Move window to the previous output device</description>
+    </key>
+    <key type="i" name="pad-left">
+      <default>0</default>
+      <summary>Pad Left</summary>
+      <description>Number of pixels from the left edge where the window will come to rest (0 - 500)</description>
+    </key>
+    <key type="i" name="pad-right">
+      <default>0</default>
+      <summary>Pad Right</summary>
+      <description>Number of pixels from the right edge where the window will come to rest (0 - 500)</description>
+    </key>
+    <key type="i" name="pad-top">
+      <default>0</default>
+      <summary>Pad Top</summary>
+      <description>Number of pixels from the top edge where the window will come to rest (0 - 500)</description>
+    </key>
+    <key type="i" name="pad-bottom">
+      <default>0</default>
+      <summary>Pad Bottom</summary>
+      <description>Number of pixels from the bottom edge where the window will come to rest (0 - 500)</description>
+    </key>
+    <key type="b" name="unfocus-window">
+      <default>false</default>
+      <summary>Unfocus Window</summary>
+      <description>Unfocus windows that are moved off the viewport</description>
+    </key>
+    <key type="b" name="window-center">
+      <default>false</default>
+      <summary>Window Center</summary>
+      <description>Put pointer uses the center of the window</description>
+    </key>
+    <key type="b" name="avoid-offscreen">
+      <default>false</default>
+      <summary>Avoid Offscreen</summary>
+      <description>Avoids putting window borders offscreen</description>
+    </key>
+    <key type="d" name="speed">
+      <default>2.5</default>
+      <summary>Speed</summary>
+      <description>Animation speed (0.1 - 50.0)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>0.5</default>
+      <summary>Timestep</summary>
+      <description>Animation timestep (0.1 - 50.0)</description>
+    </key>
+  </schema>
+</schemalist>

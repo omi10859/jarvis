@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.mag" gettext-domain="compiz">
+    <key type="s" name="initiate">
+      <default>'&lt;Super&gt;m'</default>
+      <summary>Initiate</summary>
+      <description>Zoom In</description>
+    </key>
+    <key type="s" name="zoom-in-button">
+      <default>'&lt;Super&gt;&lt;Shift&gt;Button4'</default>
+      <summary>Zoom In</summary>
+      <description>Zoom In</description>
+    </key>
+    <key type="s" name="zoom-out-button">
+      <default>'&lt;Super&gt;&lt;Shift&gt;Button5'</default>
+      <summary>Zoom Out</summary>
+      <description>Zoom Out</description>
+    </key>
+    <key type="i" name="mode">
+      <default>0</default>
+      <summary>Mode</summary>
+      <description>Mode. (0 = Simple, 1 = Image overlay, 2 = Fisheye)</description>
+    </key>
+    <key type="d" name="zoom-factor">
+      <default>2.0</default>
+      <summary>Zoom</summary>
+      <description>Zoom factor for keyboard initiated magnifier. (1.1 - 32.0)</description>
+    </key>
+    <key type="d" name="speed">
+      <default>1.5</default>
+      <summary>Speed</summary>
+      <description>Zoom Speed (0.1 - 50)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>1.2</default>
+      <summary>Timestep</summary>
+      <description>Zoom Timestep (0.1 - 50)</description>
+    </key>
+    <key type="b" name="keep-screen">
+      <default>true</default>
+      <summary>Keep fully on screen</summary>
+      <description>Keep fully on screen.</description>
+    </key>
+    <key type="i" name="box-width">
+      <default>300</default>
+      <summary>Width</summary>
+      <description>Box width. (20 - 1000)</description>
+    </key>
+    <key type="i" name="box-height">
+      <default>200</default>
+      <summary>Height</summary>
+      <description>Box height. (20 - 1000)</description>
+    </key>
+    <key type="i" name="border">
+      <default>2</default>
+      <summary>Border width</summary>
+      <description>Border widtht. (0 - 20)</description>
+    </key>
+    <key type="s" name="box-color">
+      <default>'#000000ff'</default>
+      <summary>Border color</summary>
+      <description>Border color</description>
+    </key>
+    <key type="s" name="overlay">
+      <default>'Gnome/overlay.png'</default>
+      <summary>Magnifier image</summary>
+      <description>Magnifier image.</description>
+    </key>
+    <key type="s" name="mask">
+      <default>'Gnome/mask.png'</default>
+      <summary>Clip mask</summary>
+      <description>Clip mask.</description>
+    </key>
+    <key type="i" name="x-offset">
+      <default>155</default>
+      <summary>X offset of the cursor</summary>
+      <description>X offset of the cursor. (0 - 1000)</description>
+    </key>
+    <key type="i" name="y-offset">
+      <default>155</default>
+      <summary>Y offset of the cursor</summary>
+      <description>Y offset of the cursor. (0 - 1000)</description>
+    </key>
+    <key type="i" name="radius">
+      <default>200</default>
+      <summary>Radius</summary>
+      <description>Radius of the magnification area. (10 - 1000)</description>
+    </key>
+  </schema>
+</schemalist>

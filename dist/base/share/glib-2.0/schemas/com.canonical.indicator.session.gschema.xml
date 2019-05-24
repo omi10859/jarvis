@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/apps/indicator-session/" id="com.canonical.indicator.session">
+    <key type="b" name="suppress-logout-restart-shutdown">
+      <default>false</default>
+      <summary>Suppress the dialog to confirm logout, restart and shutdown action</summary>
+      <description>Whether or not to show confirmation dialogs for logout, restart and shutdown actions.</description>
+    </key>
+    <key type="b" name="suppress-logout-menuitem">
+      <default>false</default>
+      <summary>Remove the Log Out item from the session menu</summary>
+      <description>Makes it so that the logout button doesn’t show in the session menu.</description>
+    </key>
+    <key type="b" name="suppress-restart-menuitem">
+      <default>false</default>
+      <summary>Remove the Restart item from the session menu</summary>
+      <description>Makes it so that the restart button doesn’t show in the session menu.</description>
+    </key>
+    <key type="b" name="suppress-shutdown-menuitem">
+      <default>false</default>
+      <summary>Remove the shutdown item from the session menu</summary>
+      <description>Makes it so that the shutdown button doesn’t show in the session menu.</description>
+    </key>
+    <key type="b" name="force-restart-menuitem">
+      <default>false</default>
+      <summary>Force the visibility of Restart item in the session menu</summary>
+      <description>Makes it so that the restart shows in the session menu even in the environments where it should not show.</description>
+    </key>
+    <key type="b" name="show-real-name-on-panel">
+      <default>false</default>
+      <summary>Determine the visibility of the User's real name on the panel</summary>
+      <description>Allow for the Removal of the users name from the panel</description>
+    </key>
+    <key type="b" name="user-show-menu">
+      <default>true</default>
+      <summary>Show the list of users</summary>
+      <description>Allow for the user list to be hidden by the user.</description>
+    </key>
+
+  </schema>
+  
+</schemalist>

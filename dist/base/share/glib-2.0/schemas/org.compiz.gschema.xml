@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz" path="/org/compiz/" gettext-domain="compiz">
+    <key type="s" name="current-profile">
+      <default>'Default'</default>
+      <summary>Current Profile</summary>
+      <description>Describes the current profile</description>
+    </key>
+    <key type="as" name="existing-profiles">
+      <default>['Default']</default>
+      <summary>Existing Profiles</summary>
+      <description>Profiles available for the GSettings backend to use</description>
+    </key>
+  </schema>
+  <schema id="org.compiz.profile" gettext-domain="compiz">
+    <key type="as" name="plugins-with-set-keys">
+      <default>[]</default>
+      <summary>Plugins with set keys</summary>
+      <description>Plugins which have set keys</description>
+    </key>
+  </schema>
+</schemalist>

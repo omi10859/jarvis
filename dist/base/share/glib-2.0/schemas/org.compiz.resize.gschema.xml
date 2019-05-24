@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.resize" gettext-domain="compiz">
+    <key type="s" name="initiate-button">
+      <default>'&lt;Alt&gt;Button2'</default>
+      <summary>Initiate Window Resize</summary>
+      <description>Start resizing window</description>
+    </key>
+    <key type="s" name="initiate-key">
+      <default>'&lt;Alt&gt;F8'</default>
+      <summary>Initiate Window Resize</summary>
+      <description>Start resizing window</description>
+    </key>
+    <key type="i" name="mode">
+      <default>0</default>
+      <summary>Default Resize Mode</summary>
+      <description>Default mode used for window resizing (0 = Normal, 1 = Outline, 2 = Rectangle, 3 = Stretch)</description>
+    </key>
+    <key type="b" name="resize-from-center">
+      <default>false</default>
+      <summary>Resize From Center</summary>
+      <description>Same as setting 'any' for resize_from_center_match</description>
+    </key>
+    <key type="b" name="maximize-vertically">
+      <default>true</default>
+      <summary>Maximize Vertically if screen edge hit</summary>
+      <description>Maximizes the window vertically if the top or bottom screen edge is hit while resizing</description>
+    </key>
+    <key type="b" name="increase-border-contrast">
+      <default>true</default>
+      <summary>Use a double-border in 'Rectangle' and 'Outline' modes</summary>
+      <description>Increase the contrast of the border using a lighter color.</description>
+    </key>
+    <key type="b" name="use-desktop-average-color">
+      <default>true</default>
+      <summary>Use Desktop average colors</summary>
+      <description>Try to use the desktop average color if defined by your DE (overrides custom colors).</description>
+    </key>
+    <key type="s" name="border-color">
+      <default>'#fb8b009f'</default>
+      <summary>Border Color</summary>
+      <description>Border color used for outline and rectangle resize modes</description>
+    </key>
+    <key type="s" name="fill-color">
+      <default>'#fb8b0019'</default>
+      <summary>Fill Color</summary>
+      <description>Fill color used for rectangle resize mode</description>
+    </key>
+    <key type="b" name="disable-blend">
+      <default>false</default>
+      <summary>Disable Transparency</summary>
+      <description>Disable blending.</description>
+    </key>
+    <key type="s" name="normal-match">
+      <default>''</default>
+      <summary>Normal Resize Windows</summary>
+      <description>Windows that normal resize should be used for (match)</description>
+    </key>
+    <key type="s" name="outline-match">
+      <default>''</default>
+      <summary>Outline Resize Windows</summary>
+      <description>Windows that outline resize should be used for (match)</description>
+    </key>
+    <key type="s" name="rectangle-match">
+      <default>''</default>
+      <summary>Rectangle Resize Windows</summary>
+      <description>Windows that rectangle resize should be used for (match)</description>
+    </key>
+    <key type="s" name="stretch-match">
+      <default>''</default>
+      <summary>Stretch Resize Windows</summary>
+      <description>Windows that stretch resize should be used for (match)</description>
+    </key>
+    <key type="s" name="resize-from-center-match">
+      <default>''</default>
+      <summary>Resize From Center Windows</summary>
+      <description>Windows that should be resized from center (match)</description>
+    </key>
+    <key type="ai" name="outline-modifier">
+      <default>[]</default>
+      <summary>Outline Modifier</summary>
+      <description>Use these bindings to resize with an outline.</description>
+    </key>
+    <key type="ai" name="rectangle-modifier">
+      <default>[]</default>
+      <summary>Rectangle Modifier</summary>
+      <description>Use these bindings to resize with an rectangle.</description>
+    </key>
+    <key type="ai" name="stretch-modifier">
+      <default>[]</default>
+      <summary>Stretch Modifier</summary>
+      <description>Use these bindings to resize by stretching.</description>
+    </key>
+    <key type="ai" name="centered-modifier">
+      <default>[0]</default>
+      <summary>Centered Modifier</summary>
+      <description>Use these bindings to resize from the center.</description>
+    </key>
+  </schema>
+</schemalist>

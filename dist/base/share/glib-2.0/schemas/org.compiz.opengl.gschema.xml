@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.opengl" gettext-domain="compiz">
+    <key type="i" name="texture-filter">
+      <default>1</default>
+      <summary>Texture Filter</summary>
+      <description>Texture filtering (0 = Fast, 1 = Good, 2 = Best)</description>
+    </key>
+    <key type="b" name="lighting">
+      <default>false</default>
+      <summary>Lighting</summary>
+      <description>Use diffuse light when screen is transformed</description>
+    </key>
+    <key type="b" name="sync-to-vblank">
+      <default>true</default>
+      <summary>Sync To VBlank</summary>
+      <description>Only perform screen updates during vertical blanking period</description>
+    </key>
+    <key type="b" name="texture-compression">
+      <default>false</default>
+      <summary>Texture Compression</summary>
+      <description>If available use compression for textures converted from images</description>
+    </key>
+    <key type="b" name="framebuffer-object">
+      <default>true</default>
+      <summary>Framebuffer object</summary>
+      <description>Render all frames indirectly using framebuffer objects (GL_EXT_framebuffer_object), if supported by the driver. Pros: Might be faster than the default buffer swapping method in some cases. Cons: This will come at the cost of (1) usually reduced graphics benchmark performance; (2) increased GPU resource consumption; and (3) possibly higher visible lag. Note: This feature is always on in OpenGL|ES builds such as ARM platforms.</description>
+    </key>
+    <key type="b" name="vertex-buffer-object">
+      <default>true</default>
+      <summary>Vertex buffer object</summary>
+      <description>Render all graphics primitives using vertex buffer objects (GL_ARB_vertex_buffer_object), if supported by the driver. Pros: This provides higher graphics performance for some drivers. Cons: This is a new feature and may cause graphical problems. Note: This feature is always on in OpenGL|ES builds such as ARM platforms.</description>
+    </key>
+    <key type="b" name="always-swap-buffers">
+      <default>true</default>
+      <summary>Always use buffer swapping</summary>
+      <description>Use glXSwapBuffers to display every frame. This eliminates visible tearing with most drivers and dramatically improves visual smoothness. Automatically enabled when framebuffer_object is on.</description>
+    </key>
+    <key type="s" name="unredirect-driver-blacklist">
+      <default>'(nouveau|Intel).*Mesa 8.0'</default>
+      <summary>Unredirect Driver Blacklist</summary>
+      <description>If non-empty, specifies a POSIX (extended) regular expression to match against the OpenGL driver strings (newline separated): "GL_VENDOR\nGL_RENDERER\nGL_VERSION". If the regular expression matches a substring of that concatenation then no windows will ever be unredirected while using that particular graphics driver.</description>
+    </key>
+    <key type="b" name="enable-x11-sync">
+      <default>true</default>
+      <summary>Enabled</summary>
+      <description>Use X11 Sync fences to synchronize rendering between X11 and OpenGL (GL_EXT_x11_sync_object). Without this, the contents of windows may not be completely redrawn.</description>
+    </key>
+    <key type="as" name="x11-sync-blacklist-vendor">
+      <default>['NVIDIA','NVIDIA']</default>
+      <summary>Vendor</summary>
+      <description>The card vendor for which X11 sync should be disabled.</description>
+    </key>
+    <key type="as" name="x11-sync-blacklist-model">
+      <default>['GeForce 6150(LE|SE)','GeForce (7025|7050 PV)']</default>
+      <summary>Model</summary>
+      <description>The card vendor for which X11 sync should be disabled.</description>
+    </key>
+  </schema>
+</schemalist>

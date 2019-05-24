@@ -1,0 +1,14 @@
+
+<!-- Generated data (by glib-mkenums) -->
+
+<schemalist>
+  <enum id='com.canonical.desktop.interface.ScrollbarMode'>
+    <value nick='normal' value='0'/>
+    <value nick='overlay-auto' value='1'/>
+    <value nick='overlay-pointer' value='2'/>
+    <value nick='overlay-touch' value='3'/>
+  </enum>
+</schemalist>
+
+<!-- Generated data ends here -->
+

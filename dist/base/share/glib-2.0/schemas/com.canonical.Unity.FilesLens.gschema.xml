@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/desktop/unity/lenses/files/" id="com.canonical.Unity.FilesLens" gettext-domain="unity-lens-files">
+    <key type="b" name="use-locate">
+      <default>true</default>
+      <summary>Use locate during searches.</summary>
+      <description>Use locate during searches to make sure the lens is able to find most of their files even it they're not logged by Zeitgeist.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.unityshell" gettext-domain="compiz">
+    <key type="s" name="show-menu-bar">
+      <default>'&lt;Alt&gt;'</default>
+      <summary>Key to show the menu bar while pressed</summary>
+      <description>Reveals the global menu bar while pressed.</description>
+    </key>
+    <key type="s" name="lock-screen">
+      <default>'&lt;Super&gt;l'</default>
+      <summary>Key to lock the screen.</summary>
+      <description>Pressing this key will lock the current session.</description>
+    </key>
+    <key type="s" name="show-hud">
+      <default>'&lt;Alt&gt;'</default>
+      <summary>Key to show the HUD when tapped</summary>
+      <description>A tap on this key summons the HUD.</description>
+    </key>
+    <key type="s" name="execute-command">
+      <default>'&lt;Alt&gt;F2'</default>
+      <summary>Key to execute a command</summary>
+      <description>Opens a folder or executes a command.</description>
+    </key>
+    <key type="s" name="show-desktop-key">
+      <default>'&lt;Control&gt;&lt;Super&gt;d'</default>
+      <summary>Show Desktop</summary>
+      <description>Hide all windows and focus desktop.</description>
+    </key>
+    <key type="s" name="panel-first-menu">
+      <default>'&lt;Alt&gt;F10'</default>
+      <summary>Key to open the first panel menu</summary>
+      <description>Opens the first indicator menu of the Panel, allowing keyboard navigation thereafter.</description>
+    </key>
+    <key type="s" name="spread-app-windows">
+      <default>'&lt;Control&gt;&lt;Super&gt;w'</default>
+      <summary>Key to spread the current application windows</summary>
+      <description>Initiate the window Spread for the current application windows.</description>
+    </key>
+    <key type="s" name="spread-app-windows-anywhere">
+      <default>'&lt;Control&gt;&lt;Super&gt;&lt;Shift&gt;w'</default>
+      <summary>Key to spread the current application windows in any workspace</summary>
+      <description>Initiate the window Spread for the current application windows, for all the windows.</description>
+    </key>
+    <key type="d" name="panel-opacity">
+      <default>1.0</default>
+      <summary>Panel Opacity</summary>
+      <description>The opacity of the Panel background. (0.0 - 1.0)</description>
+    </key>
+    <key type="b" name="panel-opacity-maximized-toggle">
+      <default>false</default>
+      <summary>Panel Opacity for Maximized Windows Toggle</summary>
+      <description>When a window is maximized and visible in the current viewport, the panel opacity is disabled.</description>
+    </key>
+    <key type="s" name="background-color">
+      <default>'#00000000'</default>
+      <summary>Background Color</summary>
+      <description>Background color override for the Dash, Launcher and Switcher.</description>
+    </key>
+    <key type="i" name="dash-blur-experimental">
+      <default>2</default>
+      <summary>Dash Blur</summary>
+      <description>Type of blur in the Dash. (0 = No Blur, 1 = Static Blur, 2 = Active Blur)</description>
+    </key>
+    <key type="i" name="automaximize-value">
+      <default>75</default>
+      <summary>Automaximize Value</summary>
+      <description>The minimum value to trigger automaximize. (1 - 100)</description>
+    </key>
+    <key type="b" name="shortcut-overlay">
+      <default>true</default>
+      <summary>Enable Shortcut Hints Overlay</summary>
+      <description>Enables possibility to display an overlay showing available mouse and keyboard shortcuts.</description>
+    </key>
+    <key type="b" name="override-decoration-theme">
+      <default>false</default>
+      <summary>Override Theme Settings</summary>
+      <description>Each Gtk theme can provide shadow parameters, but you can override these values here.</description>
+    </key>
+    <key type="i" name="shadow-x-offset">
+      <default>1</default>
+      <summary>Shadow X offset</summary>
+      <description>Horizontal offset of the shadow. (-10 - 10)</description>
+    </key>
+    <key type="i" name="shadow-y-offset">
+      <default>1</default>
+      <summary>Shadow Y offset</summary>
+      <description>Vertical offset of the shadow. (-10 - 10)</description>
+    </key>
+    <key type="i" name="active-shadow-radius">
+      <default>8</default>
+      <summary>Active window shadow radius</summary>
+      <description>The radius of the shadow blur for the active window. (1 - 30)</description>
+    </key>
+    <key type="s" name="active-shadow-color">
+      <default>'#00000066'</default>
+      <summary>Active window shadow color</summary>
+      <description>The color of the shadows for the active window.</description>
+    </key>
+    <key type="i" name="inactive-shadow-radius">
+      <default>5</default>
+      <summary>Inactive windows shadow radius</summary>
+      <description>The radius of the shadow blur for the inactive windows. (1 - 30)</description>
+    </key>
+    <key type="s" name="inactive-shadow-color">
+      <default>'#000000a5'</default>
+      <summary>Inactive windows shadow color</summary>
+      <description>The color of the shadows for the inactive windows.</description>
+    </key>
+    <key type="s" name="show-launcher">
+      <default>'&lt;Super&gt;'</default>
+      <summary>Key to show the Dash, Launcher and Help Overlay</summary>
+      <description>Holding this key makes the Launcher and Help Overlay appear. Tapping it opens the Dash.</description>
+    </key>
+    <key type="s" name="keyboard-focus">
+      <default>'&lt;Alt&gt;F1'</default>
+      <summary>Key to give keyboard-focus to the Launcher</summary>
+      <description>Gives keyboard-focus to the Launcher so it can be navigated with the cursor-keys.</description>
+    </key>
+    <key type="s" name="launcher-switcher-forward">
+      <default>'&lt;Super&gt;Tab'</default>
+      <summary>Key to start the Launcher Application Switcher</summary>
+      <description>Cycles through icons present in the Launcher. Activates the highlighted icon on release.</description>
+    </key>
+    <key type="s" name="launcher-switcher-prev">
+      <default>'&lt;Super&gt;&lt;Shift&gt;Tab'</default>
+      <summary>Key to start the Launcher Application Switcher in reverse</summary>
+      <description>Cycles through icons present in the Launcher, in reverse order. Activates the highlighted icon on release.</description>
+    </key>
+    <key type="i" name="dash-tap-duration">
+      <default>250</default>
+      <summary>Dash tap duration</summary>
+      <description>Duration (in millseconds) that will count as a tap for opening the Dash. (1 - 1000)</description>
+    </key>
+    <key type="d" name="launcher-opacity">
+      <default>0.6667</default>
+      <summary>Launcher Opacity</summary>
+      <description>The opacity of the Launcher background. (0.0 - 1.0)</description>
+    </key>
+    <key type="i" name="launcher-hide-mode">
+      <default>0</default>
+      <summary>Hide Launcher</summary>
+      <description>Make the Launcher hide automatically after some time of inactivity. (0 = Never, 1 = Autohide)</description>
+    </key>
+    <key type="i" name="autohide-animation">
+      <default>3</default>
+      <summary>Hide Animation</summary>
+      <description>Animation played when the Launcher is showing or hiding. (0 = Fade on bfb and Slide, 1 = Slide only, 2 = Fade only, 3 = Fade and Slide)</description>
+    </key>
+    <key type="i" name="reveal-trigger">
+      <default>0</default>
+      <summary>Reveal Trigger</summary>
+      <description> (0 = Left Edge, 1 = Top Left Corner)</description>
+    </key>
+    <key type="i" name="num-launchers">
+      <default>0</default>
+      <summary>Launcher Monitors</summary>
+      <description>Selects on which display the Launcher will be present. (0 = All Displays, 1 = Primary Display)</description>
+    </key>
+    <key type="b" name="launcher-capture-mouse">
+      <default>true</default>
+      <summary>Launcher Capture Mouse</summary>
+      <description>Determines if the Launcher's edges will capture the mousepointer.</description>
+    </key>
+    <key type="b" name="scroll-inactive-icons">
+      <default>true</default>
+      <summary>Scroll Inactive Icon to Focus Application</summary>
+      <description>Allows using the mouse scrollwheel to focus an application if the icon is inactive.</description>
+    </key>
+    <key type="b" name="launcher-minimize-window">
+      <default>false</default>
+      <summary>Minimize Single Window Applications (Unsupported)</summary>
+      <description>Allows minimizing a single windowed application by clicking on its Launcher icon.</description>
+    </key>
+    <key type="d" name="edge-responsiveness">
+      <default>2.0</default>
+      <summary>Launcher Reveal Edge Responsiveness</summary>
+      <description>A conglomerate setting that modifies the overall responsiveness of the Launcher reveal. (0.2 - 8.0)</description>
+    </key>
+    <key type="i" name="reveal-pressure">
+      <default>20</default>
+      <summary>Launcher Reveal Pressure</summary>
+      <description>Amount of mouse pressure required to reveal the Launcher. (1 - 1000)</description>
+    </key>
+    <key type="i" name="overcome-pressure">
+      <default>20</default>
+      <summary>Launcher Edge Stop Overcome Pressure</summary>
+      <description>Amount of mouse pressure required to push the mousepointer into the next monitor. (1 - 1000)</description>
+    </key>
+    <key type="i" name="decay-rate">
+      <default>15</default>
+      <summary>Pressure Decay Rate</summary>
+      <description>The rate at which mouse pressure decays. (1 - 1000)</description>
+    </key>
+    <key type="i" name="stop-velocity">
+      <default>65</default>
+      <summary>Edge Stop Velocity</summary>
+      <description>The maximum velocity at which the mouse will still be stopped. (1 - 1000)</description>
+    </key>
+    <key type="i" name="edge-passed-disabled-ms">
+      <default>1000</default>
+      <summary>Duration of Sticky Edge Release after Break</summary>
+      <description>The number of milliseconds Sticky Edges are deactivated for after the barrier has been broken. (0 - 5000)</description>
+    </key>
+    <key type="i" name="icon-size">
+      <default>48</default>
+      <summary>Launcher Icon Size</summary>
+      <description>The size of the icons in the Launcher. (8 - 64)</description>
+    </key>
+    <key type="i" name="backlight-mode">
+      <default>1</default>
+      <summary>Launcher Icon Backlight Mode</summary>
+      <description>Change how the icons in the Launcher are backlit. (0 = Backlight Always On, 1 = Backlight Toggles, 2 = Backlight Always Off, 3 = Edge Illumination Toggles, 4 = Backlight and Edge Illumination Toggles)</description>
+    </key>
+    <key type="i" name="launch-animation">
+      <default>1</default>
+      <summary>Launcher Icon Launch Animation</summary>
+      <description>The icon animation playing during the launch of a process. (0 = None, 1 = Pulse Until Running, 2 = Blink)</description>
+    </key>
+    <key type="i" name="urgent-animation">
+      <default>2</default>
+      <summary>Launcher Icon Urgent Animation</summary>
+      <description>The icon animation playing when a Launcher Icon is in the urgent state. (0 = None, 1 = Pulse, 2 = Wiggle)</description>
+    </key>
+    <key type="i" name="menus-fadein">
+      <default>100</default>
+      <summary>Menus Fade-in Duration</summary>
+      <description>Duration (in milliseconds) of the menus fade-in animation, used when the mouse goes over the top-panel. (0 - 1000)</description>
+    </key>
+    <key type="i" name="menus-fadeout">
+      <default>120</default>
+      <summary>Menus Fade-out Duration</summary>
+      <description>Duration (in milliseconds) of the menus fade-out animation, used when the mouse goes over the top-panel. (0 - 1000)</description>
+    </key>
+    <key type="i" name="menus-discovery-duration">
+      <default>2</default>
+      <summary>Menus Discovery Duration</summary>
+      <description>How many seconds the menus should be shown when a new application has been launched. (0 - 10)</description>
+    </key>
+    <key type="i" name="menus-discovery-fadein">
+      <default>200</default>
+      <summary>Menus Discovery Fade-in Duration</summary>
+      <description>Duration (in milliseconds) of the menus fade-in animation, used when the menus of a new launched application have been shown. (0 - 1000)</description>
+    </key>
+    <key type="i" name="menus-discovery-fadeout">
+      <default>300</default>
+      <summary>Menus Discovery Fade-out Duration</summary>
+      <description>Duration (in milliseconds) of the menus fade-out animation, used when the menus of a new launched application have been shown. (0 - 1000)</description>
+    </key>
+    <key type="s" name="alt-tab-forward">
+      <default>'&lt;Alt&gt;Tab'</default>
+      <summary>Key to start the Switcher</summary>
+      <description>Switches to the next open window on the actual viewport.</description>
+    </key>
+    <key type="s" name="alt-tab-prev">
+      <default>'&lt;Alt&gt;&lt;Shift&gt;Tab'</default>
+      <summary>Key to switch to the previous window in the Switcher</summary>
+      <description>Switches to the previous open window on the actual viewport, once the Switcher has been revealed.</description>
+    </key>
+    <key type="s" name="alt-tab-forward-all">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Key to start the Switcher for all viewports</summary>
+      <description>Switches to the next open window, including windows of all viewports.</description>
+    </key>
+    <key type="s" name="alt-tab-prev-all">
+      <default>'&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Tab'</default>
+      <summary>Key to switch to the previous window in the Switcher for all viewports</summary>
+      <description>Switches to the previous open window, once the Switcher has been revealed, including windows of all viewports.</description>
+    </key>
+    <key type="s" name="alt-tab-next-window">
+      <default>'Disabled'</default>
+      <summary>Key to flip through windows in the Switcher</summary>
+      <description>Flips through all the windows present in the Switcher.</description>
+    </key>
+    <key type="s" name="alt-tab-prev-window">
+      <default>'Disabled'</default>
+      <summary>Key to flip through windows in the Switcher backwards</summary>
+      <description>Flips through all the windows present in the Switcher, in reverse order.</description>
+    </key>
+    <key type="b" name="switch-strictly-between-applications">
+      <default>false</default>
+      <summary>Switcher strictly changes between applications</summary>
+      <description>Disables the last focused window being the first entry in the Switcher, so Switcher strictly switches between applications</description>
+    </key>
+    <key type="b" name="show-minimized-windows">
+      <default>true</default>
+      <summary>Show live previews of windows in the Switcher</summary>
+      <description>Enables miniature live window previews in the Switcher.</description>
+    </key>
+    <key type="b" name="alt-tab-timeout">
+      <default>true</default>
+      <summary>Timed automatic to show live previews in the Switcher</summary>
+      <description>Automatically spreads multiple windows of the same application out into a grid after a short time.</description>
+    </key>
+    <key type="b" name="alt-tab-bias-viewport">
+      <default>true</default>
+      <summary>Bias alt-tab to prefer windows on the current viewport</summary>
+      <description>Bias the Switcher to prefer windows which are placed on the current viewport.</description>
+    </key>
+    <key type="b" name="disable-show-desktop">
+      <default>false</default>
+      <summary>Disable Show Desktop in the Switcher</summary>
+      <description>Disables the Show Desktop icon in the Switcher.</description>
+    </key>
+    <key type="b" name="disable-mouse">
+      <default>false</default>
+      <summary>Disable the mouse in the Switcher</summary>
+      <description>Disables the mouse in the Switcher.</description>
+    </key>
+  </schema>
+</schemalist>

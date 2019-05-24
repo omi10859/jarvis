@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.extrawm" gettext-domain="compiz">
+    <key type="s" name="toggle-redirect-key">
+      <default>'Disabled'</default>
+      <summary>Toggle Redirect</summary>
+      <description>Toggle window redirect</description>
+    </key>
+    <key type="s" name="toggle-fullscreen-key">
+      <default>'Disabled'</default>
+      <summary>Toggle Fullscreen</summary>
+      <description>Toggle window fullscreen</description>
+    </key>
+    <key type="s" name="toggle-always-on-top-key">
+      <default>'Disabled'</default>
+      <summary>Toggle Always-On-Top</summary>
+      <description>Toggle always on top for the active window</description>
+    </key>
+    <key type="s" name="toggle-sticky-key">
+      <default>'Disabled'</default>
+      <summary>Toggle Sticky</summary>
+      <description>Toggle window stickyness</description>
+    </key>
+    <key type="s" name="activate-demands-attention-key">
+      <default>'Disabled'</default>
+      <summary>Activate Demanding Attention Window</summary>
+      <description>Activate next window which has the "demands attention" flag set.</description>
+    </key>
+  </schema>
+</schemalist>

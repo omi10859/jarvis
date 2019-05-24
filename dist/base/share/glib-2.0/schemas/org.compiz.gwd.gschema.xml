@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.gwd" path="/org/compiz/gwd/" gettext-domain="compiz">
+    <key type="s" name="blur-type">
+      <default>'all'</default>
+      <summary>Blur Type</summary>
+      <description>Blur to use on titlebars - "all" for the entire frame, "titlebar" for just the titlebar and "none" for no blur</description>
+    </key>
+    <key type="d" name="metacity-theme-active-opacity">
+      <default>1.0</default>
+      <range min="0.0" max="1.0"/>
+      <summary>Active Opacity</summary>
+      <description>Opacity of active titlebars</description>
+    </key>
+    <key type="d" name="metacity-theme-inactive-opacity">
+      <default>1.0</default>
+      <range min="0.0" max="1.0"/>
+      <summary>Inactive Opacity</summary>
+      <description>Opacity of inactive titlebars</description>
+    </key>
+    <key type="b" name="metacity-theme-active-shade-opacity">
+      <default>true</default>
+      <summary>Active shade opacity</summary>
+      <description>Shade active windows with metacity theme decorations from opaque to translucent</description>
+    </key>
+    <key type="b" name="metacity-theme-inactive-shade-opacity">
+      <default>true</default>
+      <summary>Inactive shade opacity</summary>
+      <description>Shade inactive windows with metacity theme decorations from opaque to translucent</description>
+    </key>
+    <key type="s" name="mouse-wheel-action">
+      <default>'none'</default>
+      <summary>Action to take on scrolling a titlebar</summary>
+      <description>Action to take on scrolling a titlebar - "none" for no action, "shade" to shade the window</description>
+    </key>
+    <key type="b" name="use-metacity-theme">
+      <default>true</default>
+      <summary>Use metacity theme</summary>
+      <description>Use metacity theme when drawing window decorations</description>
+    </key>
+    <key type="b" name="use-tooltips">
+      <default>false</default>
+      <summary>Use tooltips</summary>
+      <description>Show tooltip windows on decorator functions</description>
+    </key>
+  </schema>
+</schemalist>

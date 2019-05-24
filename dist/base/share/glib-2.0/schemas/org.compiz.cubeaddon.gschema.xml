@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.cubeaddon" gettext-domain="compiz">
+    <key type="s" name="top-next-key">
+      <default>'space'</default>
+      <summary>Next Top Image Key</summary>
+      <description>Advance to the next image on the top face of the cube.</description>
+    </key>
+    <key type="s" name="top-next-button">
+      <default>'Disabled'</default>
+      <summary>Next Top Image Button</summary>
+      <description>Advance to the next image on the top face of the cube.</description>
+    </key>
+    <key type="s" name="top-prev-key">
+      <default>'Backspace'</default>
+      <summary>Previous Top Image Key</summary>
+      <description>Go back to the previous image on the top face of the cube.</description>
+    </key>
+    <key type="s" name="top-prev-button">
+      <default>'Disabled'</default>
+      <summary>Previous Top Image Button</summary>
+      <description>Go back to the previous image on the top face of the cube.</description>
+    </key>
+    <key type="s" name="bottom-next-key">
+      <default>'Disabled'</default>
+      <summary>Next Bottom Image Key</summary>
+      <description>Advance to the next image on the bottom face of the cube.</description>
+    </key>
+    <key type="s" name="bottom-next-button">
+      <default>'Disabled'</default>
+      <summary>Next Bottom Image Button</summary>
+      <description>Advance to the next image on the bottom face of the cube.</description>
+    </key>
+    <key type="s" name="bottom-prev-key">
+      <default>'Disabled'</default>
+      <summary>Previous Bottom Image Key</summary>
+      <description>Go back to the previous image on the bottom face of the cube.</description>
+    </key>
+    <key type="s" name="bottom-prev-button">
+      <default>'Disabled'</default>
+      <summary>Previous Bottom Image Button</summary>
+      <description>Go back to the previous image on the bottom face of the cube.</description>
+    </key>
+    <key type="b" name="reflection">
+      <default>true</default>
+      <summary>Enabled</summary>
+      <description>Render a reflective ground below the desktop cube.</description>
+    </key>
+    <key type="s" name="ground-color1">
+      <default>'#b3b3b3cc'</default>
+      <summary>Ground Color (near)</summary>
+      <description>Color of the ground (near).</description>
+    </key>
+    <key type="s" name="ground-color2">
+      <default>'#b3b3b300'</default>
+      <summary>Ground Color (far)</summary>
+      <description>Color of the ground (far).</description>
+    </key>
+    <key type="d" name="ground-size">
+      <default>0.5</default>
+      <summary>Reflection Ground Size</summary>
+      <description>Size of the ground the reflection is rendered on. (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="intensity">
+      <default>0.4</default>
+      <summary>Intensity</summary>
+      <description>The intensity of the reflection. (0.0 - 1.0)</description>
+    </key>
+    <key type="b" name="auto-zoom">
+      <default>true</default>
+      <summary>Auto Zoom</summary>
+      <description>Zoom out automatically to make the cube fit the screen.</description>
+    </key>
+    <key type="b" name="zoom-manual-only">
+      <default>true</default>
+      <summary>Mouse Rotate Auto Zoom Only</summary>
+      <description>Zoom out automatically on mouse rotate only.</description>
+    </key>
+    <key type="i" name="mode">
+      <default>0</default>
+      <summary>Reflection Mode</summary>
+      <description>The mode of the reflection. (0 = Jumpy, 1 = Jumpy reflection, 2 = Distance, 3 = Above)</description>
+    </key>
+    <key type="i" name="deformation">
+      <default>1</default>
+      <summary>Deformation</summary>
+      <description>The deformation mode. (0 = None, 1 = Cylinder, 2 = Sphere)</description>
+    </key>
+    <key type="b" name="unfold-deformation">
+      <default>true</default>
+      <summary>Unfold Cube Deformation</summary>
+      <description>Apply the deformation in unfold cube mode.</description>
+    </key>
+    <key type="b" name="cylinder-manual-only">
+      <default>false</default>
+      <summary>Mouse Rotate Deformation Only</summary>
+      <description>Initiates cube cylinder deformation only if rotation is mouse driven.</description>
+    </key>
+    <key type="b" name="deform-caps">
+      <default>true</default>
+      <summary>Deform Caps</summary>
+      <description>Deform the cube caps also.</description>
+    </key>
+    <key type="d" name="sphere-aspect">
+      <default>0.0</default>
+      <summary>Aspect Ratio</summary>
+      <description>The aspect ratio of the deformed cube. (0.0 - 1.0)</description>
+    </key>
+    <key type="b" name="draw-top">
+      <default>true</default>
+      <summary>Draw Top Face</summary>
+      <description>Draw the top face of the cube.</description>
+    </key>
+    <key type="b" name="draw-bottom">
+      <default>true</default>
+      <summary>Draw Bottom Face</summary>
+      <description>Draw the bottom face of the cube.</description>
+    </key>
+    <key type="b" name="adjust-top">
+      <default>false</default>
+      <summary>Adjust Top Image</summary>
+      <description>Adjust the top face image to the rotation.</description>
+    </key>
+    <key type="b" name="adjust-bottom">
+      <default>false</default>
+      <summary>Adjust Bottom Image</summary>
+      <description>Adjust the bottom face image to the rotation.</description>
+    </key>
+    <key type="b" name="top-scale">
+      <default>true</default>
+      <summary>Scale Top Image</summary>
+      <description>Scale the image to cover the top face of cube.</description>
+    </key>
+    <key type="b" name="bottom-scale">
+      <default>true</default>
+      <summary>Scale Bottom Image</summary>
+      <description>Scale the image to cover the bottom face of cube.</description>
+    </key>
+    <key type="b" name="top-aspect">
+      <default>true</default>
+      <summary>Maintain Top Image Aspect Ratio</summary>
+      <description>Maintain top cap image aspect ratio.</description>
+    </key>
+    <key type="b" name="bottom-aspect">
+      <default>true</default>
+      <summary>Maintain Bottom Image Aspect Ratio</summary>
+      <description>Maintain bottom cap image aspect ratio.</description>
+    </key>
+    <key type="b" name="top-clamp">
+      <default>true</default>
+      <summary>Clamp Top Face Image To Border</summary>
+      <description>Clamp the top face image to the border. This is often the best, if your image doesn't fit the size of the cube or if it's transparent. It can lead to some ugly dotted lines when enabled (especially with large enough images) though.</description>
+    </key>
+    <key type="b" name="bottom-clamp">
+      <default>true</default>
+      <summary>Clamp bottom face image to border</summary>
+      <description>Clamp the bottom face image to the border. This is often the best, if your image doesn't fit the size of the cube or if it's transparent. It can lead to some ugly dotted lines when enabled (especially with large enough images) though.</description>
+    </key>
+    <key type="as" name="top-images">
+      <default>['fusioncap.png']</default>
+      <summary>Image files</summary>
+      <description>List of .png and .svg files that should be rendered on the top face of the cube.</description>
+    </key>
+    <key type="as" name="bottom-images">
+      <default>['compizcap.png']</default>
+      <summary>Image files</summary>
+      <description>List of .png and .svg files that should be rendered on the bottom face of the cube.</description>
+    </key>
+  </schema>
+</schemalist>

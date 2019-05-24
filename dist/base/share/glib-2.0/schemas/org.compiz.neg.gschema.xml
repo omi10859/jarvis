@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.neg" gettext-domain="compiz">
+    <key type="s" name="window-toggle-key">
+      <default>'&lt;Super&gt;n'</default>
+      <summary>Toggle Window Negative</summary>
+      <description>Toggle active window negative</description>
+    </key>
+    <key type="b" name="activate-at-startup">
+      <default>false</default>
+      <summary>plugin should be active at startup</summary>
+      <description>if active, the plugin will start active, with windows inverted</description>
+    </key>
+    <key type="s" name="screen-toggle-key">
+      <default>'&lt;Super&gt;m'</default>
+      <summary>Toggle Screen Negative</summary>
+      <description>Toggle screen negative</description>
+    </key>
+    <key type="s" name="neg-match">
+      <default>'any'</default>
+      <summary>Neg Windows</summary>
+      <description>Windows to be negative by default (match)</description>
+    </key>
+    <key type="s" name="exclude-match">
+      <default>'type=Desktop'</default>
+      <summary>Exclude Windows</summary>
+      <description>Windows to exclude from negating (match)</description>
+    </key>
+    <key type="b" name="neg-decorations">
+      <default>false</default>
+      <summary>Negate Decorations</summary>
+      <description>Also negate window decorations, not only the window contents.</description>
+    </key>
+  </schema>
+</schemalist>

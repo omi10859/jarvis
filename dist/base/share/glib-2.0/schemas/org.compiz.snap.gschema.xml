@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.snap" gettext-domain="compiz">
+    <key type="ai" name="avoid-snap">
+      <default>[0]</default>
+      <summary>Avoid Snap Modifier</summary>
+      <description>Use these bindings to avoid snapping.</description>
+    </key>
+    <key type="ai" name="snap-type">
+      <default>[0]</default>
+      <summary>Snap Type</summary>
+      <description>Choose 'Resistance', 'Attraction' or 'Full Mode'.</description>
+    </key>
+    <key type="ai" name="edges-categories">
+      <default>[0]</default>
+      <summary>Edges</summary>
+      <description>Snap to 'Screen Edges', 'Windows Edges' or 'Both'.</description>
+    </key>
+    <key type="i" name="resistance-distance">
+      <default>30</default>
+      <summary>Edge Resistance Distance</summary>
+      <description>The distance until edge resistance takes place. (1 - 100)</description>
+    </key>
+    <key type="i" name="attraction-distance">
+      <default>20</default>
+      <summary>Edge Attraction Distance</summary>
+      <description>The distance until edge attraction takes place. (1 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

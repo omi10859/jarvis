@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-todo">
+    <schema id="org.gnome.todo.plugins.todo-txt" path="/org/gnome/todo/plugins/todo-txt/">
+        <key name="file" type="s">
+            <default>''</default>
+            <summary>Todo.txt File</summary>
+            <description>Source of the Todo.txt file</description>
+        </key>
+    </schema>
+</schemalist>

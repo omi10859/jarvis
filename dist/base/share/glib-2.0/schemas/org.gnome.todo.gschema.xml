@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-todo">
+    <schema id="org.gnome.todo" path="/org/gnome/todo/">
+        <key name="window-maximized" type="b">
+            <default>true</default>
+            <summary>Window maximized</summary>
+            <description>Window maximized state</description>
+        </key>
+        <key name="window-size" type="ai">
+            <default>[800, 600]</default>
+            <summary>Window size</summary>
+            <description>Window size (width and height).</description>
+        </key>
+        <key name="window-position" type="ai">
+            <default>[]</default>
+            <summary>Window position</summary>
+            <description>Window position (x and y).</description>
+        </key>
+        <key name="first-run" type="b">
+            <default>true</default>
+            <summary>First run of GNOME To Do</summary>
+            <description>Whether it’s the first run of GNOME To Do (to run the initial setup) or not</description>
+        </key>
+        <key name="default-provider" type="s">
+            <default>"local"</default>
+            <summary>Default provider to add new lists to</summary>
+            <description>The identifier of the default provider to add new lists to</description>
+        </key>
+        <key name="active-extensions" type="as">
+            <default>["background", "eds", "today-panel", "scheduled-panel"]</default>
+            <summary>List of active extensions</summary>
+            <description>The list of active extensions</description>
+        </key>
+        <key name="view" enum="org.gnome.todo.GtdListSelectorViewType">
+            <default>'grid'</default>
+            <summary>The current list selector</summary>
+            <description>The current list selector. Can be “grid” or “list”.</description>
+        </key>
+    </schema>
+</schemalist>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.kdecompat" gettext-domain="compiz">
+    <key type="b" name="plasma-thumbnails">
+      <default>true</default>
+      <summary>Support Plasma Thumbnails</summary>
+      <description>Support window thumbnails in Plasma window tooltips</description>
+    </key>
+    <key type="b" name="present-windows">
+      <default>true</default>
+      <summary>Support Present Windows</summary>
+      <description>Support the "present windows" effect for Plasma task groups</description>
+    </key>
+    <key type="b" name="window-blur">
+      <default>true</default>
+      <summary>Support Blur Effect</summary>
+      <description>Support the "blur behind windows effect (requires the blur plugin to be loaded)</description>
+    </key>
+    <key type="b" name="sliding-popups">
+      <default>true</default>
+      <summary>Sliding Popups</summary>
+      <description>Activate slide effect for popup windows</description>
+    </key>
+    <key type="i" name="slide-in-duration">
+      <default>250</default>
+      <summary>Slide In Duration</summary>
+      <description>Duration of popup slide in effect (in ms) (50 - 1000)</description>
+    </key>
+    <key type="i" name="slide-out-duration">
+      <default>250</default>
+      <summary>Slide Out Duration</summary>
+      <description>Duration of popup slide out effect (in ms) (50 - 1000)</description>
+    </key>
+  </schema>
+</schemalist>

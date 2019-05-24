@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="com.canonical.indicator.keyboard" path="/com/canonical/indicator/keyboard/">
+    <key name="migrated" type="b">
+      <summary>Keyboard layouts migrated</summary>
+      <description>True if keyboard layouts were migrated, false otherwise.</description>
+      <default>false</default>
+    </key>
+    <key name="visible" type="b">
+      <summary>Keyboard indicator visibility</summary>
+      <description>True if the keyboard indicator is shown, false otherwise.</description>
+      <default>true</default>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.fade" gettext-domain="compiz">
+    <key type="i" name="fade-mode">
+      <default>0</default>
+      <summary>Fade Mode</summary>
+      <description>Window fade mode (0 = Constant speed, 1 = Constant time)</description>
+    </key>
+    <key type="d" name="fade-speed">
+      <default>5.0</default>
+      <summary>Fade Speed</summary>
+      <description>Window fade speed (0.1 - 25.0)</description>
+    </key>
+    <key type="i" name="fade-time">
+      <default>100</default>
+      <summary>Fade Time</summary>
+      <description>Window fade time (in ms) in "Constant time" mode (1 - 5000)</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'any &amp; !(title=notify-osd)'</default>
+      <summary>Fade windows</summary>
+      <description>Windows that should be fading (match)</description>
+    </key>
+    <key type="b" name="visual-bell">
+      <default>false</default>
+      <summary>Visual Bell</summary>
+      <description>Fade effect on system beep</description>
+    </key>
+    <key type="b" name="fullscreen-visual-bell">
+      <default>false</default>
+      <summary>Fullscreen Visual Bell</summary>
+      <description>Fullscreen fade effect on system beep</description>
+    </key>
+    <key type="b" name="dim-unresponsive">
+      <default>true</default>
+      <summary>Dim Unresponsive Windows</summary>
+      <description>Dim windows that are not responding to window manager requests</description>
+    </key>
+    <key type="i" name="unresponsive-brightness">
+      <default>65</default>
+      <summary>Unresponsive Window Brightness</summary>
+      <description>Brightness (in %) of unresponsive windows (0 - 100)</description>
+    </key>
+    <key type="i" name="unresponsive-saturation">
+      <default>0</default>
+      <summary>Unresponsive Window Saturation</summary>
+      <description>Saturation (in %) of unresponsive windows (0 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

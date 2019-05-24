@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.mblur" gettext-domain="compiz">
+    <key type="s" name="initiate-key">
+      <default>'&lt;Control&gt;F12'</default>
+      <summary>Toggle Motion Blur</summary>
+      <description>Toggle motion Blur effect.</description>
+    </key>
+    <key type="i" name="mode">
+      <default>0</default>
+      <summary>Motion Blur mode</summary>
+      <description>Motion Blur render mode. (0 = Texture Copy, 1 = Accumulation buffer)</description>
+    </key>
+    <key type="d" name="strength">
+      <default>20.0</default>
+      <summary>Motion Blur Strength</summary>
+      <description>Motion Blur strength. (0.0 - 100.0)</description>
+    </key>
+    <key type="b" name="on-transformed-screen">
+      <default>false</default>
+      <summary>Motion Blur on Transformed Screen</summary>
+      <description>Execute Motion Blur if the screen is transformed.</description>
+    </key>
+  </schema>
+</schemalist>

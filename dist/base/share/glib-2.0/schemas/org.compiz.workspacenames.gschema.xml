@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.workspacenames" gettext-domain="compiz">
+    <key type="ai" name="viewports">
+      <default>[1,2,3,4]</default>
+      <summary>Viewport</summary>
+      <description>Number of viewport to be named.</description>
+    </key>
+    <key type="as" name="names">
+      <default>['Viewport 1','Viewport 2','Viewport 3','Viewport 4']</default>
+      <summary>Name</summary>
+      <description>The name of the workspace.</description>
+    </key>
+    <key type="d" name="display-time">
+      <default>1.5</default>
+      <summary>Display Time</summary>
+      <description>Timeout of the workspacename display (in seconds). (0.1 - 5.0)</description>
+    </key>
+    <key type="d" name="fade-time">
+      <default>0.25</default>
+      <summary>Fade Time</summary>
+      <description>Time the workspacename display uses for the fade-out (in seconds). (0.0 - 5.0)</description>
+    </key>
+    <key type="b" name="bold-text">
+      <default>true</default>
+      <summary>Bold Font</summary>
+      <description>Render the workspacename using a bold font.</description>
+    </key>
+    <key type="i" name="text-font-size">
+      <default>24</default>
+      <summary>Font Size</summary>
+      <description>Font size for the text display (in pixels). (6 - 96)</description>
+    </key>
+    <key type="i" name="text-placement">
+      <default>0</default>
+      <summary>Text Placement</summary>
+      <description>Selects where to place the text. (0 = Centered on screen, 1 = Top of screen minus offset, 2 = Bottom of screen plus offset)</description>
+    </key>
+    <key type="i" name="vertical-offset">
+      <default>50</default>
+      <summary>Vertical Offset</summary>
+      <description>Vertical offset from top or bottom of the screen (in pixels). (0 - 500)</description>
+    </key>
+    <key type="s" name="back-color">
+      <default>'#00000099'</default>
+      <summary>Background Color</summary>
+      <description>Background color and opacity of the workspacename display.</description>
+    </key>
+    <key type="s" name="font-color">
+      <default>'#ffffffff'</default>
+      <summary>Font Color</summary>
+      <description>Font color and opacity of the workspacename display.</description>
+    </key>
+  </schema>
+</schemalist>

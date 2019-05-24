@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.showdesktop" gettext-domain="compiz">
+    <key type="d" name="speed">
+      <default>1.2</default>
+      <summary>Speed</summary>
+      <description>The speed of the window movement. (0.1 - 50.0)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>0.1</default>
+      <summary>Timestep</summary>
+      <description>The timestep of the window movement. (0.1 - 50.0)</description>
+    </key>
+    <key type="i" name="direction">
+      <default>10</default>
+      <summary>Movement Direction</summary>
+      <description>The direction in which the windows move. (0 = Up, 1 = Down, 2 = Left, 3 = Right, 4 = Top Left Corner, 5 = Bottom Left Corner, 6 = Top Right Corner, 7 = Bottom Right Corner, 8 = Up/Down, 9 = Left/Right, 10 = To Corners, 11 = Intelligent Random, 12 = Fully Random)</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'type=toolbar | type=utility | type=dialog | type=normal'</default>
+      <summary>Window Types</summary>
+      <description>Window types that should be moved out of sight when entering showdesktop-mode. (match)</description>
+    </key>
+    <key type="b" name="skip-animation">
+      <default>false</default>
+      <summary>Skip Animation</summary>
+      <description>Skips the showdesktop animation.</description>
+    </key>
+    <key type="d" name="window-opacity">
+      <default>0.3</default>
+      <summary>Window Opacity</summary>
+      <description>Windows will fade to this opacity when showdesktop'd. (0.1 - 1.0)</description>
+    </key>
+    <key type="i" name="window-part-size">
+      <default>20</default>
+      <summary>Window Part Size</summary>
+      <description>The size of the window part that will remain on screen when showdesktop'd (in pixels). (0 - 300)</description>
+    </key>
+  </schema>
+</schemalist>

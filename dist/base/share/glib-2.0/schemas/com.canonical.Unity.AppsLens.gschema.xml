@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/desktop/unity/lenses/applications/" id="com.canonical.Unity.ApplicationsLens" gettext-domain="unity-lens-applications">
+    <key type="b" name="display-available-apps">
+      <default>true</default>
+      <summary>Display Apps Available for Download in the Applications lens.</summary>
+      <description>Display Apps Available for Download in the Applications lens.</description>
+    </key>
+    <key type="b" name="display-recent-apps">
+      <default>true</default>
+      <summary>Display Recently Used apps in the Applications lens.</summary>
+      <description>Display Recently Used Apps in the Applications lens.</description>
+    </key>
+  </schema>
+  <schema path="/desktop/unity/runner/" id="com.canonical.Unity.Runner" gettext-domain="unity-lens-applications">
+    <key type="as" name="history">
+        <default>[]</default>
+        <summary>History of Alt + F2 command</summary>
+        <description>Key for storing the history of the Alt + F2 command.  </description>
+    </key>
+  </schema>
+</schemalist>

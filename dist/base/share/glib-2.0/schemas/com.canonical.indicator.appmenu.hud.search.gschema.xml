@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<schemalist>
+  <schema path='/com/canonical/indicator/appmenu/hud/search/'
+          id='com.canonical.indicator.appmenu.hud.search'
+          gettext-domain='indicator-appmenu'>
+    <key type='u' name='indicator-penalty'>
+      <default>50</default>
+      <summary>The penalty given to a menu item being in an indicator</summary>
+      <description>
+        In order to have the application's menu items appear higher in the search results a slight penalty is
+        given to the indicator menu items. This value represents the percentage of that penalty so a value of
+        '50' is a 50% additional to the calculated distance.
+      </description>
+    </key>
+
+    <key type='u' name='add-penalty'>
+      <default>100</default>
+      <summary>Penalty for extra characters added to the search</summary>
+      <description>
+        The penalty for each extra character in the search string that does not appear in the text of a menu
+        item.
+
+        This penalty would be applied if the user typed "fiile" when searching against the menu item "File", for
+        example.
+      </description>
+    </key>
+
+    <key type='u' name='drop-penalty'>
+      <default>100</default>
+      <summary>Penalty applied if a character is dropped</summary>
+      <description>
+        The penalty for each character dropped from the search string, as compared with the text of a menu item.
+        This only applies to missing characters that are not at the end of the search term.
+
+        This penalty would be applied if the user typed "fle" when searching against the menu item "File", for
+        example.
+      </description>
+    </key>
+
+    <key type='u' name='end-drop-penalty'>
+      <default>20</default>
+      <summary>Penalty applied if a character is dropped from the end</summary>
+      <description>
+        The penalty for each missing character at the end of a search term.
+
+        This penalty would be applied if the user typed "fil" when searching against the menu item "File", for
+        example.
+      </description>
+    </key>
+
+    <key type='u' name='swap-penalty'>
+      <default>150</default>
+      <summary>Penalty applied when the characters are not the same</summary>
+      <description>
+        The penalty for each substituted character in the search term.
+
+        The penalty would be applied if the user typed "fike" when searching against the menu item "File", for
+        example.
+      </description>
+    </key>
+
+    <key type='u' name='max-distance'>
+      <default>30</default>
+      <summary>The highest distance value that is shown in the results</summary>
+      <description>
+        After the distances are calculated (including the indicator penalty) then all values above this max are
+        dropped. This means that the history for those entries aren't looked up as well.
+      </description>
+    </key>
+  </schema>
+</schemalist>

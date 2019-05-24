@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.animation" gettext-domain="compiz">
+    <key type="as" name="open-effects">
+      <default>['animation:Glide 2','animation:Fade','animation:Fade']</default>
+      <summary>Open Effect</summary>
+      <description>The animation effect shown when creating a window.</description>
+    </key>
+    <key type="ai" name="open-durations">
+      <default>[120,80,80]</default>
+      <summary>Duration</summary>
+      <description>Animation duration in milliseconds for open effect.</description>
+    </key>
+    <key type="as" name="open-matches">
+      <default>['((type=Normal | Unknown) | name=sun-awt-X11-XFramePeer | name=sun-awt-X11-XDialogPeer) &amp; !(role=toolTipTip | role=qtooltip_label) &amp; !(type=Normal &amp; override_redirect=1) &amp; !(name=gnome-screensaver)','((type=Menu | PopupMenu | DropdownMenu | Combo | Dialog | ModalDialog | Normal) &amp; !(class=\\.exe$))','(type=Tooltip | Notification | Utility) &amp; !(name=compiz) &amp; !(title=notify-osd)']</default>
+      <summary>Window Match</summary>
+      <description>The windows that will be animated.</description>
+    </key>
+    <key type="as" name="open-options">
+      <default>['','','']</default>
+      <summary>Options</summary>
+      <description>Comma separated list of option value assignments to override effect settings, e.g.: fire_color=#0080ffff, fire_particles=700, fire_smoke=1</description>
+    </key>
+    <key type="as" name="open-random-effects">
+      <default>[]</default>
+      <summary>Pool</summary>
+      <description>Pool of effects to be chosen from if Random effect is selected. Click reset to use all effects.</description>
+    </key>
+    <key type="as" name="close-effects">
+      <default>['animation:Glide 2','animation:Fade','animation:Fade']</default>
+      <summary>Close Effect</summary>
+      <description>The animation effect shown when closing a window.</description>
+    </key>
+    <key type="ai" name="close-durations">
+      <default>[120,80,50]</default>
+      <summary>Duration</summary>
+      <description>Animation duration in milliseconds for close effect.</description>
+    </key>
+    <key type="as" name="close-matches">
+      <default>['((type=Normal | Unknown) | name=sun-awt-X11-XFramePeer | name=sun-awt-X11-XDialogPeer) &amp; !(role=toolTipTip | role=qtooltip_label) &amp; !(type=Normal &amp; override_redirect=1) &amp; !(name=gnome-screensaver) &amp; !(name=gnome-screenshot)','((type=Menu | PopupMenu | DropdownMenu | Combo | Dialog | ModalDialog | Normal) &amp; !(class=\\.exe$))','(type=Tooltip | Notification | Utility) &amp; !(name=compiz) &amp; !(title=notify-osd)']</default>
+      <summary>Window Match</summary>
+      <description>The windows that will be animated.</description>
+    </key>
+    <key type="as" name="close-options">
+      <default>['','','']</default>
+      <summary>Options</summary>
+      <description>Comma separated list of option value assignments to override effect settings, e.g.: fire_color=#0080ffff, fire_particles=700, fire_smoke=1</description>
+    </key>
+    <key type="as" name="close-random-effects">
+      <default>[]</default>
+      <summary>Pool</summary>
+      <description>Pool of effects to be chosen from if Random effect is selected. Click reset to use all effects.</description>
+    </key>
+    <key type="as" name="minimize-effects">
+      <default>['animation:Zoom']</default>
+      <summary>Minimize Effect</summary>
+      <description>The animation effect shown when minimizing a window.</description>
+    </key>
+    <key type="ai" name="minimize-durations">
+      <default>[220]</default>
+      <summary>Duration</summary>
+      <description>Animation duration in milliseconds for minimize effect.</description>
+    </key>
+    <key type="as" name="minimize-matches">
+      <default>['(type=Normal | Dialog | ModalDialog | Unknown)']</default>
+      <summary>Window Match</summary>
+      <description>The windows that will be animated.</description>
+    </key>
+    <key type="as" name="minimize-options">
+      <default>['']</default>
+      <summary>Options</summary>
+      <description>Comma separated list of option value assignments to override effect settings, e.g.: fire_color=#0080ffff, fire_particles=700, fire_smoke=1</description>
+    </key>
+    <key type="as" name="minimize-random-effects">
+      <default>[]</default>
+      <summary>Pool</summary>
+      <description>Pool of effects to be chosen from if Random effect is selected. Click reset to use all effects.</description>
+    </key>
+    <key type="as" name="unminimize-effects">
+      <default>['animation:Magic Lamp']</default>
+      <summary>Unminimize Effect</summary>
+      <description>The animation effect shown when unminimizing a window.</description>
+    </key>
+    <key type="ai" name="unminimize-durations">
+      <default>[300]</default>
+      <summary>Duration</summary>
+      <description>Animation duration in milliseconds for unminimize effect.</description>
+    </key>
+    <key type="as" name="unminimize-matches">
+      <default>['(type=Normal | Dialog | ModalDialog | Unknown)']</default>
+      <summary>Window Match</summary>
+      <description>The windows that will be animated.</description>
+    </key>
+    <key type="as" name="unminimize-options">
+      <default>['']</default>
+      <summary>Options</summary>
+      <description>Comma separated list of option value assignments to override effect settings, e.g.: fire_color=#0080ffff, fire_particles=700, fire_smoke=1</description>
+    </key>
+    <key type="as" name="unminimize-random-effects">
+      <default>[]</default>
+      <summary>Pool</summary>
+      <description>Pool of effects to be chosen from if Random effect is selected. Click reset to use all effects.</description>
+    </key>
+    <key type="as" name="shade-effects">
+      <default>['animation:Roll Up']</default>
+      <summary>Shade Effect</summary>
+      <description>The animation effect shown when shading a window.</description>
+    </key>
+    <key type="ai" name="shade-durations">
+      <default>[300]</default>
+      <summary>Duration</summary>
+      <description>Animation duration in milliseconds for shade effect.</description>
+    </key>
+    <key type="as" name="shade-matches">
+      <default>['(type=Normal | Dialog | ModalDialog | Utility | Unknown)']</default>
+      <summary>Window Match</summary>
+      <description>Window that should animate with this effect when shaded.</description>
+    </key>
+    <key type="as" name="shade-options">
+      <default>['']</default>
+      <summary>Options</summary>
+      <description>Comma separated list of option value assignments to override effect settings, e.g.: fire_color=#0080ffff, fire_particles=700, fire_smoke=1</description>
+    </key>
+    <key type="as" name="shade-random-effects">
+      <default>[]</default>
+      <summary>Pool</summary>
+      <description>Pool of effects to be chosen from if Random effect is selected. Click reset to use all effects.</description>
+    </key>
+    <key type="as" name="focus-effects">
+      <default>['animation:Fade']</default>
+      <summary>Focus Effect</summary>
+      <description>The animation effect shown when focusing a window.</description>
+    </key>
+    <key type="ai" name="focus-durations">
+      <default>[150]</default>
+      <summary>Duration</summary>
+      <description>Animation duration in milliseconds for focus effect.</description>
+    </key>
+    <key type="as" name="focus-matches">
+      <default>['(type=Normal | Dialog | ModalDialog | Utility | Unknown) &amp; !(name=compiz)']</default>
+      <summary>Window Match</summary>
+      <description>Window that should animate with this effect when focused.</description>
+    </key>
+    <key type="as" name="focus-options">
+      <default>['']</default>
+      <summary>Options</summary>
+      <description>Comma separated list of option value assignments to override effect settings, e.g.: fire_color=#0080ffff, fire_particles=700, fire_smoke=1</description>
+    </key>
+    <key type="b" name="all-random">
+      <default>false</default>
+      <summary>Random Animations For All Events</summary>
+      <description>All effects are chosen randomly, ignoring the selected effect. If None is selected for an event, that event won't be animated.</description>
+    </key>
+    <key type="i" name="time-step">
+      <default>16</default>
+      <summary>Animation Time Step</summary>
+      <description>The amount of time in milliseconds between each render of the animation. The higher the number, the jerkier the movements become. (1 - 400)</description>
+    </key>
+    <key type="d" name="curved-fold-amp-mult">
+      <default>1.0</default>
+      <summary>Amplitude Multiplier</summary>
+      <description>Fold amplitude (size) is multiplied by this number. Negative values fold outward. (-1.5 - 2)</description>
+    </key>
+    <key type="b" name="curved-fold-zoom-to-taskbar">
+      <default>true</default>
+      <summary>Zoom to TaskBar on Minimize</summary>
+      <description>Whether the window should zoom to taskbar when minimized with Curved Fold effect.</description>
+    </key>
+    <key type="i" name="dodge-mode">
+      <default>1</default>
+      <summary>Mode</summary>
+      <description>Fixed Clicked Window: The window that is clicked on will stay fixed. All Moving: The clicked window will do a dodging action as well. (0 = Fixed Clicked Window, 1 = All Moving)</description>
+    </key>
+    <key type="d" name="dodge-gap-ratio">
+      <default>0.5</default>
+      <summary>Gap Ratio</summary>
+      <description>Ratio of gaps between dodge start times to focus duration. (0 - 1)</description>
+    </key>
+    <key type="b" name="dream-zoom-to-taskbar">
+      <default>true</default>
+      <summary>Zoom to TaskBar on Minimize</summary>
+      <description>Whether the window should zoom to taskbar when minimized with Dream effect.</description>
+    </key>
+    <key type="d" name="glide1-away-position">
+      <default>1</default>
+      <summary>Away Position</summary>
+      <description>Closeness of window to camera at the end of the animation (1.0: Close to camera, -2.0: Away from camera). (-2 - 1)</description>
+    </key>
+    <key type="d" name="glide1-away-angle">
+      <default>0</default>
+      <summary>Away Angle</summary>
+      <description>Angle of window at the end of the animation. (-540 - 540)</description>
+    </key>
+    <key type="b" name="glide1-zoom-to-taskbar">
+      <default>false</default>
+      <summary>Zoom to TaskBar on Minimize</summary>
+      <description>Whether the window should zoom to taskbar when minimized with Glide 1 effect.</description>
+    </key>
+    <key type="d" name="glide2-away-position">
+      <default>-0.1</default>
+      <summary>Away Position</summary>
+      <description>Closeness of window to camera at the end of the animation (1.0: Close to camera, -2.0: Away from camera). (-2 - 1)</description>
+    </key>
+    <key type="d" name="glide2-away-angle">
+      <default>0</default>
+      <summary>Away Angle</summary>
+      <description>Angle of window at the end of the animation. (-540 - 540)</description>
+    </key>
+    <key type="b" name="glide2-zoom-to-taskbar">
+      <default>true</default>
+      <summary>Zoom to TaskBar on Minimize</summary>
+      <description>Whether the window should zoom to taskbar when minimized with Glide 2 effect.</description>
+    </key>
+    <key type="d" name="horizontal-folds-amp-mult">
+      <default>1.0</default>
+      <summary>Amplitude Multiplier</summary>
+      <description>Fold amplitude (size) is multiplied by this number. Negative values fold outward. (-1 - 3)</description>
+    </key>
+    <key type="i" name="horizontal-folds-num-folds">
+      <default>3</default>
+      <summary>Number of Horizontal Folds</summary>
+      <description>The number of horizontal folds that occur in the Horizontal Fold animation. (1 - 50)</description>
+    </key>
+    <key type="b" name="horizontal-folds-zoom-to-taskbar">
+      <default>true</default>
+      <summary>Zoom to TaskBar on Minimize</summary>
+      <description>Whether the window should zoom to taskbar when minimized with Horizontal Folds effect.</description>
+    </key>
+    <key type="b" name="magic-lamp-moving-end">
+      <default>true</default>
+      <summary>Open/Close Moving End</summary>
+      <description>On open/close, move magic lamp ending point with the mouse pointer.</description>
+    </key>
+    <key type="i" name="magic-lamp-grid-res">
+      <default>100</default>
+      <summary>Grid Y Resolution</summary>
+      <description>Vertex grid resolution for Magic Lamp (Y dimension only). This is the number of points used to define the curves. The higher the number, the smoother the curves. However there will be a loss of performance (CPU usage increases). (2 - 200)</description>
+    </key>
+    <key type="i" name="magic-lamp-open-start-width">
+      <default>30</default>
+      <summary>Open Start Width</summary>
+      <description>Starting width of open effect and ending width of close effect for Magic Lamp. (0 - 500)</description>
+    </key>
+    <key type="b" name="magic-lamp-wavy-moving-end">
+      <default>true</default>
+      <summary>Open/Close Moving End</summary>
+      <description>On open/close, move magic lamp ending point with the mouse pointer.</description>
+    </key>
+    <key type="i" name="magic-lamp-wavy-grid-res">
+      <default>100</default>
+      <summary>Grid Y Resolution</summary>
+      <description>Vertex grid resolution for Magic Lamp Wavy (Y dimension only). This is the number of points used to define the curves. The higher the number, the smoother the curves. However there will be a loss of performance (CPU usage increases). (4 - 200)</description>
+    </key>
+    <key type="i" name="magic-lamp-wavy-max-waves">
+      <default>3</default>
+      <summary>Max Waves</summary>
+      <description>The maximum number of waves for Magic Lamp Wavy. (1 - 20)</description>
+    </key>
+    <key type="d" name="magic-lamp-wavy-amp-min">
+      <default>200</default>
+      <summary>Min Wave Amplitude</summary>
+      <description>The minimum wave amplitude (size of the waves) Magic Lamp Wavy will have. (200 - 2000)</description>
+    </key>
+    <key type="d" name="magic-lamp-wavy-amp-max">
+      <default>300</default>
+      <summary>Max Wave Amplitude</summary>
+      <description>The maximum wave amplitude (size of the waves) Magic Lamp Wavy will have. (200 - 2000)</description>
+    </key>
+    <key type="i" name="magic-lamp-wavy-open-start-width">
+      <default>30</default>
+      <summary>Open Start Width</summary>
+      <description>Starting width of open effect and ending width of close effect for Magic Lamp Wavy. (0 - 500)</description>
+    </key>
+    <key type="b" name="rollup-fixed-interior">
+      <default>false</default>
+      <summary>Fixed Interior</summary>
+      <description>Fixed window interior during the Rollup animation.</description>
+    </key>
+    <key type="d" name="sidekick-num-rotations">
+      <default>0.5</default>
+      <summary>Number of Rotations</summary>
+      <description>Number of rotations for Sidekick (plus or minus 10% for randomness). (0 - 5)</description>
+    </key>
+    <key type="d" name="sidekick-springiness">
+      <default>0.0</default>
+      <summary>Springiness</summary>
+      <description>How spring-like the Sidekick animation should be. (0 - 1)</description>
+    </key>
+    <key type="i" name="sidekick-zoom-from-center">
+      <default>0</default>
+      <summary>Zoom from Center</summary>
+      <description>Zoom from center when playing the Sidekick animation. (0 = Off, 1 = Minimize/Unminimize Only, 2 = Open/Close Only, 3 = On)</description>
+    </key>
+    <key type="d" name="wave-width">
+      <default>0.7</default>
+      <summary>Wave Width</summary>
+      <description>The width of the wave relative to the window height. (0.02 - 3)</description>
+    </key>
+    <key type="d" name="wave-amp-mult">
+      <default>1.0</default>
+      <summary>Wave Amplitude Multiplier</summary>
+      <description>Wave amplitude (size) is multiplied by this number. Negative values fold outward. (-20 - 20)</description>
+    </key>
+    <key type="i" name="zoom-from-center">
+      <default>0</default>
+      <summary>Zoom from Center</summary>
+      <description>Zoom from center when playing the Zoom animation. (0 = Off, 1 = Minimize/Unminimize Only, 2 = Open/Close Only, 3 = On)</description>
+    </key>
+    <key type="d" name="zoom-springiness">
+      <default>0.08</default>
+      <summary>Springiness</summary>
+      <description>How spring-like the Zoom animation should be. (0 - 1)</description>
+    </key>
+  </schema>
+</schemalist>

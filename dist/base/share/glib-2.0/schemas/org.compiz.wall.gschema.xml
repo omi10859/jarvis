@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.wall" gettext-domain="compiz">
+    <key type="b" name="show-switcher">
+      <default>true</default>
+      <summary>Show Viewport Switcher Preview</summary>
+      <description>Show switcher window while switching viewports</description>
+    </key>
+    <key type="b" name="miniscreen">
+      <default>true</default>
+      <summary>Show Live Viewport Previews</summary>
+      <description>Show live viewport previews in switcher window</description>
+    </key>
+    <key type="d" name="preview-timeout">
+      <default>0.2</default>
+      <summary>Switch Target Preview Visibility Time</summary>
+      <description>Duration (in s) the switch target preview should remain visible after switching ends. (0.0 - 2.0)</description>
+    </key>
+    <key type="i" name="preview-scale">
+      <default>130</default>
+      <summary>Preview Scale</summary>
+      <description>Size of the preview in % (0 - 400)</description>
+    </key>
+    <key type="i" name="edge-radius">
+      <default>5</default>
+      <summary>Edge Radius</summary>
+      <description>Radius of the rounded edge (0 - 20)</description>
+    </key>
+    <key type="i" name="border-width">
+      <default>7</default>
+      <summary>Border Width</summary>
+      <description>Width of the border between the previews (0 - 30)</description>
+    </key>
+    <key type="s" name="outline-color">
+      <default>'#ffffff32'</default>
+      <summary>Outline Color</summary>
+      <description>Outline color of the switcher window.</description>
+    </key>
+    <key type="s" name="background-gradient-base-color">
+      <default>'#00000064'</default>
+      <summary>Base Color</summary>
+      <description>First color for the background gradient of the switcher window.</description>
+    </key>
+    <key type="s" name="background-gradient-highlight-color">
+      <default>'#00000064'</default>
+      <summary>Highlight Color</summary>
+      <description>Second color for the background gradient of the switcher window.</description>
+    </key>
+    <key type="s" name="background-gradient-shadow-color">
+      <default>'#00000064'</default>
+      <summary>Shadow Color</summary>
+      <description>Third color for the background gradient of the switcher window.</description>
+    </key>
+    <key type="s" name="thumb-gradient-base-color">
+      <default>'#55555532'</default>
+      <summary>Base Color</summary>
+      <description>First color for the thumb gradient of the switcher window.</description>
+    </key>
+    <key type="s" name="thumb-gradient-highlight-color">
+      <default>'#55555532'</default>
+      <summary>Highlight Color</summary>
+      <description>Second color for the thumb gradient of the switcher window.</description>
+    </key>
+    <key type="s" name="thumb-highlight-gradient-base-color">
+      <default>'#ffffffff'</default>
+      <summary>Base Color</summary>
+      <description>First color for the thumb highlight gradient of the switcher window.</description>
+    </key>
+    <key type="s" name="thumb-highlight-gradient-shadow-color">
+      <default>'#dfdfdfff'</default>
+      <summary>Shadow Color</summary>
+      <description>Second color for the thumb highlight gradient of the switcher window.</description>
+    </key>
+    <key type="s" name="arrow-base-color">
+      <default>'#e6e6e6d9'</default>
+      <summary>Base Color</summary>
+      <description>First color of the arrow of the switcher window.</description>
+    </key>
+    <key type="s" name="arrow-shadow-color">
+      <default>'#dcdcdcd9'</default>
+      <summary>Shadow Color</summary>
+      <description>Second color of the arrow of the switcher window.</description>
+    </key>
+    <key type="b" name="allow-wraparound">
+      <default>false</default>
+      <summary>Allow Wrap-Around</summary>
+      <description>Allow wrap-around when moving the wall up/down/left/right</description>
+    </key>
+    <key type="d" name="slide-duration">
+      <default>0.3</default>
+      <summary>Wall Sliding Duration</summary>
+      <description>Duration (in s) for wall sliding viewport switching animation (0.0 - 5.0)</description>
+    </key>
+    <key type="s" name="no-slide-match">
+      <default>'type=Dock | type=Desktop | state=Sticky'</default>
+      <summary>Non Sliding Windows</summary>
+      <description>Windows that should not slide during the slide animation (match)</description>
+    </key>
+    <key type="b" name="auto-switch-vp-and-window">
+      <default>false</default>
+      <summary>Auto Switch Vp And Window</summary>
+      <description>Auto switch the viewport and move window when Alt-Tab to window that is more than half contained in another viewport</description>
+    </key>
+    <key type="s" name="left-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Left'</default>
+      <summary>Move Left</summary>
+      <description>Move along the wall to the left</description>
+    </key>
+    <key type="s" name="left-button">
+      <default>'Disabled'</default>
+      <summary>Move Left</summary>
+      <description>Move along the wall to the left</description>
+    </key>
+    <key type="s" name="right-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Right'</default>
+      <summary>Move Right</summary>
+      <description>Move along the wall to the right</description>
+    </key>
+    <key type="s" name="right-button">
+      <default>'Disabled'</default>
+      <summary>Move Right</summary>
+      <description>Move along the wall to the right</description>
+    </key>
+    <key type="s" name="up-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Up'</default>
+      <summary>Move Up</summary>
+      <description>Move along the wall up</description>
+    </key>
+    <key type="s" name="up-button">
+      <default>'Disabled'</default>
+      <summary>Move Up</summary>
+      <description>Move along the wall up</description>
+    </key>
+    <key type="s" name="down-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Down'</default>
+      <summary>Move Down</summary>
+      <description>Move along the wall down</description>
+    </key>
+    <key type="s" name="down-button">
+      <default>'Disabled'</default>
+      <summary>Move Down</summary>
+      <description>Move along the wall down</description>
+    </key>
+    <key type="s" name="next-key">
+      <default>'Disabled'</default>
+      <summary>Move Next</summary>
+      <description>Move along the wall to the next viewport</description>
+    </key>
+    <key type="s" name="next-button">
+      <default>'Disabled'</default>
+      <summary>Move Next</summary>
+      <description>Move along the wall to the next viewport</description>
+    </key>
+    <key type="s" name="prev-key">
+      <default>'Disabled'</default>
+      <summary>Move Prev</summary>
+      <description>Move along the wall to the previous viewport</description>
+    </key>
+    <key type="s" name="prev-button">
+      <default>'Disabled'</default>
+      <summary>Move Prev</summary>
+      <description>Move along the wall to the previous viewport</description>
+    </key>
+    <key type="s" name="left-window-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Left'</default>
+      <summary>Move Left With Window</summary>
+      <description>Move with window along the wall to the left</description>
+    </key>
+    <key type="s" name="right-window-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Right'</default>
+      <summary>Move Right With Window</summary>
+      <description>Move with window along the wall to the right</description>
+    </key>
+    <key type="s" name="up-window-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Up'</default>
+      <summary>Move Up With Window</summary>
+      <description>Move with window along the wall up</description>
+    </key>
+    <key type="s" name="down-window-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;&lt;Shift&gt;Down'</default>
+      <summary>Move Down With Window</summary>
+      <description>Move with window along the wall down</description>
+    </key>
+    <key type="s" name="flip-left-edge">
+      <default>'Left'</default>
+      <summary>Flip Left</summary>
+      <description>Flip left</description>
+    </key>
+    <key type="s" name="flip-right-edge">
+      <default>'Right'</default>
+      <summary>Flip Right</summary>
+      <description>Flip right</description>
+    </key>
+    <key type="s" name="flip-up-edge">
+      <default>'Top'</default>
+      <summary>Flip Up</summary>
+      <description>Flip up</description>
+    </key>
+    <key type="s" name="flip-down-edge">
+      <default>'Bottom'</default>
+      <summary>Flip Down</summary>
+      <description>Flip down</description>
+    </key>
+    <key type="i" name="mmmode">
+      <default>0</default>
+      <summary>Multimonitor behavior</summary>
+      <description>How should a multimonitor configuration be handled (0 = Switch all, 1 = Switch separately)</description>
+    </key>
+    <key type="b" name="edgeflip-pointer">
+      <default>false</default>
+      <summary>Edge Flip Pointer</summary>
+      <description>Flip viewport when moving the pointer to a screen edge</description>
+    </key>
+    <key type="b" name="edgeflip-move">
+      <default>false</default>
+      <summary>Edge Flip Move</summary>
+      <description>Flip viewport when moving a window to a screen edge</description>
+    </key>
+    <key type="b" name="edgeflip-dnd">
+      <default>false</default>
+      <summary>Edge Flip DnD</summary>
+      <description>Flip viewport when dragging an object to a screen edge</description>
+    </key>
+  </schema>
+</schemalist>

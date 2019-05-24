@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.decor" gettext-domain="compiz">
+    <key type="d" name="active-shadow-radius">
+      <default>8.0</default>
+      <summary>Shadow Radius</summary>
+      <description>Drop shadow radius (0.1 - 18.0)</description>
+    </key>
+    <key type="d" name="active-shadow-opacity">
+      <default>0.8</default>
+      <summary>Shadow Opacity</summary>
+      <description>Drop shadow opacity (0.01 - 6.0)</description>
+    </key>
+    <key type="s" name="active-shadow-color">
+      <default>'#00000080'</default>
+      <summary>Shadow Color</summary>
+      <description>Drop shadow color</description>
+    </key>
+    <key type="i" name="active-shadow-x-offset">
+      <default>1</default>
+      <summary>Shadow Offset X</summary>
+      <description>Drop shadow X offset (-16 - 16)</description>
+    </key>
+    <key type="i" name="active-shadow-y-offset">
+      <default>1</default>
+      <summary>Shadow Offset Y</summary>
+      <description>Drop shadow Y offset (-16 - 16)</description>
+    </key>
+    <key type="d" name="inactive-shadow-radius">
+      <default>5.0</default>
+      <summary>Shadow Radius</summary>
+      <description>Drop shadow radius (0.1 - 13.0)</description>
+    </key>
+    <key type="d" name="inactive-shadow-opacity">
+      <default>0.4</default>
+      <summary>Shadow Opacity</summary>
+      <description>Drop shadow opacity (0.01 - 6.0)</description>
+    </key>
+    <key type="s" name="inactive-shadow-color">
+      <default>'#000000ff'</default>
+      <summary>Shadow Color</summary>
+      <description>Drop shadow color</description>
+    </key>
+    <key type="i" name="inactive-shadow-x-offset">
+      <default>1</default>
+      <summary>Shadow Offset X</summary>
+      <description>Drop shadow X offset (-16 - 16)</description>
+    </key>
+    <key type="i" name="inactive-shadow-y-offset">
+      <default>1</default>
+      <summary>Shadow Offset Y</summary>
+      <description>Drop shadow Y offset (-16 - 16)</description>
+    </key>
+    <key type="s" name="command">
+      <default>'/usr/bin/gtk-window-decorator'</default>
+      <summary>Command</summary>
+      <description>Decorator command line that is executed if no decorator is already running.</description>
+    </key>
+    <key type="b" name="mipmap">
+      <default>false</default>
+      <summary>Mipmap</summary>
+      <description>Allow mipmaps to be generated for decoration textures</description>
+    </key>
+    <key type="s" name="decoration-match">
+      <default>'any'</default>
+      <summary>Decoration windows</summary>
+      <description>Windows that should be decorated (match)</description>
+    </key>
+    <key type="s" name="shadow-match">
+      <default>'any'</default>
+      <summary>Shadow windows</summary>
+      <description>Windows that should have a shadow (match)</description>
+    </key>
+  </schema>
+</schemalist>

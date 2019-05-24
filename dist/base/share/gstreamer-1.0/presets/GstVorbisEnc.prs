@@ -1,0 +1,11 @@
+[_presets_]
+element-name=GstVorbisEnc
+version=0.10.36
+
+[Ubuntu]
+name=vorbisenc
+perfect-timestamp=true
+hard-resync=false
+tolerance=40000000
+quality=0.6
+managed=false

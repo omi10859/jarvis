@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.wallpaper" gettext-domain="compiz">
+    <key type="as" name="bg-image">
+      <default>[]</default>
+      <summary>Image</summary>
+      <description>The image file used.</description>
+    </key>
+    <key type="ai" name="bg-image-pos">
+      <default>[]</default>
+      <summary>Positioning</summary>
+      <description>The image positioning if defined above.</description>
+    </key>
+    <key type="ai" name="bg-fill-type">
+      <default>[]</default>
+      <summary>Background Fill Type</summary>
+      <description>The background fill type used if no image file is defined.</description>
+    </key>
+    <key type="as" name="bg-color1">
+      <default>[]</default>
+      <summary>Color 1</summary>
+      <description>Fill or first gradient color.</description>
+    </key>
+    <key type="as" name="bg-color2">
+      <default>[]</default>
+      <summary>Color 2</summary>
+      <description>Second gradient color.</description>
+    </key>
+    <key type="b" name="cycle-wallpapers">
+      <default>false</default>
+      <summary>Cycle Wallpapers</summary>
+      <description>Cycle through wallpapers if more than one is defined.</description>
+    </key>
+    <key type="d" name="cycle-timeout">
+      <default>10.0</default>
+      <summary>Cycle Timeout (min)</summary>
+      <description>Timeout before cycling to the next wallpaper (in minutes). (0.15 - 1440.0)</description>
+    </key>
+    <key type="d" name="fade-duration">
+      <default>2.0</default>
+      <summary>Fade Duration (sec)</summary>
+      <description>Duration of the fade from one wallpaper to the next (in seconds). (0.05 - 10.0)</description>
+    </key>
+  </schema>
+</schemalist>

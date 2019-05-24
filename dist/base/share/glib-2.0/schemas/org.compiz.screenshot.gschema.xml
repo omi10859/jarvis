@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.screenshot" gettext-domain="compiz">
+    <key type="s" name="initiate-button">
+      <default>'&lt;Super&gt;Button1'</default>
+      <summary>Initiate</summary>
+      <description>Initiate the capture, release the button to take the shot.</description>
+    </key>
+    <key type="b" name="draw-selection-indicator">
+      <default>true</default>
+      <summary>Draw Screenshot Selection Indicator</summary>
+      <description>Draw a rectangle outline indicating the screenshot selection.</description>
+    </key>
+    <key type="s" name="selection-outline-color">
+      <default>'#2f2f4f9f'</default>
+      <summary>Selection Indicator Outline Color</summary>
+      <description>Color and opacity of the screenshot selection rectangle outline.</description>
+    </key>
+    <key type="s" name="selection-fill-color">
+      <default>'#2f2f4f4f'</default>
+      <summary>Selection Indicator Fill Color</summary>
+      <description>Fill color and opacity of the screenshot selection rectangle.</description>
+    </key>
+    <key type="s" name="directory">
+      <default>''</default>
+      <summary>Save Directory</summary>
+      <description>Save screenshot images in this directory. If empty, the desktop directory will be used.</description>
+    </key>
+    <key type="s" name="launch-app">
+      <default>''</default>
+      <summary>Launch Application</summary>
+      <description>Automatically open the screenshot in this application.</description>
+    </key>
+  </schema>
+</schemalist>

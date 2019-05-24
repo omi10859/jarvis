@@ -1,0 +1,7 @@
+<schemalist>
+  <schema id='com.canonical.desktop.interface' path='/com/canonical/desktop/interface/'>
+    <key name='scrollbar-mode' enum='com.canonical.desktop.interface.ScrollbarMode'>
+      <default>'overlay-auto'</default>
+    </key>
+  </schema>
+</schemalist>
