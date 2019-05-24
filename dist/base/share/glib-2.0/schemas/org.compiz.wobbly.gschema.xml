@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.wobbly" gettext-domain="compiz">
+    <key type="s" name="snap-key">
+      <default>'&lt;Shift&gt;'</default>
+      <summary>Snap windows</summary>
+      <description>Toggle window snapping</description>
+    </key>
+    <key type="b" name="snap-inverted">
+      <default>false</default>
+      <summary>Snap Inverted</summary>
+      <description>Inverted window snapping</description>
+    </key>
+    <key type="b" name="shiver">
+      <default>false</default>
+      <summary>Shiver</summary>
+      <description>Make window shiver</description>
+    </key>
+    <key type="d" name="friction">
+      <default>3</default>
+      <summary>Friction</summary>
+      <description>Spring Friction (0.1 - 10)</description>
+    </key>
+    <key type="d" name="spring-k">
+      <default>8</default>
+      <summary>Spring K</summary>
+      <description>Spring Konstant (0.1 - 10)</description>
+    </key>
+    <key type="i" name="grid-resolution">
+      <default>8</default>
+      <summary>Grid Resolution</summary>
+      <description>Vertex Grid Resolution (1 - 64)</description>
+    </key>
+    <key type="i" name="min-grid-size">
+      <default>8</default>
+      <summary>Minimum Grid Size</summary>
+      <description>Minimum Vertex Grid Size (4 - 128)</description>
+    </key>
+    <key type="i" name="map-effect">
+      <default>0</default>
+      <summary>Map Effect</summary>
+      <description>Map Window Effect (0 = None, 1 = Shiver)</description>
+    </key>
+    <key type="i" name="focus-effect">
+      <default>0</default>
+      <summary>Focus Effect</summary>
+      <description>Focus Window Effect (0 = None, 1 = Shiver)</description>
+    </key>
+    <key type="s" name="map-window-match">
+      <default>'Splash | DropdownMenu | PopupMenu | Tooltip | Notification | Combo | Dnd | Unknown'</default>
+      <summary>Map Windows</summary>
+      <description>Windows that should wobble when mapped (match)</description>
+    </key>
+    <key type="s" name="focus-window-match">
+      <default>''</default>
+      <summary>Focus Windows</summary>
+      <description>Windows that should wobble when focused (match)</description>
+    </key>
+    <key type="s" name="grab-window-match">
+      <default>''</default>
+      <summary>Grab Windows</summary>
+      <description>Windows that should wobble when grabbed (match)</description>
+    </key>
+    <key type="s" name="move-window-match">
+      <default>'Toolbar | Menu | Utility | Dialog | Normal | Unknown'</default>
+      <summary>Move Windows</summary>
+      <description>Windows that should wobble when moved (match)</description>
+    </key>
+    <key type="b" name="maximize-effect">
+      <default>true</default>
+      <summary>Maximize Effect</summary>
+      <description>Wobble effect when maximizing and unmaximizing windows</description>
+    </key>
+  </schema>
+</schemalist>

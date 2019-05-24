@@ -1,0 +1,158 @@
+<schemalist>
+  <schema id='org.gnome.Vino' path='/org/gnome/desktop/remote-access/'>
+    <key name='prompt-enabled' type='b'>
+      <summary>Prompt the user before completing a connection</summary>
+      <description>
+        If true, remote users accessing the desktop are not allowed
+        access until the user on the host machine approves the
+        connection. Recommended especially when access is not password
+        protected.
+      </description>
+      <default>true</default>
+    </key>
+
+    <key name='view-only' type='b'>
+      <summary>Only allow remote users to view the desktop</summary>
+      <description>
+        If true, remote users accessing the desktop are only allowed to
+        view the desktop. Remote users will not be able to use the mouse
+        or keyboard.
+      </description>
+      <default>false</default>
+    </key>
+
+    <key name='network-interface' type='s'>
+      <summary>Network interface for listening</summary>
+      <description>
+        If not set, the server will listen on all network interfaces.
+
+        Set this if you want to accept connections only from some specific
+        network interface. For example, eth0, wifi0, lo and so on.
+      </description>
+      <default>''</default>
+    </key>
+
+    <key name='use-alternative-port' type='b'>
+      <summary>Listen on an alternative port</summary>
+      <description>
+        If true, the server will listen on another port, instead of the default
+        (5900). The port must be specified in the 'alternative-port' key.
+      </description>
+      <default>false</default>
+    </key>
+
+    <key name='alternative-port' type='q'>
+      <summary>Alternative port number</summary>
+      <description>
+        The port which the server will listen to if the 'use-alternative-port'
+        key is set to true. Valid values are in the range of 5000 to 50000.
+      </description>
+      <default>5900</default>
+    </key>
+
+    <key name='require-encryption' type='b'>
+      <summary>Require encryption</summary>
+      <description>
+        If true, remote users accessing the desktop are required to
+        support encryption. It is highly recommended that you use a
+        client which supports encryption unless the intervening network
+        is trusted.
+      </description>
+      <default>true</default>
+    </key>
+
+    <key name='authentication-methods' type='as'>
+      <summary>Allowed authentication methods</summary>
+      <description>
+        Lists the authentication methods with which remote users may
+        access the desktop.
+
+        There are two possible authentication methods; "vnc" causes the
+        remote user to be prompted for a password (the password is
+        specified by the vnc-password key) before connecting and "none"
+        which allows any remote user to connect.
+      </description>
+      <default>['none']</default>
+    </key>
+
+    <key name='vnc-password' type='s'>
+      <summary>Password required for "vnc" authentication</summary>
+      <description>
+        The password which the remote user will be prompted for if the
+        "vnc" authentication method is used. The password specified by
+        the key is base64 encoded.
+
+        The special value of 'keyring' (which is not valid base64) means
+        that the password is stored in the GNOME keyring.
+      </description>
+      <default>'keyring'</default>
+    </key>
+
+    <key name='mailto' type='s'>
+      <summary>E-mail address to which the remote desktop URL should be sent</summary>
+      <description>
+        This key specifies the e-mail address to which the remote
+        desktop URL should be sent if the user clicks on the URL in the
+        Desktop Sharing preferences dialog.
+      </description>
+      <default>''</default>
+    </key>
+
+    <key name='lock-screen-on-disconnect' type='b'>
+      <summary>Lock the screen when last user disconnect</summary>
+      <description>
+        If true, the screen will be locked after the last remote client
+        disconnects.
+      </description>
+      <default>false</default>
+    </key>
+
+    <key name='icon-visibility' enum="org.gnome.Vino.VinoIconVisibility">
+      <summary>When the status icon should be shown</summary>
+      <description>
+        This key controls the behavior of the status icon. There are
+        three options: "always" - the icon will always be present; "client" -
+        the icon will only be present when someone is connected (this is the
+        default behavior); "never" - the icon will not be present.
+      </description>
+      <default>'client'</default>
+    </key>
+
+    <key name='disable-background' type='b'>
+      <summary>Whether to disable the desktop background when a user is connected</summary>
+      <description>
+        When true, disable the desktop background and replace it with a single
+        block of color when a user successfully connects.
+      </description>
+      <default>false</default>
+    </key>
+
+    <key name='use-upnp' type='b'>
+      <summary>Whether a UPnP router should be used to forward and open ports</summary>
+      <description>
+        If true, request that a UPnP-capable router should forward and open the
+        port used by Vino.
+      </description>
+      <default>false</default>
+    </key>
+
+    <key name='disable-xdamage' type='b'>
+      <summary>Whether we should disable the XDamage extension of X.org</summary>
+      <description>
+        If true, do not use the XDamage extension of X.org. This extension does
+        not work properly on some video drivers when using 3D effects.
+        Disabling it will make Vino work in these environments, with slower
+        rendering as a side effect.
+      </description>
+      <default>false</default>
+    </key>
+
+    <key name='notify-on-connect' type='b'>
+      <summary>Notify on connect</summary>
+      <description>
+        If true, show a notification when a user connects to the system.
+      </description>
+      <default>true</default>
+    </key>
+  </schema>
+</schemalist>

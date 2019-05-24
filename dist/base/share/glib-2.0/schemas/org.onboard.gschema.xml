@@ -1,0 +1,887 @@
+<!--
+Copyright © 2012 Gerd Kohlberger <lowfi@chello.at>
+Copyright © 2011-2017 marmuta <marmvta@gmail.com>
+
+This file is part of Onboard.
+
+Onboard is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+Onboard is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<schemalist>
+    <enum id="org.onboard.keyboard.StatusIconProvider">
+        <value nick="auto" value="0"/>
+        <value nick="GtkStatusIcon" value="1"/>
+        <value nick="AppIndicator" value="2"/>
+    </enum>
+
+    <schema id="org.onboard" path="/org/onboard/">
+        <key name="schema-version" type="s">
+            <default>""</default>
+            <summary>Schema version</summary>
+            <description>Version of this configuration schema. Set on first start.</description>
+        </key>
+        <key name="use-system-defaults" type="b">
+            <default>true</default>
+            <summary>Use system defaults</summary>
+            <description>If true, get configuration from system defaults first. This flag will be reset on first start.</description>
+        </key>
+        <key name="layout" type="s">
+            <default>''</default>
+            <summary>Layout filename</summary>
+            <description>Name of the file or basename of the current layout.</description>
+        </key>
+        <key name="theme" type="s">
+            <default>''</default>
+            <summary>Theme filename</summary>
+            <description>Name of the file or basename of the current theme.</description>
+        </key>
+        <key name="system-theme-tracking-enabled" type="b">
+            <default>true</default>
+            <summary>Track changes of the current GTK-theme.</summary>
+            <description>Switch onboard themes of matching basenames in sync with the current GTK-theme.</description>
+        </key>
+        <key name="system-theme-associations" type="a{ss}">
+            <default>{'HighContrast' : 'HighContrast', 'HighContrastInverse' : 'HighContrastInverse', 'LowContrast' : 'LowContrast', 'ContrastHighInverse' : 'HighContrastInverse'}</default>
+            <summary>System theme associations</summary>
+            <description>List of encountered system themes (GTK-themes) and the Onboard themes they are linked to.</description>
+        </key>
+        <key name="show-status-icon" type="b">
+            <default>true</default>
+            <summary>Show status icon instead of the classic minimize.</summary>
+            <description>Display an icon in the notification area to hide and show onboard.</description>
+        </key>
+        <key name="status-icon-provider" enum="org.onboard.keyboard.StatusIconProvider">
+            <default>"auto"</default>
+            <summary>Status icon provider</summary>
+            <description>Choose between status icon implementations. AppIndicator shows Onboard on middle-click activation, GtkStatusIcon on left-click.
+If unavailable, 'AppIndicator' falls back to GtkStatusIcon.
+            </description>
+        </key>
+        <key name="start-minimized" type="b">
+            <default>false</default>
+            <summary>Start onboard with a minimized window.</summary>
+            <description>Do not display the onboard window on start; start onboard minimized.</description>
+        </key>
+        <key name="show-tooltips" type="b">
+            <default>true</default>
+            <summary>Show tooltips.</summary>
+            <description>Show tooltips for certain buttons of the keyboard.</description>
+        </key>
+        <key name="snippets" type="as">
+            <default>[ '0:Onboard\\nHome:https\\://launchpad.net/onboard', '1:Example:Create your macros here.' ]</default>
+            <summary>Label and text for the snippet keys</summary>
+            <description>Define labels and text lines for the snippet keys in the format index:label:text Allowed escape sequences are "\n" for newline, "\:" for a colon and "\\"  for a backslash.</description>
+        </key>
+        <key name="key-label-font" type="s">
+            <default>''</default>
+            <summary>Default font of key labels</summary>
+            <description>Default font of key labels. Applies to all themes which don't specify their font.'</description>
+        </key>
+        <key name="key-label-overrides" type="as">
+            <default>[]</default>
+            <summary>Default key label overrides</summary>
+            <description>Optional key labels and and size groups that override the layouts' labels. Merged with current themes key_label_overrides. Format: ["key_id:label:group",...]. Colons and backslashes have to be escaped as "\:" and "\\".</description>
+        </key>
+        <key name="current-settings-page" type="i">
+            <default>0</default>
+            <summary>Current settings page</summary>
+            <description>Current tab page of onboard-settings.</description>
+        </key>
+        <key name="xembed-onboard" type="b">
+            <default>false</default>
+            <summary>Show onboard when unlocking the screen.</summary>
+            <description>Make onboard appear in conjunction to the dialog to unlock the screen.</description>
+        </key>
+        <key name="xembed-aspect-change-range" type="ad">
+            <default>[0, 1.6]</default>
+            <summary>Aspect range while embedded</summary>
+            <description>Limits of the keyboard's aspect ratio when it is embedded, i.e. in unity-greeter, gnome-screensaver.</description>
+        </key>
+        <key name="xembed-background-color" type="s">
+            <default>'#0000007F'</default>
+            <summary>Background color when embedded</summary>
+            <description>Color of the background bar that is rendered on top of the background image in unity-greeter and gnome-screensaver. If empty, the color is taken from the keyboard's current background color.'</description>
+        </key>
+        <key name="xembed-background-image-enabled" type="b">
+            <default>true</default>
+            <summary>Enable drawing background image when embedded</summary>
+            <description>Enable drawing the current GNOME background image in unity-greeter and gnome-screensaver.</description>
+        </key>
+        <key name="xembed-unity-greeter-offset-x" type="d">
+            <default>85.0</default>
+            <summary>Horizontal position in unity-greeter</summary>
+            <description>Maximum distance of the keyboard in unity-greeter in pixels from the left screen edge. Depending on the available width, the offset is gradually lowered. Negative values center the keyboard horizontally. 
+This key has no effect outside of unity-greeter.</description>
+        </key>
+
+        <child name="auto-show" schema="org.onboard.auto-show" />
+        <child name="keyboard" schema="org.onboard.keyboard" />
+        <child name="window" schema="org.onboard.window" />
+        <child name="icon-palette" schema="org.onboard.icon-palette" />
+        <child name="universal-access" schema="org.onboard.universal-access" />
+        <child name="theme-settings" schema="org.onboard.theme-settings" />
+        <child name="lockdown" schema="org.onboard.lockdown" />
+        <child name="scanner" schema="org.onboard.scanner" />
+        <child name="typing-assistance" schema="org.onboard.typing-assistance" />
+    </schema>
+
+    <enum id="org.onboard.auto-show.RepositionMethod">
+        <value nick="none" value="0"/>
+        <value nick="prevent-occlusion" value="1"/>
+        <value nick="reduce-travel" value="2"/>
+    </enum>
+
+    <schema id="org.onboard.auto-show" path="/org/onboard/auto-show/">
+        <key name="enabled" type="b">
+            <default>false</default>
+            <summary>Auto-show enabled</summary>
+            <description>Auto-show Onboard for editable widgets. Requires gnome-accessibility (at-spi2).</description>
+        </key>
+        <key name="reposition-method-floating"  enum="org.onboard.auto-show.RepositionMethod">
+            <default>"prevent-occlusion"</default>
+            <summary>Auto-repositioning when keyboard is floating</summary>
+            <description>The default method "prevent-occlusion" only moves the keyboard when it would otherwise cover the currently focused text entry. Set to "none" to disable repositioning.</description>
+        </key>
+        <key name="reposition-method-docked"  enum="org.onboard.auto-show.RepositionMethod">
+            <default>"prevent-occlusion"</default>
+            <summary>Auto-repositioning when keyboard is docked</summary>
+            <description>The default method "prevent-occlusion" only moves the keyboard when it would otherwise cover the currently focused text entry. Set to "none" to disable repositioning.</description>
+        </key>
+        <key name="widget-clearance" type="(dddd)">
+            <default>(25.0, 55.0, 25.0, 40.0)</default>
+            <summary>Widget clearance</summary>
+            <description>Border to leave unoccluded around a focused text widget (left, top, right, bottom).</description>
+        </key>
+        <key name="hide-on-key-press" type="b">
+            <default>true</default>
+            <summary>Hide on key-press</summary>
+            <description>Hide Onboard when pressing any key on a physical keyboard.</description>
+        </key>
+        <key name="hide-on-key-press-pause" type="d">
+            <default>1800.0</default>
+            <summary>Auto-show pause after key-press.</summary>
+            <description>Number of seconds auto-show remains paused after a physical key-press. -1.0 to pause forever.</description>
+        </key>
+
+        <key name="tablet-mode-detection-enabled" type="b">
+            <default>true</default>
+            <summary>Enable tablet/laptop mode detection</summary>
+            <description>Enable listening to lock-key-code and unlock-key-code and lock/unlock auto-show in response.</description>
+        </key>
+        <key name="tablet-mode-enter-key" type="i">
+            <default>0</default>
+            <summary>Key-code to unlock auto-show</summary>
+            <description>When this key-press is received, resume auto-show. A convertible device might signal entering tablet-mode that way.</description>
+        </key>
+        <key name="tablet-mode-leave-key" type="i">
+            <default>0</default>
+            <summary>Key-code to lock auto-show</summary>
+            <description>When this key-press is received, stop auto-show indefinitely. A convertible device might signal entering laptop-mode that way.</description>
+        </key>
+        <key name="tablet-mode-state-file" type="s">
+            <default>''</default>
+            <summary>Name of tablet mode state file</summary>
+            <description>Path to a text file indicating whether tablet-mode is active or not, e.g. a sysfs path.</description>
+        </key>
+        <key name="tablet-mode-state-file-pattern" type="s">
+            <default>'1'</default>
+            <summary>Pattern for tablet-mode-state-file</summary>
+            <description>String to find in 'tablet-mode-state-file' in order to detect tablet-mode, e.g. 1.</description>
+        </key>
+
+        <key name="keyboard-device-detection-enabled" type="b">
+            <default>false</default>
+            <summary>Enable detection of keyboard devices</summary>
+            <description>If enabled, auto-show will be paused while physical keyboard devices are connected.</description>
+        </key>
+        <key name="keyboard-device-detection-exceptions" type="as">
+            <default>[]</default>
+            <summary>Keyboard devices to ignore</summary>
+            <description>List of keyboard devices that should not pause auto-show.</description>
+        </key>
+    </schema>
+
+    <enum id="org.onboard.keyboard.DefaultKeyAction">
+        <value nick="single-stroke" value="0"/>
+        <value nick="delayed-stroke" value="1"/>
+    </enum>
+    <enum id="org.onboard.keyboard.KeySynth">
+        <value nick="auto" value="0"/>
+        <value nick="XTest" value="1"/>
+        <value nick="uinput" value="2"/>
+        <value nick="AT-SPI" value="3"/>
+    </enum>
+    <enum id="org.onboard.keyboard.TouchInput">
+        <value nick="none" value="0"/>
+        <value nick="single" value="1"/>
+        <value nick="multi" value="2"/>
+    </enum>
+    <enum id="org.onboard.keyboard.InputEventSource">
+        <value nick="GTK" value="0"/>
+        <value nick="XInput" value="1"/>
+    </enum>
+
+    <schema id="org.onboard.keyboard" path="/org/onboard/keyboard/">
+        <key name="show-click-buttons" type="b">
+            <default>false</default>
+            <summary>Show click buttons</summary>
+            <description>Show mouse click buttons.</description>
+        </key>
+        <key name="sticky-key-release-delay" type="d">
+            <default>0.0</default>
+            <summary>Auto-release sticky keys</summary>
+            <description>Time of inactivity in seconds until latched and locked modifiers and layer keys are released automatically. This applies no matter if the keyboard is hidden or visible, but when hidden, "sticky-key-release-on-hide-delay" may release the keys earlier. Leave at 0.0 to not automatically release them.</description>
+        </key>
+        <key name="sticky-key-release-on-hide-delay" type="d">
+            <default>5.0</default>
+            <summary>Auto-release sticky keys after hiding the keyboard</summary>
+            <description>Time after hiding the keyboard in seconds until latched and locked modifiers and layer keys are released automatically. Leave at 0.0 to not automatically release them.</description>
+        </key>
+        <key name='sticky-key-behavior' type='a{ss}'>
+            <default>{'all' : 'cycle'}</default>
+            <summary>Behavior of sticky keys</summary>
+            <description>Controls the behavior of sticky keys, e.g. modifier and layer keys.
+Groups of keys or single keys may be assigned individual behaviors.
+Valid groups are 'all', 'modifiers' and 'layers'. Individual keys may be specified by their ids defined in the .layout files.
+Valid behaviors are: 'cycle' (default), 'dblclick', 'latch', 'lock' as well as 'latch-lock-nocycle', 'dblclick-nocycle', 'latch-nocycle', 'lock-nocycle' and 'push'.
+            </description>
+        </key>
+        <key name="default-key-action" enum="org.onboard.keyboard.DefaultKeyAction">
+            <default>"delayed-stroke"</default>
+            <summary>Default key action</summary>
+            <description>The key action determines when key strokes are generated.
+single-stroke: generate key-press on button down, key-release on button-up. If the system is configured to do so, holding the button down long enough initiates key repeats.
+delayed-stroke: generate key-press and key-release on button-release, there is no support for key-repeat, but holding the button down long enough generates a long press.
+            </description>
+        </key>
+        <key name="key-synth" enum="org.onboard.keyboard.KeySynth">
+            <default>"auto"</default>
+            <summary>Key synthesizer</summary>
+            <description>The key-stroke generator to use.</description>
+        </key>
+        <key name="long-press-delay" type="d">
+            <default>0.5</default>
+            <summary>Long-press delay</summary>
+            <description>Time to hold a key down until a long-press is detected.</description>
+        </key>
+        <key name="touch-input"  enum="org.onboard.keyboard.TouchInput">
+            <default>"multi"</default>
+            <summary>Touch input handling</summary>
+            <description>Enable listening to single or multiple simultaneous touch events (multi-touch). Falls back to regular pointer events when there are no actual touch events coming in. </description>
+        </key>
+        <key name="input-event-source"  enum="org.onboard.keyboard.InputEventSource">
+            <default>"XInput"</default>
+            <summary>Input event source</summary>
+            <description>Receive pointing device events from either GTK (safe) or XInput (recommended if it works).'XInput' gets around a number of pointer grab issues. In particular, it allows to freely type into text entries with pop-up windows, for example in the firefox URL-bar.</description>
+        </key>
+        <key name="touch-feedback-enabled" type="b">
+            <default>false</default>
+            <summary>Touch feedback enabled</summary>
+            <description>Show extra labels above currently pressed keys.</description>
+        </key>
+        <key name="touch-feedback-size" type="i">
+            <default>0</default>
+            <summary>Touch-feedback size</summary>
+            <description>Size of the touch-feedback popup in pixels. 0 to let Onboard guess it based on physical monitor size.</description>
+        </key>
+        <key name="audio-feedback-enabled" type="b">
+            <default>false</default>
+            <summary>Audio feedback</summary>
+            <description>Play a sound when a key is pressed.</description>
+        </key>
+        <key name="audio-feedback-place-in-space" type="b">
+            <default>false</default>
+            <summary>Place audio feedback in space</summary>
+            <description>Place audio feedback in space between speakers.</description>
+        </key>
+        <key name="show-secondary-labels" type="b">
+            <default>false</default>
+            <summary>Show secondary labels</summary>
+            <description>Show additional key labels of different modifier levels.</description>
+        </key>
+        <key name="inter-key-stroke-delay" type="d">
+            <default>0.0</default>
+            <summary>Delay between key-strokes</summary>
+            <description>Delay in seconds between generated key-strokes when inserting word suggestions or snippets. Mainly meant to work around key-stroke losses in Firefox and other Gtk-2 applications. Has no effect on Gtk-3 applications.</description>
+        </key>
+        <key name="modifier-update-delay" type="d">
+            <default>1.0</default>
+            <summary>Delay until external modifier changes become visible</summary>
+            <description>Delay in seconds until most modifier changes from the outside become visible in Onboard. 0.0 for no delay. -1.0 to never show modifier changes.</description>
+        </key>
+        <key name="key-press-modifiers" type="a{ss}">
+            <default>{"button3" : "SHIFT"}</default>
+            <summary>Auto-activate modifiers based on how a key was pressed</summary>
+            <description>Format {trigger, modifier[|modifier [|...]]}. Triggers may be one of "button0"-"button32", "swipeup", or "swipedown".
+Modifiers can only be "SHIFT" at the moment.
+            </description>
+        </key>
+    </schema>
+
+    <enum id="org.onboard.window.DockingEdge">
+        <value nick="top" value="0"/>
+        <value nick="bottom" value="3"/>
+    </enum>
+
+    <enum id="org.onboard.window.DockingMonitor">
+        <value nick="active"   value="100"/>
+        <value nick="primary"  value="110"/>
+        <value nick="monitor0" value="0"/>
+        <value nick="monitor1" value="1"/>
+        <value nick="monitor2" value="2"/>
+        <value nick="monitor3" value="3"/>
+        <value nick="monitor4" value="4"/>
+        <value nick="monitor5" value="5"/>
+        <value nick="monitor6" value="6"/>
+        <value nick="monitor7" value="7"/>
+        <value nick="monitor8" value="8"/>
+    </enum>
+
+    <schema id="org.onboard.window" path="/org/onboard/window/">
+        <key name="window-state-sticky" type="b">
+            <default>true</default>
+            <summary>Always on visible workspace</summary>
+            <description>Show keyboard and icon palette always on visible workspace.</description>
+        </key>
+        <key name="window-decoration" type="b">
+            <default>false</default>
+            <summary>Window decoration</summary>
+            <description>Show window title bar and frame.</description>
+        </key>
+        <key name="force-to-top" type="b">
+            <default>false</default>
+            <summary>Force window to top</summary>
+            <description>Try harder to keep the keyboard on top of other windows. Results depend very much on the behavior of the window manager. In Compiz/Unity it helps to keep Onboard above Dash.</description>
+        </key>
+        <key name="keep-aspect-ratio" type="b">
+            <default>false</default>
+            <summary>Keep the window's aspect ratio'</summary>
+            <description>Constrain the size of the main window to the layout's aspect ratio.</description>
+        </key>
+        <key name="transparent-background" type="b">
+            <default>false</default>
+            <summary>Transparent window background</summary>
+            <description>Makes the background of the keyboard fully transparent.</description>
+        </key>
+        <key name="transparency" type="d">
+            <default>0.0</default>
+            <summary>Window transparency</summary>
+            <description>Transparency of the keyboard window.</description>
+        </key>
+        <key name="background-transparency" type="d">
+            <default>10</default>
+            <summary>Background transparency</summary>
+            <description>Transparency of the background of the keyboard window.</description>
+        </key>
+        <key name="enable-inactive-transparency" type="b">
+            <default>false</default>
+            <summary>Inactive transparency change enabled</summary>
+            <description>Change transparency to 'inactive-transparency' on inactivity.</description>
+        </key>
+        <key name="inactive-transparency" type="d">
+            <default>50.0</default>
+            <summary>Inactive window transparency</summary>
+            <description>Transparency after leaving onboards window.</description>
+        </key>
+        <key name="inactive-transparency-delay" type="d">
+            <default>1.0</default>
+            <summary>Inactive transparency delay</summary>
+            <description>Delay in seconds from leaving Onboards window until the inactive transparency takes effect.</description>
+        </key>
+        <key name="window-handles" type="s">
+            <default>"E SE S SW W NW N NE M"</default>
+            <summary>Window resize and move handles</summary>
+            <description>Active resize and move handles, space separated.</description>
+        </key>
+        <key name="docking-enabled" type="b">
+            <default>false</default>
+            <summary>Docking enabled</summary>
+            <description>Enable docking of the keyboard window to screen edges. 'False' to leave the keaboard floating.</description>
+        </key>
+        <key name="docking-shrink-workarea" type="b">
+            <default>true</default>
+            <summary>Shrink workarea when docked.</summary>
+            <description>When docked, shrink the avaliable space for maximized windows.</description>
+        </key>
+        <key name="docking-edge" enum="org.onboard.window.DockingEdge">
+            <default>"bottom"</default>
+            <summary>Docking screen edge</summary>
+            <description>Edge to dock the keyboard window to.</description>
+        </key>
+        <key name="docking-monitor" enum="org.onboard.window.DockingMonitor">
+            <default>"active"</default>
+            <summary>Docking monitor</summary>
+            <description>Monitor where the keyboard docks.</description>
+        </key>
+        <key name="docking-aspect-change-range" type="ad">
+            <default>[0.0, 2.0]</default>
+            <summary>Aspect range while docked and expanded</summary>
+            <description>Limits of the keyboard's aspect ratio when it is docked and expanded.</description>
+        </key>
+
+        <child name="landscape" schema="org.onboard.window.landscape"/>
+        <child name="portrait"  schema="org.onboard.window.portrait"/>
+    </schema>
+
+    <schema id="org.onboard.window.landscape" path="/org/onboard/window/landscape/">
+        <key name="x" type="i">
+            <default>100</default>
+            <summary>X position of the keyboard</summary>
+            <description>Horizontal position of the keyboard window.</description>
+        </key>
+        <key name="y" type="i">
+            <default>50</default>
+            <summary>Y position of the keyboard</summary>
+            <description>Vertical position of the keyboard window.</description>
+        </key>
+        <key name="width" type="i">
+            <default>700</default>
+            <summary>Window width</summary>
+            <description>Width of the keyboard window.</description>
+        </key>
+        <key name="height" type="i">
+            <default>205</default>
+            <summary>Window height</summary>
+            <description>Height of the keyboard window.</description>
+        </key>
+        <key name="dock-width" type="i">
+            <default>700</default>
+            <summary>Docked window width</summary>
+            <description>Width of the docked keyboard window.</description>
+        </key>
+        <key name="dock-height" type="i">
+            <default>205</default>
+            <summary>Docked window height</summary>
+            <description>Height of the docked keyboard window.</description>
+        </key>
+        <key name="dock-expand" type="b">
+            <default>true</default>
+            <summary>Docked expansion</summary>
+            <description>Expand the keyboard to the edges of the workarea when docked.</description>
+        </key>
+    </schema>
+
+    <schema id="org.onboard.window.portrait" path="/org/onboard/window/portrait/">
+        <key name="x" type="i">
+            <default>100</default>
+            <summary>X position of the keyboard</summary>
+            <description>Horizontal position of the keyboard window.</description>
+        </key>
+        <key name="y" type="i">
+            <default>50</default>
+            <summary>Y position of the keyboard</summary>
+            <description>Vertical position of the keyboard window.</description>
+        </key>
+        <key name="width" type="i">
+            <default>600</default>
+            <summary>Window width</summary>
+            <description>Width of the keyboard window.</description>
+        </key>
+        <key name="height" type="i">
+            <default>200</default>
+            <summary>Window height</summary>
+            <description>Height of the keyboard window..</description>
+        </key>
+        <key name="dock-width" type="i">
+            <default>600</default>
+            <summary>Docked window width</summary>
+            <description>Width of the docked keyboard window.</description>
+        </key>
+        <key name="dock-height" type="i">
+            <default>200</default>
+            <summary>Docked window height</summary>
+            <description>Height of the docked keyboard window.</description>
+        </key>
+        <key name="dock-expand" type="b">
+            <default>true</default>
+            <summary>Docked expansion</summary>
+            <description>Expand the keyboard to the edges of the workarea when docked.</description>
+        </key>
+    </schema>
+
+    <schema id="org.onboard.icon-palette" path="/org/onboard/icon-palette/">
+        <key name="in-use" type="b">
+            <default>false</default>
+            <summary>Show icon palette when onboard is minimized.</summary>
+            <description>Display a floating icon when onboard is minimized. By clicking on it, onboard reappears.</description>
+        </key>
+        <key name="window-handles" type="s">
+            <default>"E SE S SW W NW N NE M"</default>
+            <summary>Window resize and move handles</summary>
+            <description>Active resize and move handles, space separated.</description>
+        </key>
+        <child name="landscape" schema="org.onboard.icon-palette.landscape"/>
+        <child name="portrait" schema="org.onboard.icon-palette.portrait"/>
+    </schema>
+
+    <schema id="org.onboard.icon-palette.landscape" path="/org/onboard/icon-palette/landscape/">
+        <key name="x" type="i">
+            <default>100</default>
+            <summary>Horizontal position of the icon palette.</summary>
+            <description>Horizontal position of the icon palette on the screen.</description>
+        </key>
+        <key name="y" type="i">
+            <default>50</default>
+            <summary>Vertical position of the icon palette.</summary>
+            <description>Vertical position of the icon palette on the screen.</description>
+        </key>
+        <key name="width" type="i">
+            <default>64</default>
+            <summary>Width of the icon palette.</summary>
+            <description>Width of the icon palette in pixels.</description>
+        </key>
+        <key name="height" type="i">
+            <default>64</default>
+            <summary>Height of the icon palette.</summary>
+            <description>Height of the icon palette in pixels.</description>
+        </key>
+    </schema>
+
+    <schema id="org.onboard.icon-palette.portrait" path="/org/onboard/icon-palette/portrait/">
+        <key name="x" type="i">
+            <default>100</default>
+            <summary>Horizontal position of the icon palette.</summary>
+            <description>Horizontal position of the icon palette on the screen.</description>
+        </key>
+        <key name="y" type="i">
+            <default>50</default>
+            <summary>Vertical position of the icon palette.</summary>
+            <description>Vertical position of the icon palette on the screen.</description>
+        </key>
+        <key name="width" type="i">
+            <default>64</default>
+            <summary>Width of the icon palette.</summary>
+            <description>Width of the icon palette in pixels.</description>
+        </key>
+        <key name="height" type="i">
+            <default>64</default>
+            <summary>Height of the icon palette.</summary>
+            <description>Height of the icon palette in pixels.</description>
+        </key>
+    </schema>
+
+    <schema id="org.onboard.universal-access" path="/org/onboard/universal-access/">
+        <key name="drag-threshold" type="i">
+            <default>-1</default>
+            <summary>Drag threshold</summary>
+            <description>Accidental resize and move protection. Threshold is the distance in pixels the pointer has to travel before dragging begins. -1 for system drag threshold, 0 to disable and any positive integer as custom threshold.</description>
+        </key>
+        <key name="hide-click-type-window" type="b">
+            <default>true</default>
+            <summary>Hide hover click click-type window</summary>
+            <description>When Hover Click is enabled, hide the system-provided window for click type selection.</description>
+        </key>
+        <key name="enable-click-type-window-on-exit" type="b">
+            <default>true</default>
+            <summary>Enable click-type window on exit</summary>
+            <description>Always enable the system provided window for click-type selection when exiting onboard.
+This key is deprecated and has no effect with mousetweaks version 3.10.0 or later.</description>
+        </key>
+    </schema>
+
+    <schema id="org.onboard.theme-settings" path="/org/onboard/theme-settings/">
+        <key name="color-scheme" type="s">
+            <default>''</default>
+            <summary>Color scheme filename</summary>
+            <description>Name of the file with the color scheme.</description>
+        </key>
+        <key name="background-gradient" type="d">
+            <default>0.0</default>
+            <summary>Strength of the background gradient</summary>
+            <description>Strength of the background gradient. Range 0-100%, with 0 for flat color.</description>
+        </key>
+        <key name="key-style" type="s">
+            <default>'flat'</default>
+            <summary>Key style</summary>
+            <description>Drawing style of the keys. Valid values are currently "flat", "gradient" and "dish".</description>
+        </key>
+        <key name="roundrect-radius" type="d">
+            <default>0.0</default>
+            <summary>Roundness</summary>
+            <description>Radius of rounded corners around the keys. Range 0-100%, with 0 for fully rectangular keys.</description>
+        </key>
+        <key name="key-size" type="d">
+            <default>100.0</default>
+            <summary>Key size</summary>
+            <description>Size of all keys relative to the layout definition in percent.</description>
+        </key>
+        <key name="key-stroke-width" type="d">
+            <default>100.0</default>
+            <summary>Width of the key border</summary>
+            <description>Width of the border in percent of the style default. Minimum width in screen coordinates is 1 pixel. A value of 0 turns the line off.</description>
+        </key>
+        <key name="key-fill-gradient" type="d">
+            <default>0.0</default>
+            <summary>Strength of the fill gradient</summary>
+            <description>Strength of the keys' fill gradient. Range 0-100%, with 0 for flat color.</description>
+        </key>
+        <key name="key-stroke-gradient" type="d">
+            <default>0.0</default>
+            <summary>Strength of the stroke gradient</summary>
+            <description>Strength of the keys' outline gradient. Range 0-100%, with 0 for flat color.</description>
+        </key>
+        <key name="key-gradient-direction" type="d">
+            <default>0.0</default>
+            <summary>Gradient direction</summary>
+            <description>Direction of simulated incoming light. 0-360 degrees, where 0 stands for light from the top.</description>
+        </key>
+        <key name="key-label-font" type="s">
+            <default>''</default>
+            <summary>Font for key-labels</summary>
+            <description>Font for key labels. May include the modifiers 'bold', 'italic', 'condensed', separated by spaces. </description>
+        </key>
+        <key name="key-label-overrides" type="as">
+            <default>[]</default>
+            <summary>Key label overrides</summary>
+            <description>Optional key labels and and size groups that override the layouts labels. Format: ["key_id:label:group",...]. Colons and backslashes have to be escaped as "\:" and "\\".</description>
+        </key>
+        <key name="key-shadow-strength" type="d">
+            <default>0.0</default>
+            <summary>Shadow strength</summary>
+            <description>Strength of the keys' shadows. Range 0-100%, 0 turns shadows off.</description>
+        </key>
+        <key name="key-shadow-size" type="d">
+            <default>0.0</default>
+            <summary>Shadow size</summary>
+            <description>Size and offset of the keys' shadows. Range 0-100%.</description>
+        </key>
+    </schema>
+
+    <schema id="org.onboard.lockdown" path="/org/onboard/lockdown/">
+        <key name="disable-click-buttons" type="b">
+            <default>false</default>
+            <summary>Disallow showing click helpers</summary>
+            <description>Disallow showing click buttons.</description>
+        </key>
+        <key name="disable-hover-click" type="b">
+            <default>false</default>
+            <summary>Disable hover click button</summary>
+            <description>Disable Onboard's hover click button. Hover click can still be turned on in gnome system settings.</description>
+        </key>
+        <key name="disable-dwell-activation" type="b">
+            <default>false</default>
+            <summary>Disable dwell-activation</summary>
+            <description>Disable dwell-activation of all dwell-enabled buttons and the icon palette. This has no effect on the system-wide available hover click functionality.</description>
+        </key>
+        <key name="disable-preferences" type="b">
+            <default>false</default>
+            <summary>Disallow opening preferences</summary>
+            <description>Disallow opening Onboards preferences via button and status menu. Onboard-settings can still be started from the desktop shortcut and from command line.</description>
+        </key>
+        <key name="disable-quit" type="b">
+            <default>false</default>
+            <summary>Disallow quitting Onboard</summary>
+            <description>Disallow quitting Onboard by pressing the quit button or choosing quit from the status menu. Onboard then only closes by sending SIGTERM, i.e. killing it.</description>
+        </key>
+        <key name="disable-touch-handles" type="b">
+            <default>false</default>
+            <summary>Never show touch handles</summary>
+            <description>Never show the enlarged move/resize handles for touch and hover click users.</description>
+        </key>
+        <key name="disable-keys" type="aas">
+            <default>[["CTRL", "LALT", "F[0-9]+"]]</default>
+            <summary>Disable keys</summary>
+            <description>Disable the key action for the listed key combinations. Entries consist of a regex pattern to match Onboard's key ids, preceeded by optional modifiers.
+Available modifiers are: SHIFT, CTRL, LALT, RALT, LWIN, CAPS, NMLK
+Example: [["LALT", "TAB"], ["LALT", "SHIFT", "TAB"], ["CTRL", "ALT", "F[0-9]+"]]
+            </description>
+        </key>
+    </schema>
+
+    <enum id="org.onboard.scanner.ScanMode">
+        <value nick="Autoscan" value="0"/>
+        <value nick="Overscan" value="1"/>
+        <value nick="Stepscan" value="2"/>
+        <value nick="Directed" value="3"/>
+    </enum>
+
+    <schema id="org.onboard.scanner" path="/org/onboard/scanner/">
+        <key name="enabled" type="b">
+            <default>false</default>
+            <summary>Enable scanner</summary>
+            <description>Set Onboard to keyboard scanning mode.</description>
+        </key>
+        <key name="mode" enum="org.onboard.scanner.ScanMode">
+            <default>"Autoscan"</default>
+            <summary>Scan mode</summary>
+            <description>The scan mode determines how the scanner moves between keys.</description>
+        </key>
+        <key name="interval" type="d">
+            <default>1.20</default>
+            <summary>Scanning interval</summary>
+            <description>The delay before the scanner selects the next key. (in seconds)</description>
+        </key>
+        <key name="interval-fast" type="d">
+            <default>0.05</default>
+            <summary>Fast scanning interval</summary>
+            <description>The scanning interval used for forward progression in 'Overscan' mode. (in seconds)</description>
+        </key>
+        <key name="cycles" type="i">
+            <default>2</default>
+            <summary>Scannig cycles</summary>
+            <description>The maximum number of keyboard cycles before the scanner stops.</description>
+        </key>
+        <key name="backtrack" type="i">
+            <default>5</default>
+            <summary>Amount of backtracking</summary>
+            <description>The number of keys the scanner will backtrack in 'Overscan' mode.</description>
+        </key>
+        <key name="user-scan" type="b">
+            <default>false</default>
+            <summary>User scan</summary>
+            <description>The scanner should only step while the switch is held down. ('Autoscan' mode)</description>
+        </key>
+        <key name="alternate" type="b">
+            <default>false</default>
+            <summary>Alternate actions</summary>
+            <description>The scanner should swap switch actions after every key activation. ('Stepscan' mode)</description>
+        </key>
+        <key name="device-name" type="s">
+            <default>"Default"</default>
+            <summary>Input device name</summary>
+            <description>The name of the input device used for scanning.</description>
+        </key>
+        <key name="device-detach" type="b">
+            <default>false</default>
+            <summary>Detach input device</summary>
+            <description>The input device should not control the system cursor/caret.</description>
+        </key>
+        <key name="device-key-map" type="a{ii}">
+            <default>{}</default>
+            <summary>Key mapping</summary>
+            <description>Maps key values to scan actions. (Format: keyval:action)</description>
+        </key>
+        <key name="device-button-map" type="a{ii}">
+            <default>{1:0,3:5}</default>
+            <summary>Button mapping</summary>
+            <description>Maps mouse buttons to scan actions. (Format: button:action)</description>
+        </key>
+        <key name="feedback-flash" type="b">
+            <default>true</default>
+            <summary>Flash keys</summary>
+            <description>Keys should flash when activated.</description>
+        </key>
+    </schema>
+
+    <enum id="org.onboard.typing-assistance.spell-check.Backend">
+        <value nick="hunspell" value="0"/>
+        <value nick="aspell" value="1"/>
+    </enum>
+
+    <schema id="org.onboard.typing-assistance" path="/org/onboard/typing-assistance/">
+        <key name="active-language" type="s">
+            <default>""</default>
+            <summary>Active language.</summary>
+            <description>Currently active language id for word prediction and spell checker. The format is ll[_CC] where ll is a ISO 639 two letter language code and CC a ISO 3166 country code, e.g. en_US, de_DE. Leave it empty for the system default language.</description>
+        </key>
+        <key name="recent-languages" type="as">
+            <default>[]</default>
+            <summary>Most recently used languages.</summary>
+            <description>List of most recently used languages.</description>
+        </key>
+        <key name="max-recent-languages" type="i">
+            <default>5</default>
+            <summary>Maximum number of recently used languages.</summary>
+            <description>The maximum number of recently used languages visible in the language menu.</description>
+        </key>
+        <key name="spell-check-backend" enum="org.onboard.typing-assistance.spell-check.Backend">
+            <default>"hunspell"</default>
+            <summary>Backend</summary>
+            <description>The spell checker backend.</description>
+        </key>
+        <key name="auto-capitalization" type="b">
+            <default>false</default>
+            <summary>Auto-capitalization enabled</summary>
+            <description>Automatically capitalize words while typing.</description>
+        </key>
+        <key name="auto-correction" type="b">
+            <default>false</default>
+            <summary>Auto-correction enabled</summary>
+            <description>Automatically correct words while typing.</description>
+        </key>
+
+        <child name="word-suggestions" schema="org.onboard.typing-assistance.word-suggestions" />
+    </schema>
+
+    <enum id="org.onboard.keyboard.LearningBehaviorPaused">
+        <value nick="nothing" value="0"/>
+        <value nick="known-only" value="1"/>
+    </enum>
+
+    <schema id="org.onboard.typing-assistance.word-suggestions" path="/org/onboard/typing-assistance/word-suggestions/">
+        <key name="enabled" type="b">
+            <default>false</default>
+            <summary>Word suggestions enabled</summary>
+            <description>Set to 'true' to enable word suggestions.</description>
+        </key>
+        <key name="spelling-suggestions-enabled" type="b">
+            <default>true</default>
+            <summary>Spelling suggestions enabled</summary>
+            <description>Set to 'true' to enable spelling suggestions for mispelled words at or before the cursor.</description>
+        </key>
+        <key name="auto-learn" type="b">
+            <default>true</default>
+            <summary>Enable automatic learning</summary>
+            <description>Continuously improve word predictions with typed and inserted words.</description>
+        </key>
+        <key name="pause-learning-locked" type="b">
+            <default>false</default>
+            <summary>Pause learning</summary>
+            <description>Lock the button to pause learning.</description>
+        </key>
+        <key name="learning-behavior-paused" enum="org.onboard.keyboard.LearningBehaviorPaused">
+            <default>"nothing"</default>
+            <summary>Learning behavior when paused</summary>
+            <description>Learning behavior while the "Pause learning" button is active. 
+With 'known-only', new words are rejected, but frequency and recency of already known words are still recorded.
+            </description>
+        </key>
+        <key name="punctuation-assistance" type="b">
+            <default>true</default>
+            <summary>Enable punctuation assistance</summary>
+            <description>Add and remove spaces when inserting word suggestions followed by punctuation characters.</description>
+        </key>
+        <key name="delayed-word-separators-enabled" type="b">
+            <default>false</default>
+            <summary>Insert word separators lazily</summary>
+            <description>Experimental, not recommended.</description>
+        </key>
+        <key name="stealth-mode" type="b">
+            <default>false</default>
+            <summary>Enable stealth mode</summary>
+            <description>Stealth mode disables word prediction, auto learning and the typing history for secure password entry.</description>
+        </key>
+        <key name="accent-insensitive" type="b">
+            <default>true</default>
+            <summary>Accent insensitive</summary>
+            <description>Enable accent insensitive word completion.</description>
+        </key>
+        <key name="max-word-choices" type="i">
+            <default>5</default>
+            <summary>Maximum number of predictions.</summary>
+            <description>Maximum number of predicted words shown in the word suggestion bar.</description>
+        </key>
+        <key name="show-context-line" type="b">
+            <default>false</default>
+            <summary>Show the context line</summary>
+            <description>Display the currently edited text line in the keyboard.</description>
+        </key>
+        <key name="wordlist-buttons" type="as">
+            <default>["previous-predictions", "next-predictions", "language", "hide"]</default>
+            <summary>Buttons visible in the word suggestion bar</summary>
+            <description>Key ids and order of buttons visible in the word suggestion bar.</description>
+        </key>
+    </schema>
+</schemalist>
+

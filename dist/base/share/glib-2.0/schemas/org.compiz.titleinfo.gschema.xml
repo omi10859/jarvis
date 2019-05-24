@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.titleinfo" gettext-domain="compiz">
+    <key type="b" name="show-remote-machine">
+      <default>true</default>
+      <summary>Show Remote Machine Name</summary>
+      <description>Show name of remote machine if a certain application is executed remotely.</description>
+    </key>
+    <key type="b" name="show-root">
+      <default>true</default>
+      <summary>Show Root</summary>
+      <description>Show marker if you're logged in as root.</description>
+    </key>
+  </schema>
+</schemalist>

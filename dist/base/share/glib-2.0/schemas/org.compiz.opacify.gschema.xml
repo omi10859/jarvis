@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.opacify" gettext-domain="compiz">
+    <key type="s" name="toggle-key">
+      <default>'&lt;Super&gt;o'</default>
+      <summary>Toggle Opacify</summary>
+      <description>Use this to enable/disable Opacify on the fly. Previously opacified windows will not be reset once you disable it like this.</description>
+    </key>
+    <key type="b" name="toggle-reset">
+      <default>true</default>
+      <summary>Reset opacity to original values when toggling</summary>
+      <description>Reset the opacity of all windows modified by opacify when toggling Opacify with the defined key-combination.</description>
+    </key>
+    <key type="i" name="timeout">
+      <default>700</default>
+      <summary>Delay until Opacification</summary>
+      <description>The delay (in ms) before Opacify changes opacity after the active window has changed. (0 - 10000)</description>
+    </key>
+    <key type="b" name="init-toggle">
+      <default>true</default>
+      <summary>Toggle Opacify on by default</summary>
+      <description>With this enabled, opacify will be on when you load Opacify, which is usually when you start Compiz.</description>
+    </key>
+    <key type="b" name="only-if-block">
+      <default>false</default>
+      <summary>Only increase opacity if a window is blocking</summary>
+      <description>Only increase the opacity on the targeted window if it has one or more windows blocking it from view.</description>
+    </key>
+    <key type="b" name="focus-instant">
+      <default>false</default>
+      <summary>Bypass delay when the new active window is the focused window.</summary>
+      <description>Do not wait if the window we are hovering is the focused window. This allows us to instantly see the focused window. You probably want to disable this if you are not using 'Click to Focus'.</description>
+    </key>
+    <key type="b" name="no-delay-change">
+      <default>false</default>
+      <summary>Bypass delay when Opacify is reducing the opacity on one or more windows already.</summary>
+      <description>This enables you to let Opacify instantly opacify new windows when you're already making one or more windows invisible. Makes for faster behavior while looking through layers of hidden windows.</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'Normal | Dialog | ModalDialog | Utility | Toolbar | Fullscreen'</default>
+      <summary>Window Match</summary>
+      <description>Windows that should be opacified. (match)</description>
+    </key>
+    <key type="i" name="active-opacity">
+      <default>100</default>
+      <summary>Active Opacity</summary>
+      <description>The minimum opacity percentage to ensure a targeted window has. A target window will have either this opacity or the preset opacity, whichever is higher. (1 - 100)</description>
+    </key>
+    <key type="i" name="passive-opacity">
+      <default>10</default>
+      <summary>Passive Opacity</summary>
+      <description>The maximum opacity percentage a window blocking the current targeted window can have. A blocking window will have either this opacity or the preset opacity, whichever is lower. (1 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

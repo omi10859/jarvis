@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema path="/org/compiz/integrated/" id="org.compiz.integrated">
+	<key type="b" name="display-all-workspaces">
+	    <default>true</default>
+	</key>
+	<key type="s" name="command-window-screenshot">
+	    <default>"gnome-screenshot -w"</default>
+	</key>
+	<key type="s" name="command-screenshot">
+	    <default>"gnome-screenshot"</default>
+	</key>
+	<key type="as" name="run-command-21">
+	    <default>["&lt;Control&gt;&lt;Alt&gt;Delete"]</default>
+	</key>
+	<key type="as" name="run-command-12">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-11">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-10">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-9">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-8">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-7">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-6">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-5">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-4">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-3">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-2">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="as" name="run-command-1">
+	    <default>["Disabled"]</default>
+	</key>
+	<key type="s" name="command-21">
+	    <default>"/usr/bin/gnome-system-monitor -p"</default>
+	</key>
+	<key type="s" name="command-12">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-11">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-10">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-9">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-8">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-7">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-6">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-5">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-4">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-3">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-2">
+	    <default>""</default>
+	</key>
+	<key type="s" name="command-1">
+	    <default>""</default>
+	</key>
+	<key type="as" name="show-hud">
+	    <default>["&lt;Alt&gt;"]</default>
+	</key>
+    </schema>
+</schemalist>
+

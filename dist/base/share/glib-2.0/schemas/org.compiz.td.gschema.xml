@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.td" gettext-domain="compiz">
+    <key type="s" name="window-match">
+      <default>'Toolbar | Utility | Dialog | Normal | Unknown'</default>
+      <summary>Window Match</summary>
+      <description>Windows that should be handled by 3D (match)</description>
+    </key>
+    <key type="i" name="min-cube-size">
+      <default>60</default>
+      <summary>Minimum Cube Size</summary>
+      <description>Minimum cube size (in percent). (10 - 100)</description>
+    </key>
+    <key type="i" name="max-window-space">
+      <default>10</default>
+      <summary>Window Space</summary>
+      <description>Change the amount of space between the windows (in percent of the cube size). (0 - 50)</description>
+    </key>
+    <key type="b" name="manual-only">
+      <default>true</default>
+      <summary>3D Only On Mouse Rotate</summary>
+      <description>Initiates the 3D display only if rotate is mouse driven. (Ex. You rotate the cube via the mouse)</description>
+    </key>
+    <key type="d" name="width">
+      <default>0.3</default>
+      <summary>Window Depth</summary>
+      <description>Window depth (0.0 - 1.0)</description>
+    </key>
+    <key type="i" name="bevel">
+      <default>0</default>
+      <summary>Bevel Corners</summary>
+      <description>Roundoff corners for consistency with rounded decorations (0 - 20)</description>
+    </key>
+    <key type="s" name="width-color">
+      <default>'#333333ff'</default>
+      <summary>Window Color (Active)</summary>
+      <description>Color of the active window's depth</description>
+    </key>
+    <key type="s" name="width-color-inactive">
+      <default>'#333333ff'</default>
+      <summary>Window Color (Inactive)</summary>
+      <description>Color of an inactive window's depth</description>
+    </key>
+    <key type="b" name="bevel-topleft">
+      <default>true</default>
+      <summary>Bevel Top Left</summary>
+      <description>Bevel top left corner</description>
+    </key>
+    <key type="b" name="bevel-topright">
+      <default>true</default>
+      <summary>Bevel Top Right</summary>
+      <description>Bevel top right corner</description>
+    </key>
+    <key type="b" name="bevel-bottomleft">
+      <default>false</default>
+      <summary>Bevel Bottom Left</summary>
+      <description>Bevel bottom left corner</description>
+    </key>
+    <key type="b" name="bevel-bottomright">
+      <default>false</default>
+      <summary>Bevel Bottom Right</summary>
+      <description>Bevel bottom right corner</description>
+    </key>
+  </schema>
+</schemalist>

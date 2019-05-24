@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/apps/geoclue/" id="org.freedesktop.Geoclue">
+    <key type="u" name="gps-baudrate">
+      <default>0</default>
+      <summary>The baud rate for the attached GPS device</summary>
+      <description>The baud rate for the attached GPS device.</description>
+    </key>
+    <key type="s" name="gps-device">
+      <default>''</default>
+      <summary>The device node or Bluetooth address for the attached GPS device</summary>
+      <description>The device node or Bluetooth address for the attached GPS device.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.shift" gettext-domain="compiz">
+    <key type="s" name="initiate-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;s'</default>
+      <summary>Initiate Key</summary>
+      <description>Initiate the shift switcher view via keyboard shortcut.</description>
+    </key>
+    <key type="s" name="initiate-button">
+      <default>'Disabled'</default>
+      <summary>Initiate Button</summary>
+      <description>Initiate the shift switcher view via mouse button.</description>
+    </key>
+    <key type="s" name="initiate-edge">
+      <default>''</default>
+      <summary>Initiate Screen Corner / Edge</summary>
+      <description>Initiate the shift switcher view via screen corner or edge.</description>
+    </key>
+    <key type="s" name="initiate-all-key">
+      <default>'Disabled'</default>
+      <summary>Initiate Key (All Workspaces)</summary>
+      <description>Initiate the shift switcher view via keyboard shortcut, taking into account all windows on all workspaces.</description>
+    </key>
+    <key type="s" name="initiate-all-button">
+      <default>'Disabled'</default>
+      <summary>Initiate Button (All Workspaces)</summary>
+      <description>Initiate the shift switcher view via mouse button, taking into account all windows on all workspaces.</description>
+    </key>
+    <key type="s" name="initiate-all-edge">
+      <default>''</default>
+      <summary>Initiate Screen Corner / Edge (All Workspaces)</summary>
+      <description>Initiate the shift switcher view via screen corner or edge, taking into account all windows on all workspaces.</description>
+    </key>
+    <key type="s" name="next-key">
+      <default>'&lt;Super&gt;Tab'</default>
+      <summary>Next Window Key</summary>
+      <description>Reveals the shift switcher, if not visible and selects the next window on the current workspace. Release to switch focus to the selected window.</description>
+    </key>
+    <key type="s" name="next-button">
+      <default>'Disabled'</default>
+      <summary>Next Window Button</summary>
+      <description>Reveals the shift switcher, if not visible and selects the next window on the current workspace. Release to switch focus to the selected window.</description>
+    </key>
+    <key type="s" name="prev-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;Tab'</default>
+      <summary>Previous Window Key</summary>
+      <description>Reveals the shift switcher, if not visible and selects the previous window on the current workspace. Release to switch focus to the selected window.</description>
+    </key>
+    <key type="s" name="prev-button">
+      <default>'Disabled'</default>
+      <summary>Previous Window Button</summary>
+      <description>Reveals the shift switcher, if not visible and selects the previous window on the current workspace. Release to switch focus to the selected window.</description>
+    </key>
+    <key type="s" name="next-all-key">
+      <default>'&lt;Super&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Next Window Key (All Workspaces)</summary>
+      <description>Reveals the shift switcher, if not visible and selects the next window, taking into account all workspaces. Release to focus the selected window.</description>
+    </key>
+    <key type="s" name="next-all-button">
+      <default>'Disabled'</default>
+      <summary>Next Window Button (All Workspaces)</summary>
+      <description>Reveals the shift switcher, if not visible and selects the next window, taking into account all workspaces. Release to focus the selected window.</description>
+    </key>
+    <key type="s" name="prev-all-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Previous Window Key (All Workspaces)</summary>
+      <description>Reveals the shift switcher, if not visible and selects the previous window, taking into account all workspaces. Release to focus the selected window.</description>
+    </key>
+    <key type="s" name="prev-all-button">
+      <default>'Disabled'</default>
+      <summary>Previous Window Button (All Workspaces)</summary>
+      <description>Reveals the shift switcher, if not visible and selects the previous window, taking into account all workspaces. Release to focus the selected window.</description>
+    </key>
+    <key type="s" name="next-group-key">
+      <default>'Disabled'</default>
+      <summary>Next Window Key (Group)</summary>
+      <description>Reveals the shift switcher, if not visible and selects the next window of the currently selected application. Release to focus the selected window.</description>
+    </key>
+    <key type="s" name="next-group-button">
+      <default>'Disabled'</default>
+      <summary>Next Window Button (Group)</summary>
+      <description>Reveals the shift switcher, if not visible and selects the next window of the currently selected application. Release to focus the selected window.</description>
+    </key>
+    <key type="s" name="prev-group-key">
+      <default>'Disabled'</default>
+      <summary>Previous Window Key (Group)</summary>
+      <description>Reveals the shift switcher, if not visible and selects the previous window of the currently selected application. Release to focus the selected window.</description>
+    </key>
+    <key type="s" name="prev-group-button">
+      <default>'Disabled'</default>
+      <summary>Previous Window Button (Group)</summary>
+      <description>Reveals the shift switcher, if not visible and selects the previous window of the currently selected application. Release to focus the selected window.</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'Normal | Dialog | ModalDialog | Utility | Unknown'</default>
+      <summary>Shift Windows</summary>
+      <description>Windows that should be shown in the shift switcher. (match)</description>
+    </key>
+    <key type="b" name="minimized">
+      <default>true</default>
+      <summary>Show Minimized</summary>
+      <description>Show windows that are minimized, shaded or in show desktop mode.</description>
+    </key>
+    <key type="d" name="speed">
+      <default>1.5</default>
+      <summary>Fade Speed</summary>
+      <description>Fade in/out speed (in seconds). (0.1 - 10.0)</description>
+    </key>
+    <key type="d" name="shift-speed">
+      <default>1.0</default>
+      <summary>Shift Speed</summary>
+      <description>Shift switcher animation speed. (0.1 - 5.0)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>1.2</default>
+      <summary>Timestep</summary>
+      <description>Shift switcher timestep. (0.1 - 50.0)</description>
+    </key>
+    <key type="d" name="mouse-speed">
+      <default>10.0</default>
+      <summary>Mouse Speed</summary>
+      <description>Mouse movement speed. (0.1 - 50.0)</description>
+    </key>
+    <key type="i" name="click-duration">
+      <default>500</default>
+      <summary>Click Duration</summary>
+      <description>Maximum click duration (in milliseconds). (10 - 2000)</description>
+    </key>
+    <key type="i" name="size">
+      <default>50</default>
+      <summary>Maximum Window Size</summary>
+      <description>Maximum window size (in percent of the screen width). (1 - 100)</description>
+    </key>
+    <key type="d" name="background-intensity">
+      <default>0.5</default>
+      <summary>Background Intensity</summary>
+      <description>The intensity of the background. (0.0 - 1.0)</description>
+    </key>
+    <key type="b" name="hide-all">
+      <default>false</default>
+      <summary>Hide Non-Desktop Windows</summary>
+      <description>Hide all non Desktop windows during switching.</description>
+    </key>
+    <key type="b" name="reflection">
+      <default>true</default>
+      <summary>Reflection</summary>
+      <description>Render a reflection of shifted windows on the ground.</description>
+    </key>
+    <key type="s" name="ground-color1">
+      <default>'#b3b3b3cc'</default>
+      <summary>Ground Color (near)</summary>
+      <description>Color and opacity of the ground (near).</description>
+    </key>
+    <key type="s" name="ground-color2">
+      <default>'#b3b3b300'</default>
+      <summary>Ground Color (far)</summary>
+      <description>Color and opacity of the ground (far).</description>
+    </key>
+    <key type="d" name="ground-size">
+      <default>0.5</default>
+      <summary>Reflection Ground Size</summary>
+      <description>Size of the ground the reflection is rendered on. (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="intensity">
+      <default>0.4</default>
+      <summary>Intensity</summary>
+      <description>The intensity of the reflection. (0.0 - 1.0)</description>
+    </key>
+    <key type="i" name="overlay-icon">
+      <default>1</default>
+      <summary>Overlay Icon</summary>
+      <description>The type of icon overlay to draw on windows in the shift switcher. (0 = None, 1 = Emblem, 2 = Big)</description>
+    </key>
+    <key type="b" name="mipmaps">
+      <default>false</default>
+      <summary>Mipmaps</summary>
+      <description>Generate mipmaps for higher quality scaling.</description>
+    </key>
+    <key type="i" name="multioutput-mode">
+      <default>0</default>
+      <summary>Multi Output Mode</summary>
+      <description>Selects how the switcher is displayed, if multiple output devices are used. (0 = Disabled, 1 = On activated output, 2 = One big switcher)</description>
+    </key>
+    <key type="i" name="mode">
+      <default>0</default>
+      <summary>Shift Switcher Mode</summary>
+      <description>The selected shift switcher mode. (0 = Cover, 1 = Flip)</description>
+    </key>
+    <key type="i" name="flip-rotation">
+      <default>30</default>
+      <summary>Flip Angle</summary>
+      <description>Rotation angle of the flip animation (in degrees). (-80 - 80)</description>
+    </key>
+    <key type="d" name="cover-offset">
+      <default>0.0</default>
+      <summary>Cover Offset</summary>
+      <description>Cover movement offset. (-0.4 - 0.4)</description>
+    </key>
+    <key type="d" name="cover-angle">
+      <default>60</default>
+      <summary>Cover Angle</summary>
+      <description>How much windows should be tilted (in degrees). (0 - 360)</description>
+    </key>
+    <key type="d" name="cover-extra-space">
+      <default>1</default>
+      <summary>Space Factor</summary>
+      <description>How much windows should be spaced apart. (1 - 2)</description>
+    </key>
+    <key type="i" name="cover-max-visible-windows">
+      <default>10</default>
+      <summary>Maximum Number Of Visible Windows</summary>
+      <description>The maximum number of windows visible in cover mode. (1 - 100)</description>
+    </key>
+    <key type="b" name="window-title">
+      <default>true</default>
+      <summary>Show Window Title</summary>
+      <description>Show the window title of the currently selected window.</description>
+    </key>
+    <key type="b" name="title-font-bold">
+      <default>false</default>
+      <summary>Bold Font</summary>
+      <description>Render the window title using a bold font.</description>
+    </key>
+    <key type="i" name="title-font-size">
+      <default>16</default>
+      <summary>Font Size</summary>
+      <description>Font size of the window title text (in pixels). (6 - 96)</description>
+    </key>
+    <key type="s" name="title-back-color">
+      <default>'#00000099'</default>
+      <summary>Background Color</summary>
+      <description>Color and opacity of the window title background.</description>
+    </key>
+    <key type="s" name="title-font-color">
+      <default>'#ffffffff'</default>
+      <summary>Font Color</summary>
+      <description>Font color and opacity of the window title.</description>
+    </key>
+    <key type="i" name="title-text-placement">
+      <default>2</default>
+      <summary>Text Placement</summary>
+      <description>Selects where to place the window title. (0 = Centered on screen, 1 = Top of screen minus offset, 2 = Bottom of screen plus offset)</description>
+    </key>
+    <key type="i" name="vertical-offset">
+      <default>50</default>
+      <summary>Vertical Offset</summary>
+      <description>Vertical offset from top or bottom of the screen (in pixels). (0 - 500)</description>
+    </key>
+  </schema>
+</schemalist>

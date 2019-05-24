@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.widget" gettext-domain="compiz">
+    <key type="s" name="toggle-key">
+      <default>'F9'</default>
+      <summary>Toggle Widget Display</summary>
+      <description>Show or hide widget windows</description>
+    </key>
+    <key type="s" name="toggle-button">
+      <default>'Disabled'</default>
+      <summary>Toggle Widget Display</summary>
+      <description>Show or hide widget windows</description>
+    </key>
+    <key type="s" name="toggle-edge">
+      <default>''</default>
+      <summary>Toggle Widget Display</summary>
+      <description>Show or hide widget windows</description>
+    </key>
+    <key type="s" name="match">
+      <default>''</default>
+      <summary>Widget Windows</summary>
+      <description>Windows that always should be treated as widgets (match)</description>
+    </key>
+    <key type="b" name="end-on-click">
+      <default>true</default>
+      <summary>End Widget Mode on Click</summary>
+      <description>End widget mode when a non-widget window is clicked.</description>
+    </key>
+    <key type="d" name="fade-time">
+      <default>0.5</default>
+      <summary>Fade Time</summary>
+      <description>Time (in s) for fading into/out of the widget layer. (0 - 10)</description>
+    </key>
+    <key type="i" name="bg-brightness">
+      <default>50</default>
+      <summary>Background Brightness</summary>
+      <description>Brightness of non-widget windows in widget modes. (0 - 100)</description>
+    </key>
+    <key type="i" name="bg-saturation">
+      <default>100</default>
+      <summary>Background Saturation</summary>
+      <description>Saturation of non-widget windows in widget modes. (0 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.maximumize" gettext-domain="compiz">
+    <key type="b" name="ignore-sticky">
+      <default>true</default>
+      <summary>Ignore sticky windows in the calculations</summary>
+      <description>Treat sticky windows as non-existant when calculating space to use for the maximumize window.</description>
+    </key>
+    <key type="b" name="ignore-overlapping">
+      <default>false</default>
+      <summary>Ignore already overlapping windows in the calculations</summary>
+      <description>Treat windows that are already overlapping with the current window as non-existant when calculating space to use for the maximumize window.</description>
+    </key>
+    <key type="b" name="allow-shrink">
+      <default>true</default>
+      <summary>Permit windows to shrink during maximumize</summary>
+      <description>This allows a window to change it's shape to fit in an area even when the new shape might be smaller than it's current size with regards to area</description>
+    </key>
+    <key type="b" name="maximumize-left">
+      <default>true</default>
+      <summary>Maximumize to left.</summary>
+      <description>When maximumizing, allow the window to grow to the left.</description>
+    </key>
+    <key type="b" name="maximumize-right">
+      <default>true</default>
+      <summary>Maximumize to right.</summary>
+      <description>When maximumizing, allow the window to grow to the right.</description>
+    </key>
+    <key type="b" name="maximumize-up">
+      <default>true</default>
+      <summary>Maximumize to up.</summary>
+      <description>When maximumizing, allow the window to grow upwards.</description>
+    </key>
+    <key type="b" name="maximumize-down">
+      <default>true</default>
+      <summary>Maximumize to down.</summary>
+      <description>When maximumizing, allow the window to grow downwards.</description>
+    </key>
+    <key type="s" name="trigger-max-key">
+      <default>'&lt;Super&gt;M'</default>
+      <summary>Maximumize</summary>
+      <description>Trigger a resize of the window currently focused so it fits as much of the available screenspae as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-left">
+      <default>'Disabled'</default>
+      <summary>Left-only maximumize</summary>
+      <description>Grow the window leftwards as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-right">
+      <default>'Disabled'</default>
+      <summary>Right-only maximumize</summary>
+      <description>Grow the window rightwards as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-up">
+      <default>'Disabled'</default>
+      <summary>Up-only maximumize</summary>
+      <description>Grow the window upwards as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-down">
+      <default>'Disabled'</default>
+      <summary>Down-only maximumize</summary>
+      <description>Grow the window downwards as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-horizontally">
+      <default>'Disabled'</default>
+      <summary>Horizontal-only maximumize</summary>
+      <description>Grow the window horizontally as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-vertically">
+      <default>'Disabled'</default>
+      <summary>Vertical-only maximumize</summary>
+      <description>Grow the window vertically as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-up-left">
+      <default>'Disabled'</default>
+      <summary>Top left maximumize</summary>
+      <description>Grow upper left corner of a window as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-up-right">
+      <default>'Disabled'</default>
+      <summary>Top right maximumize</summary>
+      <description>Grow upper right corner of a window as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-down-left">
+      <default>'Disabled'</default>
+      <summary>Lower left maximumize</summary>
+      <description>Grow lower left corner of a window as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-max-down-right">
+      <default>'Disabled'</default>
+      <summary>Lower right maximumize</summary>
+      <description>Grow lower right corner of a window as much as possible.</description>
+    </key>
+    <key type="s" name="trigger-min-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;M'</default>
+      <summary>Minimumize</summary>
+      <description>Trigger a resize of the window currently focused so it resizes to 1/4 size.</description>
+    </key>
+    <key type="s" name="trigger-min-left">
+      <default>'Disabled'</default>
+      <summary>Left-only minimumize</summary>
+      <description>Shrink the window leftwards.</description>
+    </key>
+    <key type="s" name="trigger-min-right">
+      <default>'Disabled'</default>
+      <summary>Right-only minimumize</summary>
+      <description>Shrink the window rightwards.</description>
+    </key>
+    <key type="s" name="trigger-min-up">
+      <default>'Disabled'</default>
+      <summary>Up-only minimumize</summary>
+      <description>Shrink the window upwards.</description>
+    </key>
+    <key type="s" name="trigger-min-down">
+      <default>'Disabled'</default>
+      <summary>Down-only minimumize</summary>
+      <description>Shrink the window downwards.</description>
+    </key>
+    <key type="s" name="trigger-min-horizontally">
+      <default>'Disabled'</default>
+      <summary>Horizontal-only minimumize</summary>
+      <description>Shrink the window horizontally.</description>
+    </key>
+    <key type="s" name="trigger-min-vertically">
+      <default>'Disabled'</default>
+      <summary>Vertical-only minimumize</summary>
+      <description>Shrink the window vertically.</description>
+    </key>
+    <key type="s" name="trigger-min-up-left">
+      <default>'Disabled'</default>
+      <summary>Top left minimumize</summary>
+      <description>Shrink upper left corner of a the window.</description>
+    </key>
+    <key type="s" name="trigger-min-up-right">
+      <default>'Disabled'</default>
+      <summary>Top right minimumize</summary>
+      <description>Shrink upper right corner of a the window.</description>
+    </key>
+    <key type="s" name="trigger-min-down-left">
+      <default>'Disabled'</default>
+      <summary>Lower left minimumize</summary>
+      <description>Shrink lower left corner of a the window.</description>
+    </key>
+    <key type="s" name="trigger-min-down-right">
+      <default>'Disabled'</default>
+      <summary>Lower right minimumize</summary>
+      <description>Shrink lower right corner of a the window.</description>
+    </key>
+  </schema>
+</schemalist>

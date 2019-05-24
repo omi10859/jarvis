@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.place" gettext-domain="compiz">
+    <key type="b" name="workarounds">
+      <default>true</default>
+      <summary>Workarounds</summary>
+      <description>Window placement workarounds</description>
+    </key>
+    <key type="i" name="mode">
+      <default>2</default>
+      <summary>Placement Mode</summary>
+      <description>Algorithm to use for window placement (0 = Cascade, 1 = Centered, 2 = Smart, 3 = Maximize, 4 = Random, 5 = Pointer)</description>
+    </key>
+    <key type="i" name="multioutput-mode">
+      <default>0</default>
+      <summary>Multi Output Mode</summary>
+      <description>Selects how window placement should behave if multiple outputs are selected (0 = Use active output device, 1 = Use output device with pointer, 2 = Use output device of focussed window, 3 = Place across all outputs)</description>
+    </key>
+    <key type="s" name="force-placement-match">
+      <default>''</default>
+      <summary>Force Placement Windows</summary>
+      <description>Windows that should forcedly be placed, even if they indicate the window manager should avoid placing them. (match)</description>
+    </key>
+    <key type="as" name="position-matches">
+      <default>[]</default>
+      <summary>Positioned windows</summary>
+      <description>Windows that should be positioned by default</description>
+    </key>
+    <key type="ai" name="position-x-values">
+      <default>[]</default>
+      <summary>X Positions</summary>
+      <description>X position values</description>
+    </key>
+    <key type="ai" name="position-y-values">
+      <default>[]</default>
+      <summary>Y Positions</summary>
+      <description>Y position values</description>
+    </key>
+    <key type="ab" name="position-constrain-workarea">
+      <default>[]</default>
+      <summary>Keep In Workarea</summary>
+      <description>Keep placed window in work area, even if that means that the position might differ from the specified position</description>
+    </key>
+    <key type="as" name="mode-matches">
+      <default>[]</default>
+      <summary>Windows</summary>
+      <description>Windows that should have a certain positioning mo+de</description>
+    </key>
+    <key type="ai" name="mode-modes">
+      <default>[]</default>
+      <summary>Mode</summary>
+      <description>Positioning modes</description>
+    </key>
+    <key type="as" name="viewport-matches">
+      <default>[]</default>
+      <summary>Viewport positioned windows</summary>
+      <description>Windows that should be positioned in specific viewports by default</description>
+    </key>
+    <key type="ai" name="viewport-x-values">
+      <default>[]</default>
+      <summary>X Viewport Positions</summary>
+      <description>Horizontal viewport positions</description>
+    </key>
+    <key type="ai" name="viewport-y-values">
+      <default>[]</default>
+      <summary>Y Viewport Positions</summary>
+      <description>Vertical viewport positions</description>
+    </key>
+  </schema>
+</schemalist>

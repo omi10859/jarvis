@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.core" gettext-domain="compiz">
+    <key type="as" name="active-plugins">
+      <default>['core']</default>
+      <summary>Active Plugins</summary>
+      <description>List of currently active plugins</description>
+    </key>
+    <key type="b" name="audible-bell">
+      <default>true</default>
+      <summary>Audible Bell</summary>
+      <description>Audible system beep</description>
+    </key>
+    <key type="b" name="ignore-hints-when-maximized">
+      <default>true</default>
+      <summary>Ignore Hints When Maximized</summary>
+      <description>Ignore size increment and aspect hints when window is maximized</description>
+    </key>
+    <key type="b" name="hide-skip-taskbar-windows">
+      <default>true</default>
+      <summary>Hide Skip Taskbar Windows</summary>
+      <description>Hide windows not in taskbar when entering show desktop mode</description>
+    </key>
+    <key type="i" name="edge-delay">
+      <default>0</default>
+      <summary>Edge Trigger Delay</summary>
+      <description>Duration the pointer must rest in a screen edge before an edge action is taken. (0 - 10000)</description>
+    </key>
+    <key type="i" name="ping-delay">
+      <default>5000</default>
+      <summary>Ping Delay</summary>
+      <description>Interval between ping messages (1000 - 30000)</description>
+    </key>
+    <key type="s" name="default-icon">
+      <default>'icon'</default>
+      <summary>Default Icon</summary>
+      <description>Default window icon image</description>
+    </key>
+    <key type="b" name="do-serialize">
+      <default>false</default>
+      <summary>Save plugin states on unload</summary>
+      <description>Save the state of plugins when they are unloaded such they will resume their past internal state when reloaded</description>
+    </key>
+    <key type="i" name="overlapping-outputs">
+      <default>0</default>
+      <summary>Overlapping Output Handling</summary>
+      <description>Which one of overlapping output devices should be preferred (0 = Smart mode, 1 = Prefer larger output, 2 = Prefer smaller output)</description>
+    </key>
+    <key type="b" name="detect-outputs">
+      <default>true</default>
+      <summary>Detect Outputs</summary>
+      <description>Automatic detection of output devices</description>
+    </key>
+    <key type="as" name="outputs">
+      <default>['640x480+0+0']</default>
+      <summary>Outputs</summary>
+      <description>List of strings describing output devices</description>
+    </key>
+    <key type="b" name="click-to-focus">
+      <default>true</default>
+      <summary>Click To Focus</summary>
+      <description>Click on window moves input focus to it</description>
+    </key>
+    <key type="b" name="raise-on-click">
+      <default>true</default>
+      <summary>Raise On Click</summary>
+      <description>Raise windows when clicked</description>
+    </key>
+    <key type="b" name="autoraise">
+      <default>true</default>
+      <summary>Auto-Raise</summary>
+      <description>Raise selected windows after interval</description>
+    </key>
+    <key type="i" name="autoraise-delay">
+      <default>1000</default>
+      <summary>Auto-Raise Delay</summary>
+      <description>Interval before raising selected windows (0 - 10000)</description>
+    </key>
+    <key type="b" name="focus-desktop">
+      <default>true</default>
+      <summary>Focus Desktop</summary>
+      <description>Focus the desktop when click to focus is disabled</description>
+    </key>
+    <key type="i" name="focus-prevention-level">
+      <default>1</default>
+      <summary>Focus Prevention Level</summary>
+      <description>Level of focus stealing prevention (0 = Off, 1 = Low, 2 = Normal, 3 = High, 4 = Very High)</description>
+    </key>
+    <key type="s" name="focus-prevention-match">
+      <default>'!(class=Polkit-gnome-authentication-agent-1)'</default>
+      <summary>Focus Prevention Windows</summary>
+      <description>Focus prevention windows (match)</description>
+    </key>
+    <key type="s" name="close-window-key">
+      <default>'&lt;Alt&gt;F4'</default>
+      <summary>Close Window</summary>
+      <description>Close active window</description>
+    </key>
+    <key type="s" name="close-window-button">
+      <default>'Disabled'</default>
+      <summary>Close Window</summary>
+      <description>Close active window</description>
+    </key>
+    <key type="s" name="raise-window-key">
+      <default>'Disabled'</default>
+      <summary>Raise Window</summary>
+      <description>Raise window above other windows</description>
+    </key>
+    <key type="s" name="raise-window-button">
+      <default>'&lt;Control&gt;Button6'</default>
+      <summary>Raise Window</summary>
+      <description>Raise window above other windows</description>
+    </key>
+    <key type="s" name="lower-window-key">
+      <default>'Disabled'</default>
+      <summary>Lower Window</summary>
+      <description>Lower window beneath other windows</description>
+    </key>
+    <key type="s" name="lower-window-button">
+      <default>'&lt;Alt&gt;Button6'</default>
+      <summary>Lower Window</summary>
+      <description>Lower window beneath other windows</description>
+    </key>
+    <key type="s" name="minimize-window-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;KP_0'</default>
+      <summary>Minimize Window</summary>
+      <description>Minimize active window</description>
+    </key>
+    <key type="s" name="minimize-window-button">
+      <default>'Disabled'</default>
+      <summary>Minimize Window</summary>
+      <description>Minimize active window</description>
+    </key>
+    <key type="s" name="maximize-window-key">
+      <default>'&lt;Control&gt;&lt;Super&gt;Up'</default>
+      <summary>Maximize Window</summary>
+      <description>Maximize active window</description>
+    </key>
+    <key type="s" name="unmaximize-window-key">
+      <default>'Disabled'</default>
+      <summary>Unmaximize Window</summary>
+      <description>Unmaximize active window</description>
+    </key>
+    <key type="s" name="unmaximize-or-minimize-window-key">
+      <default>'&lt;Control&gt;&lt;Super&gt;Down'</default>
+      <summary>Unmaximize or Minimize Window</summary>
+      <description>Unmaximize or minimize active window</description>
+    </key>
+    <key type="s" name="maximize-window-horizontally-key">
+      <default>'Disabled'</default>
+      <summary>Maximize Window Horizontally</summary>
+      <description>Maximize active window horizontally</description>
+    </key>
+    <key type="s" name="maximize-window-vertically-key">
+      <default>'Disabled'</default>
+      <summary>Maximize Window Vertically</summary>
+      <description>Maximize active window vertically</description>
+    </key>
+    <key type="s" name="window-menu-key">
+      <default>'&lt;Alt&gt;space'</default>
+      <summary>Window Menu</summary>
+      <description>Window menu key binding</description>
+    </key>
+    <key type="s" name="window-menu-button">
+      <default>'&lt;Alt&gt;Button3'</default>
+      <summary>Window Menu</summary>
+      <description>Window menu button binding</description>
+    </key>
+    <key type="s" name="show-desktop-key">
+      <default>'Disabled'</default>
+      <summary>Show Desktop</summary>
+      <description>Hide all windows and focus desktop</description>
+    </key>
+    <key type="s" name="show-desktop-edge">
+      <default>''</default>
+      <summary>Show Desktop</summary>
+      <description>Hide all windows and focus desktop</description>
+    </key>
+    <key type="s" name="toggle-window-maximized-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;KP_5'</default>
+      <summary>Toggle Window Maximized</summary>
+      <description>Toggle active window maximized</description>
+    </key>
+    <key type="s" name="toggle-window-maximized-button">
+      <default>'Disabled'</default>
+      <summary>Toggle Window Maximized</summary>
+      <description>Toggle active window maximized</description>
+    </key>
+    <key type="s" name="toggle-window-maximized-horizontally-key">
+      <default>'Disabled'</default>
+      <summary>Toggle Window Maximized Horizontally</summary>
+      <description>Toggle active window maximized horizontally</description>
+    </key>
+    <key type="s" name="toggle-window-maximized-vertically-key">
+      <default>'Disabled'</default>
+      <summary>Toggle Window Maximized Vertically</summary>
+      <description>Toggle active window maximized vertically</description>
+    </key>
+    <key type="s" name="toggle-window-shaded-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;s'</default>
+      <summary>Toggle Window Shaded</summary>
+      <description>Toggle active window shaded</description>
+    </key>
+    <key type="i" name="hsize">
+      <default>1</default>
+      <summary>Horizontal Virtual Size</summary>
+      <description>Screen size multiplier for horizontal virtual size (1 - 32)</description>
+    </key>
+    <key type="i" name="vsize">
+      <default>1</default>
+      <summary>Vertical Virtual Size</summary>
+      <description>Screen size multiplier for vertical virtual size (1 - 32)</description>
+    </key>
+  </schema>
+</schemalist>

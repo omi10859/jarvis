@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.blur" gettext-domain="compiz">
+    <key type="b" name="pulse">
+      <default>false</default>
+      <summary>Pulse</summary>
+      <description>Pulse effect</description>
+    </key>
+    <key type="d" name="blur-speed">
+      <default>3.5</default>
+      <summary>Blur Speed</summary>
+      <description>Window blur speed (0.1 - 10.0)</description>
+    </key>
+    <key type="s" name="focus-blur-match">
+      <default>'toolbar | menu | utility | normal | dialog | modaldialog'</default>
+      <summary>Focus blur windows</summary>
+      <description>Windows that should be affected by focus blur (match)</description>
+    </key>
+    <key type="b" name="focus-blur">
+      <default>false</default>
+      <summary>Focus Blur</summary>
+      <description>Blur windows that doesn't have focus</description>
+    </key>
+    <key type="s" name="alpha-blur-match">
+      <default>''</default>
+      <summary>Alpha blur windows</summary>
+      <description>Windows that should be use alpha blur by default (match)</description>
+    </key>
+    <key type="b" name="alpha-blur">
+      <default>true</default>
+      <summary>Alpha Blur</summary>
+      <description>Blur behind translucent parts of windows</description>
+    </key>
+    <key type="i" name="filter">
+      <default>0</default>
+      <summary>Blur Filter</summary>
+      <description>Filter method used for blurring (0 = 4xBilinear, 1 = Gaussian, 2 = Mipmap)</description>
+    </key>
+    <key type="i" name="gaussian-radius">
+      <default>3</default>
+      <summary>Gaussian Radius</summary>
+      <description>Gaussian radius (1 - 15)</description>
+    </key>
+    <key type="d" name="gaussian-strength">
+      <default>1.0</default>
+      <summary>Gaussian Strength</summary>
+      <description>Gaussian strength (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="mipmap-lod">
+      <default>2.5</default>
+      <summary>Mipmap LOD</summary>
+      <description>Mipmap level-of-detail (0.1 - 5.0)</description>
+    </key>
+    <key type="i" name="saturation">
+      <default>100</default>
+      <summary>Blur Saturation</summary>
+      <description>Blur saturation (0 - 100)</description>
+    </key>
+    <key type="b" name="occlusion">
+      <default>true</default>
+      <summary>Blur Occlusion</summary>
+      <description>Disable blurring of screen regions obscured by other windows.</description>
+    </key>
+    <key type="b" name="independent-tex">
+      <default>false</default>
+      <summary>Independent texture fetch</summary>
+      <description>Use the available texture units to do as many as possible independent texture fetches.</description>
+    </key>
+  </schema>
+</schemalist>

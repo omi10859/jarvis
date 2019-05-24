@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.imgjpeg" gettext-domain="compiz">
+    <key type="i" name="quality">
+      <default>80</default>
+      <summary>Compression Quality</summary>
+      <description>Quality of compression when saving JPEG images (0 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

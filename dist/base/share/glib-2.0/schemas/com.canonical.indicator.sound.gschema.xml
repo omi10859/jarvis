@@ -1,0 +1,106 @@
+<schemalist>
+  <schema id="com.canonical.indicator.sound" path="/com/canonical/indicator/sound/" gettext-domain="indicator-sound">
+    <key name="blacklisted-media-players" type="as">
+      <summary>A list of applications blacklisted from the sound menu</summary>
+      <default>[]</default>
+      <description>
+        Each media player which abides by the MPRIS2 spec will automatically appear in the menu.
+        This array should contain the desktop file names (minus .desktop suffix) of applications which
+        do not want to be included in the sound menu.
+      </description>
+    </key>
+    <key name="interested-media-players" type="as">
+      <summary>A list of applications which at some point have registered with the sound menu</summary>
+      <default>[]</default>
+      <description>
+        Each media player which abides by the MPRIS2 spec will automatically appear in the menu.
+        This array should contain the desktop file names (minus .desktop suffix) of applications which
+        have at some point appeared in the menU. This allows the menu remember and display offlined applications.
+      </description>
+    </key>
+    <key name="preferred-media-players" type="as">
+      <summary>A list of applications that will have player controls visible all the time</summary>
+      <default>[ 'rhythmbox' ]</default>
+      <description>
+        A list of applications that will have player controls visible all the time
+      </description>
+    </key>
+    <key name="global-mute" type="b">
+      <default>false</default>
+      <summary>Initial setting for global mute (mute all) on the menu </summary>
+      <description>
+        On start up volume should not be muted.
+      </description>
+    </key>
+    <key name="visible" type="b">
+      <default>true</default>
+      <summary>Whether or not to show the sound indicator in the menu bar.</summary>
+      <description>
+        Whether or not to show the sound indicator in the menu bar.
+      </description>
+    </key>
+
+    <!-- VOLUME -->
+
+    <key name="warning-volume-enabled" type="b">
+      <default>true</default>
+      <summary>Whether or not to show high volume warnings.</summary>
+      <description>
+        If enabled on a device, a confirmation dialog will be presented to the user if
+        (a) something is plugged into the headphone jack (ie, no warnings for speaker volumes) AND
+        (b) media is playing (ie, no warnings for ringtone volumes) AND
+        (c) the user attempts to set the volume higher than warning-volume-decibels AND
+        (d) the user has not indicated approval in the last warning-volume-approval-ttl seconds.
+      </description>
+    </key>
+    <key name="warning-volume-confirmation-ttl" type="i">
+      <default>72000</default>
+      <summary>How many seconds a user's warning-volume approval should be remembered.</summary>
+      <description>
+        How long to remember a user's approval of the confirmation dialog discussed in the
+        description of 'warning-volume-enabled'.
+
+        The default value (72,000 seconds) corresponds to the 20 hours suggested by
+        EU standard EN 60950-1/Al2: “The acknowledgement does not need to be repeated
+        more than once every 20 h of cumulative listening time.”
+      </description>
+    </key>
+    <key name="warning-volume-decibels" type="d">
+      <default>-8.0</default>
+      <summary>Volume level that triggers a high volume warning.</summary>
+      <description>
+        Volume level that triggers a high volume warning.
+        See warning-volume-enabled for details.
+      </description>
+    </key>
+
+    <key name="normal-volume-decibels" type="d">
+      <default>0</default>
+      <summary>Normal output volume.</summary>
+      <description>
+        The maximum volume when com.ubuntu.sound's 'allow-amplified-volume' setting is disabled.
+
+        To conform with EU standard EN 60950-1/Al2, this value should never be
+        set to a dB that causes headphone sound output to exceed 100 dBA, nor
+        electric output to exceed 150 mV.
+
+        The default value (0) corresponds to PulseAudio's PA_VOLUME_NORM.
+      </description>
+    </key>
+
+    <key name="amplified-volume-decibels" type="d">
+      <default>11</default>
+      <summary>Output volume to use when com.ubuntu.sound's 'allow-amplified-volume' setting is enabled.</summary>
+      <description>
+        The maximum volume when com.ubuntu.sound's 'allow-amplified-volume' setting is enabled.
+
+        To conform with EU standard EN 60950-1/Al2, this value should never be
+        set to a dB that causes headphone sound output to exceed 100 dBA, nor
+        electric output to exceed 150 mV.
+
+        The default value (11) corresponds to PulseAudio's PA_VOLUME_UI_MAX.
+      </description>
+    </key>
+
+  </schema>
+</schemalist>

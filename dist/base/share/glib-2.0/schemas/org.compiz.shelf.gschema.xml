@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.shelf" gettext-domain="compiz">
+    <key type="s" name="trigger-key">
+      <default>'&lt;Super&gt;l'</default>
+      <summary>Trigger scale down</summary>
+      <description>Scale a window down to a portion of it's size.</description>
+    </key>
+    <key type="s" name="reset-key">
+      <default>'Disabled'</default>
+      <summary>Reset the window to original size</summary>
+      <description>Resets the currently focused window to original size</description>
+    </key>
+    <key type="s" name="triggerscreen-key">
+      <default>'&lt;Super&gt;p'</default>
+      <summary>Trigger scale down to screen</summary>
+      <description>Scale a window down to a ration of the screen size. Respectively half, a third or a sixth of the screen.</description>
+    </key>
+    <key type="s" name="dec-button">
+      <default>'&lt;Alt&gt;&lt;Super&gt;Button4'</default>
+      <summary>Make the window smaller</summary>
+      <description>Reduces the scale factor making the window smaller.</description>
+    </key>
+    <key type="s" name="inc-button">
+      <default>'&lt;Alt&gt;&lt;Super&gt;Button5'</default>
+      <summary>Make the window bigger</summary>
+      <description>Increase the scale factor making the window bigger.</description>
+    </key>
+    <key type="i" name="animtime">
+      <default>150</default>
+      <summary>Animation duration</summary>
+      <description>Duration of the animation in milliseconds. (1 - 10000)</description>
+    </key>
+    <key type="d" name="interval">
+      <default>0.9</default>
+      <summary>Scale interval</summary>
+      <description>The number to divide the scale factor by or multiply it with when (respectively) increasing and decreasing the scale level manually. Higher number means finer changes. (0.100 - 0.999)</description>
+    </key>
+  </schema>
+</schemalist>

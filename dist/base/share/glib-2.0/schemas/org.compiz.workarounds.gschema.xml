@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.workarounds" gettext-domain="compiz">
+    <key type="b" name="keep-minimized-windows">
+      <default>false</default>
+      <summary>Keep previews of minimized windows</summary>
+      <description>Don't delete window contents on minimize. This does not work with some applications</description>
+    </key>
+    <key type="b" name="legacy-fullscreen">
+      <default>false</default>
+      <summary>Legacy Fullscreen Support</summary>
+      <description>Make Wine and legacy applications fullscreen properly.</description>
+    </key>
+    <key type="b" name="firefox-menu-fix">
+      <default>false</default>
+      <summary>Firefox Menu Fix</summary>
+      <description>Fix window type of Firefox and Thunderbird menus.</description>
+    </key>
+    <key type="b" name="ooo-menu-fix">
+      <default>true</default>
+      <summary>OpenOffice.org Menu Fix</summary>
+      <description>Fix window type of OpenOffice.org menus.</description>
+    </key>
+    <key type="b" name="notification-daemon-fix">
+      <default>false</default>
+      <summary>Notification Daemon Fix</summary>
+      <description>Fix window type of notification daemon windows.</description>
+    </key>
+    <key type="b" name="java-fix">
+      <default>true</default>
+      <summary>Java Window Fix</summary>
+      <description>Fix window type of various Java windows.</description>
+    </key>
+    <key type="b" name="java-taskbar-fix">
+      <default>true</default>
+      <summary>Java Taskbar Fix</summary>
+      <description>Fix java windows disappearing from taskbar</description>
+    </key>
+    <key type="b" name="qt-fix">
+      <default>false</default>
+      <summary>Qt Window Fix</summary>
+      <description>Fix window type of various Qt windows.</description>
+    </key>
+    <key type="b" name="convert-urgency">
+      <default>false</default>
+      <summary>Convert Urgency to Demands Attention</summary>
+      <description>Make "urgent" windows also "demand attention".</description>
+    </key>
+    <key type="b" name="aiglx-fragment-fix">
+      <default>true</default>
+      <summary>AIGLX Fragment Parameter Fix</summary>
+      <description>Fix broken glProgramEnvParameter4f implementation.</description>
+    </key>
+    <key type="b" name="fglrx-xgl-fix">
+      <default>false</default>
+      <summary>Fix screen updates in XGL with fglrx.</summary>
+      <description>Fix for broken GLX_MESA_copy_sub_buffer on XGL in fglrx.</description>
+    </key>
+    <key type="b" name="force-glx-sync">
+      <default>false</default>
+      <summary>Force synchronization between X and GLX</summary>
+      <description>Force synchronization between X and GLX, which may help for window parts not redrawing correctly when using Nvidia drivers, but also may decrease performance.</description>
+    </key>
+    <key type="b" name="no-wait-for-video-sync">
+      <default>false</default>
+      <summary>Don't wait for video sync</summary>
+      <description>Don't wait for the next video sync time to redraw</description>
+    </key>
+    <key type="b" name="initial-damage-complete-redraw">
+      <default>true</default>
+      <summary>Force complete redraw on initial damage</summary>
+      <description>Force complete redraw of the window on initial damage event</description>
+    </key>
+    <key type="b" name="force-swap-buffers">
+      <default>false</default>
+      <summary>Force full screen redraws (buffer swap) on repaint</summary>
+      <description>Forces the entire screen to redraw every repaint. Use with care, this will cause a massive increase in GPU and CPU usage</description>
+    </key>
+    <key type="b" name="sticky-alldesktops">
+      <default>false</default>
+      <summary>Make "on all desktops" windows "sticky"</summary>
+      <description>Make "on all desktops" windows sticky. Sticky windows are visible on all viewports.</description>
+    </key>
+    <key type="s" name="alldesktop-sticky-match">
+      <default>'any'</default>
+      <summary>"On all desktops" sticky match</summary>
+      <description>Windows on all desktops that should be made sticky (match)</description>
+    </key>
+  </schema>
+</schemalist>

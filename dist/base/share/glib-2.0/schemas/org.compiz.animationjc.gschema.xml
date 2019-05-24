@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.animationjc" gettext-domain="compiz">
+    <key type="d" name="blackhole-delay">
+      <default>0.75</default>
+      <summary>Delay</summary>
+      <description> (0.0 - 0.99)</description>
+    </key>
+    <key type="i" name="flicker-amplitude">
+      <default>3</default>
+      <summary>Amplitude</summary>
+      <description> (1 - 10)</description>
+    </key>
+    <key type="i" name="ghost-grid">
+      <default>20</default>
+      <summary>Grid</summary>
+      <description> (2 - 20)</description>
+    </key>
+    <key type="d" name="ghost-saturation">
+      <default>0.0</default>
+      <summary>Saturation</summary>
+      <description> (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="ghost-amplitude">
+      <default>1.0</default>
+      <summary>Amplitude</summary>
+      <description> (0.0 - 5.0)</description>
+    </key>
+    <key type="d" name="ghost-wave-speed">
+      <default>1.0</default>
+      <summary>Wave Speed</summary>
+      <description> (0.0 - 5.0)</description>
+    </key>
+    <key type="d" name="popcorn-kernel-height">
+      <default>1.0</default>
+      <summary>Kernel Height</summary>
+      <description> (0.0 - 5.0)</description>
+    </key>
+    <key type="d" name="raindrop-amplitude">
+      <default>1.0</default>
+      <summary>Amplitude</summary>
+      <description> (-5.0 - 5.0)</description>
+    </key>
+    <key type="d" name="raindrop-wavelength">
+      <default>0.4</default>
+      <summary>Wavelength</summary>
+      <description> (0.0 - 1.0)</description>
+    </key>
+    <key type="i" name="raindrop-num-waves">
+      <default>1</default>
+      <summary>Number of Waves</summary>
+      <description> (1 - 5)</description>
+    </key>
+  </schema>
+</schemalist>

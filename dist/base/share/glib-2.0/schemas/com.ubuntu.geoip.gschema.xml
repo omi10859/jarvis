@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/com/ubuntu/geoip/" id="com.ubuntu.geoip">
+    <key type="s" name="geoip-url">
+      <default>"https://geoip.ubuntu.com/lookup"</default>
+      <summary>URL used to get information about the IP</summary>
+      <description>URL of a service that can be contacted and returns an XML file containing location information about the requestor's IP address.</description>
+    </key>
+  </schema>
+</schemalist>

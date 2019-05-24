@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.animationplus" gettext-domain="compiz">
+    <key type="i" name="helix-num-twists">
+      <default>2</default>
+      <summary>Helix Number of Twists</summary>
+      <description>Number of twists to do in the animation (1 - 10)</description>
+    </key>
+    <key type="i" name="helix-gridy">
+      <default>90</default>
+      <summary>Helix Gridsize Y</summary>
+      <description>Number of blocks in the animation (5 - 300)</description>
+    </key>
+    <key type="d" name="helix-thickness">
+      <default>0</default>
+      <summary>Helix Thickness</summary>
+      <description>Thickness of blocks in the animation (0 - 50)</description>
+    </key>
+    <key type="i" name="helix-spin-direction">
+      <default>1</default>
+      <summary>Spin Direction</summary>
+      <description>Direction the strips spin. (0 = Counter-Clockwise, 1 = Clockwise)</description>
+    </key>
+    <key type="b" name="helix-direction">
+      <default>false</default>
+      <summary>Vertical Helix</summary>
+      <description>Whether Helix should rotate with its axis up/down or in/out of the screen</description>
+    </key>
+    <key type="i" name="blinds-num-halftwists">
+      <default>2</default>
+      <summary>Blinds Number of Half Twists</summary>
+      <description>Number of half twists to do in the animation (1 - 10)</description>
+    </key>
+    <key type="i" name="blinds-gridx">
+      <default>20</default>
+      <summary>Helix Gridsize Y</summary>
+      <description>Number of blocks in the animation (1 - 100)</description>
+    </key>
+    <key type="d" name="blinds-thickness">
+      <default>0</default>
+      <summary>Blinds Thickness</summary>
+      <description>Thickness of blocks in the animation (0 - 50)</description>
+    </key>
+    <key type="i" name="shatter-num-spokes">
+      <default>2</default>
+      <summary>Shatter number of spokes</summary>
+      <description>Number of spokes (divided by 4) in the animation (1 - 100)</description>
+    </key>
+    <key type="i" name="shatter-num-tiers">
+      <default>2</default>
+      <summary>Shatter Number of Tiers</summary>
+      <description>Number of concentric circles in the animation (1 - 100)</description>
+    </key>
+    <key type="i" name="bonanza-particles">
+      <default>1000</default>
+      <summary>Number Of Fire Particles</summary>
+      <description>Number of fire particles. (100 - 10000)</description>
+    </key>
+    <key type="d" name="bonanza-size">
+      <default>5</default>
+      <summary>Fire Particle Size</summary>
+      <description>Fire particle size. (0.1 - 20)</description>
+    </key>
+    <key type="d" name="bonanza-life">
+      <default>0.7</default>
+      <summary>Fire Particle Life</summary>
+      <description>Fire particle life. (0.1 - 1)</description>
+    </key>
+    <key type="s" name="bonanza-color">
+      <default>'#ff3305ff'</default>
+      <summary>Fire Particle Color</summary>
+      <description>Fire particle color.</description>
+    </key>
+    <key type="b" name="bonanza-mystical">
+      <default>false</default>
+      <summary>Randomly Colored Fire</summary>
+      <description>Have random colors for the fire effect, also known as Mystical Fire.</description>
+    </key>
+  </schema>
+</schemalist>

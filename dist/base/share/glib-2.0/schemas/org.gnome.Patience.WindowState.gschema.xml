@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  
+  <schema id="org.gnome.Patience.WindowState" gettext-domain="aisleriot">
+    <key type="b" name="maximized">
+      <default>false</default>
+      <summary>Whether the window is maximized</summary>
+    </key>
+    <key type="b" name="fullscreen">
+      <default>false</default>
+      <summary>Whether the window is fullscreen</summary>
+    </key>
+    <key type="i" name="width">
+      
+      <default>-1</default>
+      <summary>Window width</summary>
+    </key>
+    <key type="i" name="height">
+      
+      <default>-1</default>
+      <summary>Window height</summary>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<schemalist>
+  <schema path='/com/canonical/indicator/appmenu/hud/' id='com.canonical.indicator.appmenu.hud' gettext-domain='indicator-appmenu'>
+    <key type='b' name='store-usage-data'>
+      <default>true</default>
+      <summary>Whether to store usage data</summary>
+      <description>
+        When the HUD executes operations it stores the execution in order to
+        make the future results better. Some users could choose to not want
+        this data to be stored. If that is the case they should disable this
+        property.
+      </description>
+    </key>
+  </schema>
+</schemalist>

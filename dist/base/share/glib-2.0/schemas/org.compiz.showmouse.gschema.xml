@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.showmouse" gettext-domain="compiz">
+    <key type="b" name="activate-at-startup">
+      <default>false</default>
+      <summary>plugin should be active at startup</summary>
+      <description>If active, the plugin will start active, with the mouse enhanced</description>
+    </key>
+    <key type="s" name="initiate">
+      <default>'&lt;Super&gt;k'</default>
+      <summary>Initiate</summary>
+      <description>Toggle the mouse pointer trail.</description>
+    </key>
+    <key type="s" name="initiate-button">
+      <default>'Disabled'</default>
+      <summary>Initiate</summary>
+      <description>Toggle the mouse pointer trail.</description>
+    </key>
+    <key type="s" name="initiate-edge">
+      <default>''</default>
+      <summary>Initiate</summary>
+      <description>Toggle the mouse pointer trail.</description>
+    </key>
+    <key type="i" name="guide-thickness">
+      <default>0</default>
+      <summary>Guide thickness</summary>
+      <description>How thick mouse guides should be, in pixels. (0 - 20)</description>
+    </key>
+    <key type="i" name="guide-empty-radius">
+      <default>20</default>
+      <summary>Guide empty radius</summary>
+      <description>Radius of the disk around the cursor which doesn't contain guides. (0 - 100)</description>
+    </key>
+    <key type="s" name="guide-color">
+      <default>'#ff000099'</default>
+      <summary>Guide Color</summary>
+      <description>Guide color.</description>
+    </key>
+    <key type="d" name="rotation-speed">
+      <default>0.5</default>
+      <summary>Rotation speed</summary>
+      <description>Rotation speed. (0.1 - 10.0)</description>
+    </key>
+    <key type="i" name="radius">
+      <default>100</default>
+      <summary>Radius</summary>
+      <description>Ring radius (10 - 1000)</description>
+    </key>
+    <key type="i" name="emitters">
+      <default>3</default>
+      <summary>Emitters</summary>
+      <description>Number of particle emitters (0 to disable). (0 - 10)</description>
+    </key>
+    <key type="i" name="num-particles">
+      <default>500</default>
+      <summary>Number Of Particles</summary>
+      <description>Number of particles. (10 - 2000)</description>
+    </key>
+    <key type="d" name="size">
+      <default>10.0</default>
+      <summary>Particle Size</summary>
+      <description>Particle size. (0.1 - 20)</description>
+    </key>
+    <key type="d" name="slowdown">
+      <default>1.0</default>
+      <summary>Particle Slowdown</summary>
+      <description>Particle slowdown. (0.1 - 10)</description>
+    </key>
+    <key type="d" name="life">
+      <default>0.7</default>
+      <summary>Particle Life</summary>
+      <description>Particle life. (0.1 - 0.9490)</description>
+    </key>
+    <key type="d" name="darken">
+      <default>0.9</default>
+      <summary>Darken backgound</summary>
+      <description>Darken background under particles (0.0 - 1.0)</description>
+    </key>
+    <key type="b" name="blend">
+      <default>true</default>
+      <summary>Additive blending</summary>
+      <description>Additive blending of particles</description>
+    </key>
+    <key type="s" name="color">
+      <default>'#ffdf3fff'</default>
+      <summary>Particle Color</summary>
+      <description>Particle color.</description>
+    </key>
+    <key type="b" name="random">
+      <default>false</default>
+      <summary>Randomly Colored Particles</summary>
+      <description>Have random colors for the particles</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.scale" gettext-domain="compiz">
+    <key type="i" name="spacing">
+      <default>20</default>
+      <summary>Spacing</summary>
+      <description>Space between windows (0 - 250)</description>
+    </key>
+    <key type="i" name="x-offset">
+      <default>0</default>
+      <summary>X Offset</summary>
+      <description>Horizontal offset (in pixels). (0 - )</description>
+    </key>
+    <key type="i" name="y-offset">
+      <default>0</default>
+      <summary>Y Offset</summary>
+      <description>Vertical offset from the top (in pixels). (0 - )</description>
+    </key>
+    <key type="i" name="y-bottom-offset">
+      <default>0</default>
+      <summary>Y Bottom Offset</summary>
+      <description>Vertical offset from the bottom (in pixels). (0 - )</description>
+    </key>
+    <key type="d" name="speed">
+      <default>5.0</default>
+      <summary>Speed</summary>
+      <description>Scale speed (0.1 - 50)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>0.1</default>
+      <summary>Timestep</summary>
+      <description>Scale timestep (0.1 - 50)</description>
+    </key>
+    <key type="b" name="darken-back">
+      <default>true</default>
+      <summary>Darken Background</summary>
+      <description>Darken background when scaling windows</description>
+    </key>
+    <key type="i" name="opacity">
+      <default>100</default>
+      <summary>Opacity</summary>
+      <description>Amount of opacity in percent (0 - 100)</description>
+    </key>
+    <key type="i" name="overlay-icon">
+      <default>0</default>
+      <summary>Overlay Icon</summary>
+      <description>Overlay an icon on windows once they are scaled (0 = None, 1 = Emblem, 2 = Big)</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'Toolbar | Utility | Dialog | Normal | Unknown'</default>
+      <summary>Scale Windows</summary>
+      <description>Windows that should be scaled in scale mode (match)</description>
+    </key>
+    <key type="i" name="hover-time">
+      <default>750</default>
+      <summary>Drag and Drop Hover Timeout</summary>
+      <description>Time (in ms) before scale mode is terminated when hovering over a window dragging and dropping an item (50 - 10000)</description>
+    </key>
+    <key type="i" name="dnd-distance">
+      <default>6</default>
+      <summary>Drag and Drop Distance</summary>
+      <description>The minimum distance (in px) beyond which the timeout is reset. (0 - 250)</description>
+    </key>
+    <key type="b" name="dnd-timeout-spinner">
+      <default>true</default>
+      <summary>Show a spinner during th Drag and Drop timeout</summary>
+      <description>Whether to show a spinner over the windows during dnd Timeout.</description>
+    </key>
+    <key type="i" name="dnd-timeout-spinner-speed">
+      <default>100</default>
+      <summary>The speed of the DnD timeout spinner</summary>
+      <description>The animation speed (in ms) of the Drag and Drop spinner. (50 - 250)</description>
+    </key>
+    <key type="i" name="multioutput-mode">
+      <default>1</default>
+      <summary>Multi Output Mode</summary>
+      <description>Selects where windows are scaled if multiple output devices are used. (0 = On current output device, 1 = On all output devices)</description>
+    </key>
+    <key type="b" name="skip-animation">
+      <default>false</default>
+      <summary>Skip Animation</summary>
+      <description>Skips the scale plugin animation.</description>
+    </key>
+    <key type="b" name="key-bindings-toggle">
+      <default>true</default>
+      <summary>Key Bindings Toggle Scale Mode</summary>
+      <description>Key bindings toggle scale mode instead of enabling it when pressed and disabling it when released.</description>
+    </key>
+    <key type="b" name="button-bindings-toggle">
+      <default>false</default>
+      <summary>Button Bindings Toggle Scale Mode</summary>
+      <description>Button bindings toggle scale mode instead of enabling it when pressed and disabling it when released.</description>
+    </key>
+    <key type="s" name="initiate-edge">
+      <default>''</default>
+      <summary>Initiate Window Picker</summary>
+      <description>Layout and start transforming windows</description>
+    </key>
+    <key type="s" name="initiate-key">
+      <default>'&lt;Super&gt;w'</default>
+      <summary>Initiate Window Picker</summary>
+      <description>Layout and start transforming windows</description>
+    </key>
+    <key type="s" name="initiate-button">
+      <default>'Disabled'</default>
+      <summary>Initiate Window Picker</summary>
+      <description>Layout and start transforming windows</description>
+    </key>
+    <key type="s" name="initiate-all-edge">
+      <default>''</default>
+      <summary>Initiate Window Picker For All Windows</summary>
+      <description>Layout and start transforming all windows</description>
+    </key>
+    <key type="s" name="initiate-all-button">
+      <default>'Disabled'</default>
+      <summary>Initiate Window Picker For All Windows</summary>
+      <description>Layout and start transforming all windows</description>
+    </key>
+    <key type="s" name="initiate-all-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;w'</default>
+      <summary>Initiate Window Picker For All Windows</summary>
+      <description>Layout and start transforming all windows</description>
+    </key>
+    <key type="s" name="initiate-group-edge">
+      <default>''</default>
+      <summary>Initiate Window Picker For Window Group</summary>
+      <description>Layout and start transforming window group</description>
+    </key>
+    <key type="s" name="initiate-group-button">
+      <default>'Disabled'</default>
+      <summary>Initiate Window Picker For Window Group</summary>
+      <description>Layout and start transforming window group</description>
+    </key>
+    <key type="s" name="initiate-group-key">
+      <default>'Disabled'</default>
+      <summary>Initiate Window Picker For Window Group</summary>
+      <description>Layout and start transforming window group</description>
+    </key>
+    <key type="s" name="initiate-output-edge">
+      <default>''</default>
+      <summary>Initiate Window Picker For Windows on Current Output</summary>
+      <description>Layout and start transforming windows on current output</description>
+    </key>
+    <key type="s" name="initiate-output-button">
+      <default>'Disabled'</default>
+      <summary>Initiate Window Picker For Windows on Current Output</summary>
+      <description>Layout and start transforming windows on current output</description>
+    </key>
+    <key type="s" name="initiate-output-key">
+      <default>'Disabled'</default>
+      <summary>Initiate Window Picker For Windows on Current Output</summary>
+      <description>Layout and start transforming windows on current output</description>
+    </key>
+    <key type="i" name="click-on-desktop">
+      <default>2</default>
+      <summary>Click on empty area</summary>
+      <description>Action to perform on click on empty area (0 = None, 1 = Show desktop, 2 = Terminate scale)</description>
+    </key>
+  </schema>
+</schemalist>

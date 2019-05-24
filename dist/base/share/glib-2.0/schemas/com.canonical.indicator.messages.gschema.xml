@@ -1,0 +1,12 @@
+<schemalist>
+  <schema id="com.canonical.indicator.messages" path="/com/canonical/indicator/messages/" gettext-domain="indicator-messages">
+    <key name="applications" type="as">
+      <summary>List of applications that are shown in the messaging menu</summary>
+      <description>
+        Applications corresponding to the desktop file ids in this list are shown in the messaging menu.
+      </description>
+      <default>[]</default>
+    </key>
+  </schema>
+</schemalist>
+

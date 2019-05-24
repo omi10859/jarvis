@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.cube" gettext-domain="compiz">
+    <key type="s" name="unfold-key">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Down'</default>
+      <summary>Unfold Cube Key</summary>
+      <description>Keyboard shortcut to unfold the cube.</description>
+    </key>
+    <key type="b" name="mipmap">
+      <default>true</default>
+      <summary>Mipmap</summary>
+      <description>Generate mipmaps for higher quality scaling.</description>
+    </key>
+    <key type="i" name="multioutput-mode">
+      <default>0</default>
+      <summary>Multi Output Mode</summary>
+      <description>Select how the cube is displayed, if multiple output devices are used. (0 = Automatic, 1 = Multiple cubes, 2 = One big cube)</description>
+    </key>
+    <key type="b" name="in">
+      <default>false</default>
+      <summary>Inside Cube</summary>
+      <description>Place the camera inside the cube.</description>
+    </key>
+    <key type="d" name="acceleration">
+      <default>4.0</default>
+      <summary>Fold Acceleration</summary>
+      <description>The acceleration of folding and unfolding. (1.0 - 20.0)</description>
+    </key>
+    <key type="d" name="speed">
+      <default>1.5</default>
+      <summary>Fold Speed</summary>
+      <description>The speed of folding and unfolding. (0.1 - 50.0)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>1.2</default>
+      <summary>Timestep</summary>
+      <description>The timestep of folding and unfolding. (0.1 - 50.0)</description>
+    </key>
+    <key type="s" name="top-color">
+      <default>'#ffffffff'</default>
+      <summary>Top</summary>
+      <description>Color and opacity of top face of the cube.</description>
+    </key>
+    <key type="s" name="bottom-color">
+      <default>'#ffffffff'</default>
+      <summary>Bottom</summary>
+      <description>Color and opacity of bottom face of the cube.</description>
+    </key>
+    <key type="b" name="skydome">
+      <default>false</default>
+      <summary>Skydome</summary>
+      <description>Render a specified skydome texture.</description>
+    </key>
+    <key type="s" name="skydome-image">
+      <default>''</default>
+      <summary>Skydome Image</summary>
+      <description>Image to use as texture for the skydome.</description>
+    </key>
+    <key type="b" name="skydome-animated">
+      <default>false</default>
+      <summary>Animate Skydome</summary>
+      <description>Animate the skydome when rotating the cube.</description>
+    </key>
+    <key type="s" name="skydome-gradient-start-color">
+      <default>'#0db1fdff'</default>
+      <summary>Skydome Gradient Start Color</summary>
+      <description>Color and opacity to use for the top color-stop of the skydome-fallback gradient.</description>
+    </key>
+    <key type="s" name="skydome-gradient-end-color">
+      <default>'#feffc7ff'</default>
+      <summary>Skydome Gradient End Color</summary>
+      <description>Color and opacity to use for the bottom color-stop of the skydome-fallback gradient.</description>
+    </key>
+    <key type="d" name="active-opacity">
+      <default>100.0</default>
+      <summary>Opacity During Rotation</summary>
+      <description>Opacity of the desktop during cube rotation (in percent). (0.0 - 100.0)</description>
+    </key>
+    <key type="d" name="inactive-opacity">
+      <default>100.0</default>
+      <summary>Non Rotating Opacity</summary>
+      <description>Opacity of the desktop when not rotating the cube (in percent). (0.0 - 100.0)</description>
+    </key>
+    <key type="b" name="transparent-manual-only">
+      <default>true</default>
+      <summary>Transparency Only On Mouse Rotate</summary>
+      <description>Initiates cube transparency only, if the rotation is mouse driven.</description>
+    </key>
+  </schema>
+</schemalist>

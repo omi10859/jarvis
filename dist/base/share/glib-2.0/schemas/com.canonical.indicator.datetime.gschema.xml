@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+	<enum id="time-enum">
+		<value value="0" nick="locale-default"/>
+		<value value="1" nick="12-hour"/>
+		<value value="2" nick="24-hour"/>
+		<value value="3" nick="custom"/>
+	</enum>
+	<schema path="/com/canonical/indicator/datetime/" id="com.canonical.indicator.datetime" gettext-domain="indicator-datetime">
+		<key type="b" name="show-clock">
+			<default>true</default>
+			<summary>Show the clock in the panel</summary>
+			<description>Controls whether the clock indicator appears in the panel or not.</description>
+		</key>
+		<key name="time-format" enum="time-enum">
+			<default>'locale-default'</default>
+			<summary>What the time format should be</summary>
+			<description>Controls the time format that is displayed in the indicator. For almost all users this should be the default for their locale. If you think the setting is wrong for your locale please join or talk to the translation team for your language. If you just want something different you can adjust this to be either 12 or 24 time. Or, you can use a custom format string and set the custom-time-format setting.</description>
+		</key>
+		<key type="s" name="custom-time-format">
+			<default>"%l:%M %p"</default>
+			<summary>The format string passed to strftime</summary>
+			<description>The format of the time and/or date that is visible on the panel when using the indicator. For most users this will be a set of predefined values as determined by the configuration utility, but advanced users can change it to anything strftime can accept. Look at the man page on strftime for more information.</description>
+		</key>
+		<key type="b" name="show-seconds">
+			<default>false</default>
+			<summary>Show the number of seconds in the indicator</summary>
+			<description>Makes the datetime indicator show the number of seconds in the indicator. It's important to note that this will cause additional battery drain as the time will update 60 times as often, so it is not recommended. Also, this setting will be ignored if the time-format value is set to custom.</description>
+		</key>
+		<key type="b" name="show-day">
+			<default>false</default>
+			<summary>Show the day of the week in the indicator</summary>
+			<description>Puts the day of the week on the panel along with the time and/or date depending on settings. This setting will be ignored if the time-format value is set to custom.</description>
+		</key>
+		<key type="b" name="show-date">
+			<default>false</default>
+			<summary>Show the month and date in the indicator</summary>
+			<description>Puts the month and the date in the panel along with the time and/or day of the week depending on settings. This setting will be ignored if the time-format value is set to custom.</description>
+		</key>
+		<key type="b" name="show-year">
+			<default>false</default>
+			<summary>Show the year in the indicator</summary>
+			<description>Puts the year in the panel along with the month and the date. This setting will be ignored if either the time-format value is set to custom or if show-date is set to false.</description>
+		</key>
+		<key type="b" name="show-calendar">
+			<default>true</default>
+			<summary>Show the monthly calendar in the indicator</summary>
+			<description>Puts the monthly calendar in indicator-datetime's menu.</description>
+		</key>
+		<key type="b" name="show-week-numbers">
+			<default>false</default>
+			<summary>Show week numbers in calendar</summary>
+			<description>Shows the week numbers in the monthly calendar in indicator-datetime's menu.</description>
+		</key>
+		<key type="b" name="show-events">
+			<default>true</default>
+			<summary>Show events in the indicator</summary>
+			<description>Shows events from Evolution in indicator-datetime's menu.</description>
+		</key>
+		<key type="b" name="show-auto-detected-location">
+			<default>false</default>
+			<summary>Show the auto-detected location in the indicator</summary>
+			<description>Shows your current location (determined from geoclue and /etc/timezone) in indicator-datetime's menu.</description>
+		</key>
+		<key type="b" name="show-locations">
+			<default>false</default>
+			<summary>Show locations in the indicator</summary>
+			<description>Shows custom defined locations in indicator-datetime's menu.</description>
+		</key>
+		<key type="as" name="locations">
+			<default>['UTC']</default>
+			<summary>A List of locations</summary>
+			<description>Adds the list of locations the user has configured to display in the indicator-datetime menu.</description>
+		</key>
+		<key type="s" name="timezone-name">
+			<default>''</default>
+			<summary>The name of the current timezone</summary>
+			<description>Some timezones can be known by many different cities or names. This setting describes how the current zone prefers to be named. Format is "TIMEZONE NAME" (e.g. "America/New_York Boston" to name the New_York zone Boston).</description>
+		</key>
+		<key type="s" name="alarm-haptic-feedback">
+			<default>'pulse'</default>
+			<summary>What kind of haptic feedback, if any, to trigger with an alarm.</summary>
+			<description>What kind of haptic feedback, if any, to trigger with an alarm. Two modes are currently supported: 'pulse', 'none'.</description>
+		</key>
+		<key type="s" name="calendar-default-sound">
+			<default>'/usr/share/sounds/ubuntu/ringtones/Marimbach.ogg'</default>
+			<summary>The calendar's default sound file.</summary>
+			<description>If a calendar or reminder event doesn't specify its own sound file, this file will be used as the fallback sound.</description>
+		</key>
+		<key type="s" name="alarm-default-sound">
+			<default>'/usr/share/sounds/ubuntu/ringtones/Alarm clock.ogg'</default>
+			<summary>The alarm's default sound file.</summary>
+			<description>If an alarm doesn't specify its own sound file, this file will be used as the fallback sound.</description>
+		</key>
+		<key type="u" name="alarm-default-volume">
+			<range min="1" max="100"/>
+			<default>50</default>
+			<summary>The alarm's default volume level.</summary>
+			<description>The volume at which alarms will be played.</description>
+		</key>
+		<key type="u" name="alarm-duration-minutes">
+			<range min="1" max="60"/>
+			<default>10</default>
+			<summary>The alarm's duration.</summary>
+			<description>How long the alarm's sound will be looped if its snap decision is not dismissed by the user.</description>
+		</key>
+		<key type="u" name="snooze-duration-minutes">
+			<range min="1" max="20"/>
+			<default>5</default>
+			<summary>The snooze duration.</summary>
+			<description>How long to wait when the user hits the Snooze button.</description>
+		</key>
+	</schema>
+</schemalist>

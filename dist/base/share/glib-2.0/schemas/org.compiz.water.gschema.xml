@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.water" gettext-domain="compiz">
+    <key type="s" name="initiate-key">
+      <default>'&lt;Control&gt;&lt;Super&gt;'</default>
+      <summary>Initiate</summary>
+      <description>Enable pointer water effects</description>
+    </key>
+    <key type="s" name="toggle-rain-key">
+      <default>'&lt;Shift&gt;F9'</default>
+      <summary>Toggle rain</summary>
+      <description>Toggle rain effect</description>
+    </key>
+    <key type="s" name="toggle-wiper-key">
+      <default>'&lt;Shift&gt;F8'</default>
+      <summary>Toggle wiper</summary>
+      <description>Toggle wiper effect</description>
+    </key>
+    <key type="d" name="offset-scale">
+      <default>10</default>
+      <summary>Offset Scale</summary>
+      <description>Water offset scale (0 - 1000)</description>
+    </key>
+    <key type="i" name="rain-delay">
+      <default>250</default>
+      <summary>Rain Delay</summary>
+      <description>Delay (in ms) between each rain-drop (1 - 3600000)</description>
+    </key>
+    <key type="d" name="light-vec-x">
+      <default>-1.0</default>
+      <summary>lightVec X</summary>
+      <description>Light vector X coordinate (-1 - 1)</description>
+    </key>
+    <key type="d" name="light-vec-y">
+      <default>1.0</default>
+      <summary>lightVec Y</summary>
+      <description>Light vector Y coordinate (-1 - 1)</description>
+    </key>
+    <key type="d" name="light-vec-z">
+      <default>0.0</default>
+      <summary>lightVec Z</summary>
+      <description>Light vector Z coordinate (-1 - 1)</description>
+    </key>
+    <key type="b" name="title-wave">
+      <default>false</default>
+      <summary>Title wave</summary>
+      <description>Wave effect from window title</description>
+    </key>
+  </schema>
+</schemalist>

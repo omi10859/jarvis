@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.notification" gettext-domain="compiz">
+    <key type="i" name="timeout">
+      <default>-1</default>
+      <summary>Hide Timeout</summary>
+      <description>Timeout (in seconds) before hiding the notification, set to -1 for system default and 0 for indefinite (-1 - 30)</description>
+    </key>
+    <key type="i" name="max-log-level">
+      <default>1</default>
+      <summary>Maximum Log Level</summary>
+      <description>The maximum log level to display (0 = Fatal, 1 = Error, 2 = Warning, 3 = Info, 4 = Debug)</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.matecompat" gettext-domain="compiz">
+    <key type="s" name="main-menu-key">
+      <default>'&lt;Alt&gt;F1'</default>
+      <summary>Show Main Menu</summary>
+      <description>Show the main menu</description>
+    </key>
+    <key type="s" name="run-key">
+      <default>'&lt;Alt&gt;F2'</default>
+      <summary>Run Dialog</summary>
+      <description>Show Run Application dialog</description>
+    </key>
+    <key type="s" name="command-screenshot">
+      <default>'mate-screenshot'</default>
+      <summary>Screenshot command line</summary>
+      <description>Screenshot command line</description>
+    </key>
+    <key type="s" name="run-command-screenshot-key">
+      <default>'Print'</default>
+      <summary>Take a screenshot</summary>
+      <description>Take a screenshot</description>
+    </key>
+    <key type="s" name="command-window-screenshot">
+      <default>'mate-screenshot --window'</default>
+      <summary>Window screenshot command line</summary>
+      <description>Window screenshot command line</description>
+    </key>
+    <key type="s" name="run-command-window-screenshot-key">
+      <default>'&lt;Alt&gt;Print'</default>
+      <summary>Take a screenshot of a window</summary>
+      <description>Take a screenshot of a window</description>
+    </key>
+    <key type="s" name="command-terminal">
+      <default>'mate-terminal'</default>
+      <summary>Terminal command line</summary>
+      <description>Terminal command line</description>
+    </key>
+    <key type="s" name="run-command-terminal-key">
+      <default>'Disabled'</default>
+      <summary>Open a terminal</summary>
+      <description>Open a terminal</description>
+    </key>
+  </schema>
+</schemalist>

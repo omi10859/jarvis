@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.obs" gettext-domain="compiz">
+    <key type="s" name="opacity-increase-key">
+      <default>'Disabled'</default>
+      <summary>Increase Opacity Key</summary>
+      <description>Increase the opacity of the selected window.</description>
+    </key>
+    <key type="s" name="opacity-increase-button">
+      <default>'&lt;Alt&gt;Button4'</default>
+      <summary>Increase Opacity Button</summary>
+      <description>Increase the opacity of the window the pointer hovers.</description>
+    </key>
+    <key type="s" name="opacity-decrease-key">
+      <default>'Disabled'</default>
+      <summary>Decrease Opacity Key</summary>
+      <description>Decrease the opacity of the selected window.</description>
+    </key>
+    <key type="s" name="opacity-decrease-button">
+      <default>'&lt;Alt&gt;Button5'</default>
+      <summary>Decrease Opacity Button</summary>
+      <description>Decrease the opacity of the window the pointer hovers.</description>
+    </key>
+    <key type="i" name="default-opacity-spawn-value">
+      <default>100</default>
+      <summary>New window default opacity value</summary>
+      <description>Default opacity when a new window is created (in percent). (1 - 100)</description>
+    </key>
+    <key type="i" name="opacity-step">
+      <default>5</default>
+      <summary>Step Size</summary>
+      <description>Opacity increment and decrement amount (in percent). (1 - 10)</description>
+    </key>
+    <key type="as" name="opacity-matches">
+      <default>[]</default>
+      <summary>Windows</summary>
+      <description>Windows that should have a specific default opacity.</description>
+    </key>
+    <key type="ai" name="opacity-values">
+      <default>[90]</default>
+      <summary>Window values</summary>
+      <description>Opacity value for the windows (in percent).</description>
+    </key>
+    <key type="s" name="brightness-increase-key">
+      <default>'Disabled'</default>
+      <summary>Increase Brightness Key</summary>
+      <description>Increase the brightness of the selected window.</description>
+    </key>
+    <key type="s" name="brightness-increase-button">
+      <default>'Disabled'</default>
+      <summary>Increase Brightness Button</summary>
+      <description>Increase the brightness of the window the pointer hovers.</description>
+    </key>
+    <key type="s" name="brightness-decrease-key">
+      <default>'Disabled'</default>
+      <summary>Decrease Brightness Key</summary>
+      <description>Decrease the brightness of the selected window.</description>
+    </key>
+    <key type="s" name="brightness-decrease-button">
+      <default>'Disabled'</default>
+      <summary>Decrease Brightness Button</summary>
+      <description>Decrease the brightness of the window the pointer hovers.</description>
+    </key>
+    <key type="i" name="default-brightness-spawn-value">
+      <default>100</default>
+      <summary>New window default brightness value</summary>
+      <description>Default brightness when a new window is created (in percent). (1 - 100)</description>
+    </key>
+    <key type="i" name="brightness-step">
+      <default>5</default>
+      <summary>Step Size</summary>
+      <description>Brightness increment and decrement amount (in percent). (1 - 10)</description>
+    </key>
+    <key type="as" name="brightness-matches">
+      <default>[]</default>
+      <summary>Windows</summary>
+      <description>Windows that should have a specific default brightness.</description>
+    </key>
+    <key type="ai" name="brightness-values">
+      <default>[90]</default>
+      <summary>Window values</summary>
+      <description>Brightness value for windows (in percent).</description>
+    </key>
+    <key type="s" name="saturation-increase-key">
+      <default>'Disabled'</default>
+      <summary>Increase Saturation Key</summary>
+      <description>Increase the saturation of the selected window.</description>
+    </key>
+    <key type="s" name="saturation-increase-button">
+      <default>'Disabled'</default>
+      <summary>Increase Saturation Button</summary>
+      <description>Increase the saturation of the window the pointer hovers.</description>
+    </key>
+    <key type="s" name="saturation-decrease-key">
+      <default>'Disabled'</default>
+      <summary>Decrease Saturation Key</summary>
+      <description>Decrease the saturation of the selected window.</description>
+    </key>
+    <key type="s" name="saturation-decrease-button">
+      <default>'Disabled'</default>
+      <summary>Decrease Saturation Button</summary>
+      <description>Decrease the saturation of the window the pointer hovers.</description>
+    </key>
+    <key type="i" name="default-saturation-spawn-value">
+      <default>100</default>
+      <summary>New window default saturation value</summary>
+      <description>Default saturation when a new window is created (in percent). (1 - 100)</description>
+    </key>
+    <key type="i" name="saturation-step">
+      <default>5</default>
+      <summary>Step Size</summary>
+      <description>Saturation increment and decrement amount (in percent). (1 - 10)</description>
+    </key>
+    <key type="as" name="saturation-matches">
+      <default>[]</default>
+      <summary>Windows</summary>
+      <description>Windows that should have a specific default saturation.</description>
+    </key>
+    <key type="ai" name="saturation-values">
+      <default>[90]</default>
+      <summary>Window values</summary>
+      <description>Saturation value for the windows (in percent).</description>
+    </key>
+  </schema>
+</schemalist>

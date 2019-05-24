@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<schemalist>
+  <enum id='menu-enum'>
+    <value value='0' nick='global'/>
+    <value value='1' nick='locally-integrated'/>
+  </enum>
+
+  <schema path='/com/canonical/indicator/appmenu/' id='com.canonical.indicator.appmenu' gettext-domain='indicator-appmenu'>
+    <key name='menu-mode' enum='menu-enum'>
+      <default>'global'</default>
+      <summary>Where the menu is displayed.</summary>
+      <description>
+        Controls the menu display location.
+      </description>
+    </key>
+  </schema>
+</schemalist>

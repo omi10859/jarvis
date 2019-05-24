@@ -1,0 +1,14 @@
+[_presets_]
+element-name=GstLameMP3Enc
+version=0.10.36
+
+[Ubuntu]
+name=lamemp3enc
+perfect-timestamp=false
+hard-resync=false
+tolerance=40000000
+target=Quality
+cbr=false
+quality=2
+encoding-engine-quality=Standard
+mono=false

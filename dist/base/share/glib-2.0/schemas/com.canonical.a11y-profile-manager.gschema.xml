@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="a11y-profile-manager">
+  <schema path="/com/canonical/a11y-profile-manager/" id="com.canonical.a11y-profile-manager">
+    <key type="s" name="active-profile">
+      <default>""</default>
+      <summary>The active accessibility profile</summary>
+      <description>Used to indicate to the user which accessibility profile is active.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.scalefilter" gettext-domain="compiz">
+    <key type="i" name="timeout">
+      <default>0</default>
+      <summary>Filter Type Timeout</summary>
+      <description>Time (in ms) after which the filter typing is automatically ended (0 - 10000)</description>
+    </key>
+    <key type="b" name="filter-case-insensitive">
+      <default>true</default>
+      <summary>Filter Case Insensitive</summary>
+      <description>Use case insensitive string matching when filtering.</description>
+    </key>
+    <key type="b" name="filter-display">
+      <default>true</default>
+      <summary>Show Filter Text</summary>
+      <description>Show filter text.</description>
+    </key>
+    <key type="b" name="font-bold">
+      <default>true</default>
+      <summary>Bold Font</summary>
+      <description>Use bold font for window title display</description>
+    </key>
+    <key type="i" name="font-size">
+      <default>24</default>
+      <summary>Font Size</summary>
+      <description>Font size for window title display (6 - 48)</description>
+    </key>
+    <key type="i" name="border-size">
+      <default>5</default>
+      <summary>Title Border Size</summary>
+      <description>Size of the border around the window title (1 - 20)</description>
+    </key>
+    <key type="s" name="font-color">
+      <default>'#ffffffff'</default>
+      <summary>Font Color</summary>
+      <description>Font color of the window title</description>
+    </key>
+    <key type="s" name="back-color">
+      <default>'#00000099'</default>
+      <summary>Background Color</summary>
+      <description>Background color of the window title</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.freewins" gettext-domain="compiz">
+    <key type="s" name="initiate-rotation-button">
+      <default>'&lt;Control&gt;&lt;Shift&gt;Button1'</default>
+      <summary>Initiate Rotation Button</summary>
+      <description>Mouse button to start free rotation.</description>
+    </key>
+    <key type="s" name="initiate-scale-button">
+      <default>'&lt;Control&gt;&lt;Shift&gt;Button3'</default>
+      <summary>Initiate Scaling Button</summary>
+      <description>Mouse button to start free scaling.</description>
+    </key>
+    <key type="s" name="reset-button">
+      <default>'&lt;Control&gt;&lt;Shift&gt;Button2'</default>
+      <summary>Reset Transformation Button</summary>
+      <description>Mouse button to reset the transformation.</description>
+    </key>
+    <key type="s" name="reset-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;r'</default>
+      <summary>Reset Transformation Key</summary>
+      <description>Keyboard shortcut to reset the transformation.</description>
+    </key>
+    <key type="s" name="toggle-axis-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;h'</default>
+      <summary>Axis Help Toggle</summary>
+      <description>Keyboard shortcut to toggle the visibility of the axis selection helper.</description>
+    </key>
+    <key type="ai" name="snap-mods">
+      <default>[]</default>
+      <summary>Snap Modifier</summary>
+      <description>Use these bindings to enable/disable snapping.</description>
+    </key>
+    <key type="ai" name="invert-mods">
+      <default>[]</default>
+      <summary>Invert Modifier</summary>
+      <description>Use these bindings to invert the rotation mode.</description>
+    </key>
+    <key type="s" name="scale-up-button">
+      <default>'&lt;Control&gt;&lt;Shift&gt;Button4'</default>
+      <summary>Scale Up Button</summary>
+      <description>Mouse button to scale the window up by one increment.</description>
+    </key>
+    <key type="s" name="scale-down-button">
+      <default>'&lt;Control&gt;&lt;Shift&gt;Button5'</default>
+      <summary>Scale Down Button</summary>
+      <description>Mouse button to scale the window down by one increment.</description>
+    </key>
+    <key type="s" name="scale-up-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;Page_Up'</default>
+      <summary>Scale Up Key</summary>
+      <description>Keyboard shortcut to scale the window up by one increment.</description>
+    </key>
+    <key type="s" name="scale-down-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;Page_Down'</default>
+      <summary>Scale Down Key</summary>
+      <description>Keyboard shortcut to scale the window down by one increment.</description>
+    </key>
+    <key type="s" name="rotate-up-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;w'</default>
+      <summary>Rotate Up Key</summary>
+      <description>Keyboard shortcut to rotate the window up by one increment.</description>
+    </key>
+    <key type="s" name="rotate-down-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;s'</default>
+      <summary>Rotate Down Key</summary>
+      <description>Keyboard shortcut to rotate the window down by one increment.</description>
+    </key>
+    <key type="s" name="rotate-left-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;d'</default>
+      <summary>Rotate Left Key</summary>
+      <description>Keyboard shortcut to rotate the window left by one increment.</description>
+    </key>
+    <key type="s" name="rotate-right-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;a'</default>
+      <summary>Rotate Right Key</summary>
+      <description>Keyboard shortcut to rotate the window right by one increment.</description>
+    </key>
+    <key type="s" name="rotate-c-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;e'</default>
+      <summary>Rotate Clockwise Key</summary>
+      <description>Keyboard shortcut to rotate the window clockwise by one increment.</description>
+    </key>
+    <key type="s" name="rotate-cc-key">
+      <default>'&lt;Control&gt;&lt;Shift&gt;q'</default>
+      <summary>Rotate Counter-Clockwise Key</summary>
+      <description>Keyboard shortcut to rotate the window counter-clockwise by one increment.</description>
+    </key>
+    <key type="b" name="snap">
+      <default>false</default>
+      <summary>Snap By Default</summary>
+      <description>Snap to common points by default.</description>
+    </key>
+    <key type="i" name="snap-threshold">
+      <default>50</default>
+      <summary>Snap Threshold</summary>
+      <description>Snap to every one of these angles. (1 - 100)</description>
+    </key>
+    <key type="d" name="mouse-sensitivity">
+      <default>1.0</default>
+      <summary>Mouse Sensitivity</summary>
+      <description>Adjust how sensitive the mouse movement should be. (0.1 - 10.0)</description>
+    </key>
+    <key type="i" name="scale-mode">
+      <default>0</default>
+      <summary>Scale Mode</summary>
+      <description>Select the method to scale windows. (0 = To Centre, 1 = To Opposite Corner)</description>
+    </key>
+    <key type="b" name="allow-negative">
+      <default>true</default>
+      <summary>Allow Negative</summary>
+      <description>Allow negative scaling</description>
+    </key>
+    <key type="b" name="scale-uniform">
+      <default>true</default>
+      <summary>Maintain Aspect Ratio</summary>
+      <description>Keep the aspect ratio of the window constant when scaling.</description>
+    </key>
+    <key type="d" name="min-scale">
+      <default>0.1</default>
+      <summary>Minimum scale</summary>
+      <description>How small the scale is allowed to be when 'Allow Negative' is not activated. (0.01 - 1.0)</description>
+    </key>
+    <key type="i" name="z-axis-rotation">
+      <default>2</default>
+      <summary>Rotation Type</summary>
+      <description>Choose the type of the rotation. (0 = Always 2D, 1 = Always 3D, 2 = Determine On Click, 3 = Interchangeable, 4 = Switch, 5 = Trackball)</description>
+    </key>
+    <key type="i" name="rotation-axis">
+      <default>0</default>
+      <summary>Rotation Axis</summary>
+      <description>How Freely Transformable Windows should determine the rotation axis. (0 = Always Centre, 1 = Click Point, 2 = Opposite to Click, 3 = Nearest Corner)</description>
+    </key>
+    <key type="d" name="td-percent">
+      <default>35.0</default>
+      <summary>3D Rotation Percentage</summary>
+      <description>The percentage of the window area used for 3D rotation. (10.0 - 90.0)</description>
+    </key>
+    <key type="b" name="auto-zoom">
+      <default>false</default>
+      <summary>Auto-Zoom</summary>
+      <description>Auto-Zoom when rotating so that windows do not get too large.</description>
+    </key>
+    <key type="b" name="disable-on-transformed-screen">
+      <default>false</default>
+      <summary>Disable On Transformed Screen</summary>
+      <description>Disable the rotation on a transformed screen. This prevents ugly looking clipped windows when the screen is transformed.</description>
+    </key>
+    <key type="d" name="speed">
+      <default>5.0</default>
+      <summary>Window Rotation Speed</summary>
+      <description>How fast the window should rotate. (0.1 - 15.0)</description>
+    </key>
+    <key type="d" name="rotate-increment-amount">
+      <default>10.0</default>
+      <summary>Rotate Increment Amount</summary>
+      <description>How far to rotate a window when rotating by an 'increment'. (1.0 - 100.0)</description>
+    </key>
+    <key type="d" name="scale-increment-amount">
+      <default>0.3</default>
+      <summary>Scale Increment Amount</summary>
+      <description>How much to scale a window by when scaling by an 'increment'. (0.01 - 0.5)</description>
+    </key>
+    <key type="s" name="shape-window-types">
+      <default>'(Toolbar | Utility | Dialog | ModalDialog | Normal)'</default>
+      <summary>Prevented Input Window Types</summary>
+      <description>Window types that should be shaped. Disable problematic windows here. (match)</description>
+    </key>
+    <key type="b" name="do-shape-input">
+      <default>true</default>
+      <summary>Prevent Input</summary>
+      <description>Prevent input for transformed windows.</description>
+    </key>
+    <key type="b" name="immediate-moves">
+      <default>true</default>
+      <summary>Immediate Moves</summary>
+      <description>Don't allow plugins like wobbly to manipulate the transformed window while it's being moved.</description>
+    </key>
+    <key type="s" name="circle-color">
+      <default>'#54BEFB80'</default>
+      <summary>Helper Circle Color</summary>
+      <description>Color and opacity of the circle.</description>
+    </key>
+    <key type="s" name="line-color">
+      <default>'#1800FFFF'</default>
+      <summary>Helper Line Color</summary>
+      <description>Color and opacity of the helper line around the circle.</description>
+    </key>
+    <key type="s" name="cross-line-color">
+      <default>'#1800FFFF'</default>
+      <summary>Helper Cross Line Color</summary>
+      <description>Color and opacity of the cross lines.</description>
+    </key>
+    <key type="b" name="show-circle">
+      <default>true</default>
+      <summary>Show 3D Rotation Circle</summary>
+      <description>Show the click area for 3D rotation.</description>
+    </key>
+    <key type="b" name="show-gizmo">
+      <default>true</default>
+      <summary>Show Rotation Gizmo</summary>
+      <description>Show the rotation axis info.</description>
+    </key>
+    <key type="b" name="show-cross">
+      <default>true</default>
+      <summary>Show Crosshair</summary>
+      <description>Show the crosshair for scaling click regions.</description>
+    </key>
+    <key type="b" name="show-region">
+      <default>true</default>
+      <summary>Show Input Regions</summary>
+      <description>Show the input region rectangle.</description>
+    </key>
+  </schema>
+</schemalist>
